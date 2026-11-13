@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-691647440719534190">
                       <div class="post-header">
                         <span class="post-author">jimgerweck</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/21/22 @ 7:45 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>I stumbled upon this app and wondering if anyone else has used it. Looks like it would be ideal for landmarking points, especially where there are no permanent objects nearby.<br /><a href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534209/fodoid/691647440719534203/imageType/LARGE/inlineImage/true/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" title="5CDFAA7C-49E6-42BC-9DA8-E16979857724" class="gallery-image"><img alt="5CDFAA7C-49E6-42BC-9DA8-E16979857724" class="inline-attachment" height="485" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534209/fodoid/691647440719534203/imageType/MEDIUM/inlineImage/true/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" title="5CDFAA7C-49E6-42BC-9DA8-E16979857724" width="600" /></a><a href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534210/fodoid/691647440719534204/imageType/LARGE/inlineImage/true/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" title="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" class="gallery-image"><img alt="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" class="inline-attachment" height="600" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534210/fodoid/691647440719534204/imageType/MEDIUM/inlineImage/true/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" title="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" width="337" /></a><a href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534211/fodoid/691647440719534205/imageType/LARGE/inlineImage/true/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" title="BD550EDD-B005-4AE2-A78B-24949204A62A" class="gallery-image"><img alt="BD550EDD-B005-4AE2-A78B-24949204A62A" class="inline-attachment" height="600" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/691647440719534190/filePointer/691647440719534211/fodoid/691647440719534205/imageType/MEDIUM/inlineImage/true/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" title="BD550EDD-B005-4AE2-A78B-24949204A62A" width="585" /></a></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/691647440719534209">5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg</a>, <a href="files/691647440719534210">5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg</a>, <a href="files/691647440719534211">BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg</a></div>
+                        <p>I stumbled upon this app and wondering if anyone else has used it. Looks like it would be ideal for landmarking points, especially where there are no permanent objects nearby.<br /><a href="files/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" title="5CDFAA7C-49E6-42BC-9DA8-E16979857724" class="gallery-image"><img alt="5CDFAA7C-49E6-42BC-9DA8-E16979857724" class="inline-attachment" height="485" src="files/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" title="5CDFAA7C-49E6-42BC-9DA8-E16979857724" width="600" /></a><a href="files/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" title="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" class="gallery-image"><img alt="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" class="inline-attachment" height="600" src="files/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" title="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7" width="337" /></a><a href="files/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" title="BD550EDD-B005-4AE2-A78B-24949204A62A" class="gallery-image"><img alt="BD550EDD-B005-4AE2-A78B-24949204A62A" class="inline-attachment" height="600" src="files/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" title="BD550EDD-B005-4AE2-A78B-24949204A62A" width="585" /></a></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" target="_blank"><img src="files/5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" alt="5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg" class="attachment-thumb" title="5CDFAA7C-49E6-42BC-9DA8-E16979857724.jpeg"></a><a href="files/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" target="_blank"><img src="files/5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" alt="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg" class="attachment-thumb" title="5C5BEDEB-5265-42A4-BE14-7CD7D9CC2FB7.jpeg"></a><a href="files/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" target="_blank"><img src="files/BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" alt="BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg" class="attachment-thumb" title="BD550EDD-B005-4AE2-A78B-24949204A62A.jpeg"></a></div></div>
                       </div>
                     </article>
                     

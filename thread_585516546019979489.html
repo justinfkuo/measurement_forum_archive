@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019979489">
                       <div class="post-header">
                         <span class="post-author">scotthubbard</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/29/09 @ 10:01 AM</span>
                       </div>
                       <div class="post-body">
                         I'm looking at a map where the course (at one point) goes out one side of a road, turns around and goes back on the other side of the road. The course was measured by keeping the center line on the measurer's left. Race day, they put out cones but from pics I've seen, the cones are few & far between. Regardless, there are no monitors out there to ensure runners stay left of center as they travel about 7 miles out & 7 back on a road that winds back/forth the whole way. <br /><br />Practically, runners could run the SPR, using the entire width of the road. I don't know if they have some kind of 'honor system' where runners might report those who cross the center line. It shouldn't be up to runners to enforce rules or ensure the proper path is followed. I know it's not my job to make sure runners stay left of center but I'm concerned the course won't be monitored to ensure runners run where they're supposed to.<br /><br />Do I certify the course if the paperwork and map are good despite my concerns that runners might use the entire width of the road w/out reproach?
@@ -179,7 +205,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#4 &bull; 1/31/09 @ 2:05 PM</span>
                       </div>
                       <div class="post-body">
-                        Many maps show the location of cones, or show a row of dots and there is an arrow pointing at the dots stating that cones must be placed down the center line to prevent runners crossing the line.<BR><BR>It is up to the RD to deploy the cones and enforce the sepearation, but it is the map maker who has to communicate the need for it forcefully and clearly. <BR><BR>The best way to do that is in LARGE BOLD TYPE in the middle of the cert map.<BR><BR>If the course has restrictions the map should show them clearly, boldly and obviously, so they are still evident on a bad photocopy, which is what most people seem to operate from on race day.<BR><BR>In answer to your question, "Do runners have any such rule or code of conduct about staying one side of the center line?"  In short no, not at all. <BR><BR>On the bike section of a triathlon it is against the rules to cross the center line, you can and WILL get disqualified for that. On the other hand runners are frequently all over the road, simply because most races are on the full width of the road.  With a restricted course, and unless you cone all the way down, they will naturally use the road curb to curb. <BR> <BR>One option is to measure the course using the full road width.  Then on race day if the runners stay on the correct side of the road they all just run a little longer, which is not a crime, and if they don't the the course is still not short. <BR><BR>I don't think it's at all inappropriate for the measure to take the RD aside and tell him that should a record have been set on that day the record would probably be invalidated because of the RD's falure to implement the restrictions on the certificate.  We have to communicate the certified course, to explain what we mean. <BR><BR>In practice, on race day, you just can't have to many cones. The problem is obtaining them, deploying them, recovering them and storing them. <BR><BR>We use as many cones as I can get a hand on. I am often referred to as cone man. I have had races were we have used U-haul trucks full of 36" DOT road cones. <BR><BR>But on smaller club races held in parks where we don't have to keep cars of the course, or where we are providing runner guidance like staying on the correct side of the center line, we use flying disk cones. <BR>To enforce or encourage runners to stay on the right side of a curve we drop hundreds of 12"  day glow flying disk type cones, down the center line packing them close where it curves.  <BR>We space them out on stright bits and more dense on inside of curves, putting them every few feet. <BR><BR>The big 12" ones we use on curves cost about $1 each and the 7" we use as mainly as reminders on the straights cost about 40c.  <BR><BR>We often alternate colors, day glow orange, day glow yellow, and where it's a U turn or tight curve we sometimes reinforce that with taller cones.  We buy the big 12" flying disks in bulk, in boxes of 48.<BR><BR>See this thread  <A HREF="https://measure.infopop.cc/eve/forums/a/tpc/f/75910986/m/87810886" TARGET=_blank>Prior thread on the flying disk cones</A>
+                        Many maps show the location of cones, or show a row of dots and there is an arrow pointing at the dots stating that cones must be placed down the center line to prevent runners crossing the line.<BR><BR>It is up to the RD to deploy the cones and enforce the sepearation, but it is the map maker who has to communicate the need for it forcefully and clearly. <BR><BR>The best way to do that is in LARGE BOLD TYPE in the middle of the cert map.<BR><BR>If the course has restrictions the map should show them clearly, boldly and obviously, so they are still evident on a bad photocopy, which is what most people seem to operate from on race day.<BR><BR>In answer to your question, "Do runners have any such rule or code of conduct about staying one side of the center line?"  In short no, not at all. <BR><BR>On the bike section of a triathlon it is against the rules to cross the center line, you can and WILL get disqualified for that. On the other hand runners are frequently all over the road, simply because most races are on the full width of the road.  With a restricted course, and unless you cone all the way down, they will naturally use the road curb to curb. <BR> <BR>One option is to measure the course using the full road width.  Then on race day if the runners stay on the correct side of the road they all just run a little longer, which is not a crime, and if they don't the the course is still not short. <BR><BR>I don't think it's at all inappropriate for the measure to take the RD aside and tell him that should a record have been set on that day the record would probably be invalidated because of the RD's falure to implement the restrictions on the certificate.  We have to communicate the certified course, to explain what we mean. <BR><BR>In practice, on race day, you just can't have to many cones. The problem is obtaining them, deploying them, recovering them and storing them. <BR><BR>We use as many cones as I can get a hand on. I am often referred to as cone man. I have had races were we have used U-haul trucks full of 36" DOT road cones. <BR><BR>But on smaller club races held in parks where we don't have to keep cars of the course, or where we are providing runner guidance like staying on the correct side of the center line, we use flying disk cones. <BR>To enforce or encourage runners to stay on the right side of a curve we drop hundreds of 12"  day glow flying disk type cones, down the center line packing them close where it curves.  <BR>We space them out on stright bits and more dense on inside of curves, putting them every few feet. <BR><BR>The big 12" ones we use on curves cost about $1 each and the 7" we use as mainly as reminders on the straights cost about 40c.  <BR><BR>We often alternate colors, day glow orange, day glow yellow, and where it's a U turn or tight curve we sometimes reinforce that with taller cones.  We buy the big 12" flying disks in bulk, in boxes of 48.<BR><BR>See this thread  <A HREF="thread_87810886.html" TARGET=_blank>Prior thread on the flying disk cones</A>
                         
                       </div>
                     </article>
@@ -201,7 +227,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#6 &bull; 2/3/09 @ 12:42 PM</span>
                       </div>
                       <div class="post-body">
-                        I will generally use the full road width unless it is a major race with lots of resources (human and material) to enforce restrictions. Even then, there's no guarantee.<BR><BR>NYRR places cones/stanchions on the rec lane line every 50m or so, but last Sunday I saw dozens, perhaps hundreds, of runners going outside those cones (of course, they were doing so no matter which way the road curved, so they were adding distance as well as cutting it off; probably a wash in the end). 2 years ago NYRR ran chute tape the entire length of the course from stanchion to stanchion, in this same race, (<A HREF="https://measure.infopop.cc/eve/forums/a/tpc/f/69510622/m/1231003991" TARGET=_blank>Rec Lane Restrictions thread</A>) but they obviously felt this required too much setup time, and now rely on "runner's honor" (is that an oxymoron) and volunteers to enforce the restrictions.
+                        I will generally use the full road width unless it is a major race with lots of resources (human and material) to enforce restrictions. Even then, there's no guarantee.<BR><BR>NYRR places cones/stanchions on the rec lane line every 50m or so, but last Sunday I saw dozens, perhaps hundreds, of runners going outside those cones (of course, they were doing so no matter which way the road curved, so they were adding distance as well as cutting it off; probably a wash in the end). 2 years ago NYRR ran chute tape the entire length of the course from stanchion to stanchion, in this same race, (<A HREF="thread_1231003991.html" TARGET=_blank>Rec Lane Restrictions thread</A>) but they obviously felt this required too much setup time, and now rely on "runner's honor" (is that an oxymoron) and volunteers to enforce the restrictions.
                         
                       </div>
                     </article>

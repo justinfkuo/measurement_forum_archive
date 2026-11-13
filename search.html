@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -140,20 +166,69 @@ a:hover { text-decoration: underline; }
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
     <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; Search</nav>
     
-        <h2>Search Forum Archive</h2>
+        <h2>Advanced Search</h2>
         <div class="card">
-          <input type="search" id="liveSearchInput" placeholder="Type keywords, usernames, or topics..."
-                 style="width:100%; padding:0.7rem; font-size:1rem; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text);">
-          <p class="meta" id="searchStatus" style="margin:0.5rem 0 0;">Enter a search term above.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Contains All Of These Words</label>
+              <input type="text" id="qAll" class="adv-input" placeholder="e.g. steel tape">
+            </div>
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Contains At Least One Word</label>
+              <input type="text" id="qAny" class="adv-input">
+            </div>
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Exact Phrase Match</label>
+              <input type="text" id="qExact" class="adv-input" placeholder='"calibration course"'>
+            </div>
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Contains None Of These Words</label>
+              <input type="text" id="qNone" class="adv-input" placeholder="exclude these words">
+            </div>
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Posted By (Author Name)</label>
+              <input type="text" id="qAuthor" class="adv-input" placeholder="Display name">
+            </div>
+            <div>
+              <label style="display:block; margin-bottom:0.3rem; font-size:0.9rem; font-weight:600;">Order By</label>
+              <select id="sortOrder" class="adv-input">
+                <option value="relevance">Relevance</option>
+                <option value="newest">Date: Newest First</option>
+                <option value="oldest">Date: Oldest First</option>
+              </select>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <label style="cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+              <input type="checkbox" id="chkTitleOnly"> Search topic titles only
+            </label>
+            <button id="btnSearch" style="padding:0.65rem 2rem; background:var(--accent); color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:600; font-size:1rem;">Search</button>
+          </div>
+          <p class="meta" id="searchStatus" style="margin:1rem 0 0; font-weight:500;">Enter search criteria above.</p>
         </div>
         <div id="searchResults"></div>
+        <style>
+          .adv-input { width: 100%; padding: 0.6rem 0.75rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); font-family: inherit; }
+          .adv-input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+          #btnSearch:hover { background: var(--accent-hover); }
+        </style>
         
   </main>
   
         <script src="search_index.js"></script>
         <script>
           (function() {
-            const input = document.getElementById('liveSearchInput');
+            const inputs = {
+                all: document.getElementById('qAll'),
+                any: document.getElementById('qAny'),
+                exact: document.getElementById('qExact'),
+                none: document.getElementById('qNone'),
+                author: document.getElementById('qAuthor'),
+                titleOnly: document.getElementById('chkTitleOnly'),
+                sort: document.getElementById('sortOrder')
+            };
+            const btnSearch = document.getElementById('btnSearch');
             const status = document.getElementById('searchStatus');
             const resultsEl = document.getElementById('searchResults');
             const records = window.FORUM_SEARCH_INDEX || [];
@@ -164,20 +239,60 @@ a:hover { text-decoration: underline; }
               }[s]));
             }
 
-            function runSearch(query) {
-              const q = query.trim().toLowerCase();
-              if (!q) {
-                status.textContent = 'Showing ' + records.length.toLocaleString() + ' indexed posts. Enter a keyword above.';
+            function runSearch() {
+              const valAll = inputs.all.value.toLowerCase().trim();
+              const valAny = inputs.any.value.toLowerCase().trim();
+              const valExact = inputs.exact.value.toLowerCase().trim();
+              const valNone = inputs.none.value.toLowerCase().trim();
+              const valAuthor = inputs.author.value.toLowerCase().trim();
+              const isTitleOnly = inputs.titleOnly.checked;
+              const sortOrder = inputs.sort.value;
+
+              // Do not run if all text fields are completely empty
+              if (!valAll && !valAny && !valExact && !valNone && !valAuthor) {
+                status.textContent = 'Showing ' + records.length.toLocaleString() + ' indexed posts. Enter search criteria above.';
                 resultsEl.innerHTML = '';
                 return;
               }
-              const terms = q.split(/\s+/);
-              const matches = records.filter(item => {
-                const hay = (item.title + ' ' + item.author + ' ' + item.area + ' ' + item.text).toLowerCase();
-                return terms.every(t => hay.includes(t));
+              
+              const termsAll = valAll ? valAll.split(/\s+/) : [];
+              const termsAny = valAny ? valAny.split(/\s+/) : [];
+              const termsNone = valNone ? valNone.split(/\s+/) : [];
+              
+              let matches = records.filter(item => {
+                const hay = isTitleOnly 
+                    ? item.title.toLowerCase() 
+                    : (item.title + ' ' + item.author + ' ' + item.area + ' ' + item.text).toLowerCase();
+                    
+                // 1. Contains All
+                if (termsAll.length > 0 && !termsAll.every(t => hay.includes(t))) return false;
+                
+                // 2. Contains Any (at least one)
+                if (termsAny.length > 0 && !termsAny.some(t => hay.includes(t))) return false;
+                
+                // 3. Exact Phrase
+                if (valExact && !hay.includes(valExact)) return false;
+                
+                // 4. Contains None (exclude)
+                if (termsNone.length > 0 && termsNone.some(t => hay.includes(t))) return false;
+                
+                // 5. Posted By
+                if (valAuthor && !item.author.toLowerCase().includes(valAuthor)) return false;
+                
+                return true;
               });
-              status.textContent = 'Found ' + matches.length.toLocaleString() + ' matching post(s) for "' + query + '".';
-              resultsEl.innerHTML = matches.slice(0, 100).map(m => `
+
+              // Apply Sorting (Defaults to Relevance / Original DB Order)
+              if (sortOrder === 'newest') {
+                  matches.sort((a, b) => b.sort_key.localeCompare(a.sort_key));
+              } else if (sortOrder === 'oldest') {
+                  matches.sort((a, b) => a.sort_key.localeCompare(b.sort_key));
+              }
+              
+              status.textContent = 'Found ' + matches.length.toLocaleString() + ' matching post(s).';
+              
+              // Cap display to first 150 results to prevent browser lag on massive queries
+              resultsEl.innerHTML = matches.slice(0, 150).map(m => `
                 <div class="card">
                   <div class="card-title"><a href="${escapeHtml(m.url)}">${escapeHtml(m.title)}</a></div>
                   <div class="meta">${escapeHtml(m.area)} &bull; Posted by <strong>${escapeHtml(m.author)}</strong> on ${escapeHtml(m.date)}</div>
@@ -186,11 +301,22 @@ a:hover { text-decoration: underline; }
               `).join('');
             }
 
+            // Catch searches originating from the header bar (query parameters)
             const params = new URLSearchParams(window.location.search);
-            const initialQ = params.get('q') || '';
-            input.value = initialQ;
-            runSearch(initialQ);
-            input.addEventListener('input', () => runSearch(input.value));
+            if (params.get('q')) {
+                inputs.all.value = params.get('q');
+                runSearch();
+            }
+
+            // Event Listeners
+            btnSearch.addEventListener('click', runSearch);
+            Object.values(inputs).forEach(input => {
+                if(input.tagName === 'INPUT' && input.type === 'text') {
+                    input.addEventListener('keypress', e => { if(e.key === 'Enter') runSearch(); });
+                } else if(input.tagName === 'SELECT' || input.type === 'checkbox') {
+                    input.addEventListener('change', runSearch);
+                }
+            });
           })();
         </script>
         

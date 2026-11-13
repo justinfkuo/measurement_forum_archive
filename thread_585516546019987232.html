@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019987232">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/21/10 @ 2:36 AM</span>
                       </div>
                       <div class="post-body">
                         <b>I received this yesterday from Duane Russell. Good interview.</b><br /><br />"Just wanted to pass this link on, as I was interviewed for the <br />RunColo.com Website. He took liberty with my title, and put a space in <br />the company name where it doesn't belong, but I thought he came up with <br />good questions. Read it if you want to, or ignore it if you don't have <br />time. I like the comment after the end of the interview."<br /><br /><a href="http://www.runcolo.com/content/274-interview-duane-russel-ceo-race-measure.html" target="_blank">Interview</a>

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-673208088043687828">
                       <div class="post-header">
                         <span class="post-author">oscarwagner</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/19/21 @ 4:31 AM</span>
                       </div>
                       <div class="post-body">
                         <p>This is a recap of distance measuring methods on smartphones moved over from GPS Accuracy thread.</p><p>There is some confusion about what a smartphone can do to measure longer distances.&nbsp; That is changing and improving rapidly.&nbsp; Enthused with Solocator, I got an i12 Pro Max.&nbsp; Max accuracy is 9' to 13' instead of 16'.&nbsp; It is much faster at getting to max accuracy than a plain i6.&nbsp; And it does have the newly added LiDAR capability which may do great things in the future.&nbsp; Right now, that seems to be good for improving photos and measuring interior dimensions.</p><p>AirTags were just released on April 30, 2021.&nbsp; This uses the U1 chip in 11's and 12's.&nbsp; They may be able to do precise long range measurements later.&nbsp; Right now you can keep track of your keys with them.&nbsp; The direct range I saw was about Bluetooth or 5 meters.&nbsp; It resolves to 1 foot or .1 feet depending on how close you are.&nbsp;</p><p>Right now: Apple's in-house app "Measure" does 100'+ distances with useful accuracy.&nbsp; I tried it on a steel taped 200' and got 200' 2".&nbsp; Then taped accurately under a vehicle so straight line of sight is not necessary.&nbsp; Then did a 1,000' cal course wandering all over a 4 lane road and got 997' xx" and, moving slowly in a straight line, 998' 5".&nbsp; I showed it to a friend.&nbsp; He already had it on an iPhone 6S and it did fine on 10'. Just now ran a tape 15' up flight of stairs and got 14' 11" so it does point to point and not "earth's surface".&nbsp; It does record readings and take pictures of measurements.&nbsp; &nbsp;It will be fine for homing in on "middle of nowhere" mile markers for better than +-16' GPS.&nbsp; &nbsp;</p>
@@ -168,8 +194,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#3 &bull; 6/20/21 @ 4:24 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>How do they do it?&nbsp; I do not know.&nbsp; What I read is it is "augmented reality or AR." This has been around in some form going back to at least 1992.</p><p>Wikipedia says: "AR can be defined as a system that incorporates three basic features: a combination of real and virtual worlds, real-time interaction, and accurate 3D registration of virtual and real objects.&nbsp;</p><p>What all is involved? Wikipedia again: "Modern <a href="https://en.wikipedia.org/wiki/Mobile_computing" title="Mobile computing">mobile computing</a> devices like <a href="https://en.wikipedia.org/wiki/Smartphone" title="Smartphone">smartphones</a> and <a href="https://en.wikipedia.org/wiki/Tablet_computer" title="Tablet computer">tablet computers</a> contain these elements, which often include a camera and microelectromechanical systems (<a class="mw-redirect" href="https://en.wikipedia.org/wiki/MEMS" title="MEMS">MEMS</a>) sensors such as an <a href="https://en.wikipedia.org/wiki/Accelerometer" title="Accelerometer">accelerometer</a>, <a class="mw-redirect" href="https://en.wikipedia.org/wiki/GPS" title="GPS">GPS</a>, and <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Digital_magnetic_compass" title="">solid state compass</a>, making them suitable AR platforms."</p><p>The developer might be using any hardware in that phone.&nbsp; The U1 chip and LIDAR have only been on iPhone versions 11 and 12. As developers integrate these, we will see better apps. The Apple AirTag using LIDAR just went on sale in April.&nbsp; It will resolve down to 0.1' but only from about (Bluetooth range) 20' away.&nbsp;</p><p>For mile marks, I would like to get closer than +- 16' when I have to use coordinates.&nbsp; Trail authorities are notoriously against ANY markings.&nbsp; A set of pictures can't go on a course map.&nbsp; But once you get within that +- 16', you can use Measure and get close enough to something identifiable without carrying a 100' steel tape.&nbsp;</p><p>This is a screenshot of cal course runs.&nbsp; It would be nice to have someone with a 6S or later try this.&nbsp;</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/673208088043687828/filePointer/673208088126466727/fodoid/673208088126466722/imageType/MEDIUM/inlineImage/true/mceclip1.png" /></p><p>It is exciting to realize I no longer have to carry a 100' steel tape out on a trail course to provide an excellent description of a point.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/673208088126466726">mceclip0.png</a>, <a href="files/673208088126466727">mceclip1.png</a></div>
+                        <p>How do they do it?&nbsp; I do not know.&nbsp; What I read is it is "augmented reality or AR." This has been around in some form going back to at least 1992.</p><p>Wikipedia says: "AR can be defined as a system that incorporates three basic features: a combination of real and virtual worlds, real-time interaction, and accurate 3D registration of virtual and real objects.&nbsp;</p><p>What all is involved? Wikipedia again: "Modern <a href="https://en.wikipedia.org/wiki/Mobile_computing" title="Mobile computing">mobile computing</a> devices like <a href="https://en.wikipedia.org/wiki/Smartphone" title="Smartphone">smartphones</a> and <a href="https://en.wikipedia.org/wiki/Tablet_computer" title="Tablet computer">tablet computers</a> contain these elements, which often include a camera and microelectromechanical systems (<a class="mw-redirect" href="https://en.wikipedia.org/wiki/MEMS" title="MEMS">MEMS</a>) sensors such as an <a href="https://en.wikipedia.org/wiki/Accelerometer" title="Accelerometer">accelerometer</a>, <a class="mw-redirect" href="https://en.wikipedia.org/wiki/GPS" title="GPS">GPS</a>, and <a class="mw-redirect" href="https://en.wikipedia.org/wiki/Digital_magnetic_compass" title="">solid state compass</a>, making them suitable AR platforms."</p><p>The developer might be using any hardware in that phone.&nbsp; The U1 chip and LIDAR have only been on iPhone versions 11 and 12. As developers integrate these, we will see better apps. The Apple AirTag using LIDAR just went on sale in April.&nbsp; It will resolve down to 0.1' but only from about (Bluetooth range) 20' away.&nbsp;</p><p>For mile marks, I would like to get closer than +- 16' when I have to use coordinates.&nbsp; Trail authorities are notoriously against ANY markings.&nbsp; A set of pictures can't go on a course map.&nbsp; But once you get within that +- 16', you can use Measure and get close enough to something identifiable without carrying a 100' steel tape.&nbsp;</p><p>This is a screenshot of cal course runs.&nbsp; It would be nice to have someone with a 6S or later try this.&nbsp;</p><p><img src="files/mceclip1.png" /></p><p>It is exciting to realize I no longer have to carry a 100' steel tape out on a trail course to provide an excellent description of a point.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a><a href="files/mceclip1.png" target="_blank"><img src="files/mceclip1.png" alt="mceclip1.png" class="attachment-thumb" title="mceclip1.png"></a></div></div>
                       </div>
                     </article>
                     

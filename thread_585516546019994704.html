@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019994704">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/9/11 @ 7:52 AM</span>
                       </div>
                       <div class="post-body">
                         If you have an new counter from the Reigels, the number of counts for each rotation of your front wheel is 23.636363.... But if you have an old counter you may not be sure what this number is.<br /><br />Is there any reason you would need to know this? Only if you plan to work in wheel revolutions rather than counts during calibrations. Or you may be one of those people, like me, who just likes to know.<br /><br />Here's a simple way to figure it out.<br /><br />Rotate your front wheel until the valve stem is next to the ground and note the counts.<br />Rotate the wheel one revolution until the valve stem is again near the ground. You will notice that the count has changed between 23 and 24 counts (for the case of a new counter). So you know that the number of counts per revolution is somewhere between 23 and 24 counts.<br />Now, after noting the counts with the valve stem next to the ground, ride forward for 230 counts, and then roll forward until the valve stem is next to the ground. Note that the counter has now changed between 236 and 237 counts. So you now know that there are between 23.6 and 23.7 counts per revolution.<br />Now ride forward 2360 counts and then roll forward until the stem is next to the ground. You will see that the count has changed between 2363 and 2364 counts, so your counts per revolution is between 23.63 and 23.64.<br />You can repeat this process to get as many digits of accuracy as you like.

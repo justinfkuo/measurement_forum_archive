@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-677290383708184760">
                       <div class="post-header">
                         <span class="post-author">garybrumley</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/11/21 @ 8:11 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I've been spending a lot of time lately trying to further develop my mobile spreadsheet that I use while measuring. It's an adaptation of the spreadsheet that [@mention:585516546019934607] made available some time ago on his website (thank you Duane). I've added several tools such as a segmented course calculator, radial turn calculator, a short measurement tool, a one-click reverse course direction feature, and more. It's formatted to be used with the Google Sheets app on a mobile phone. If anyone is interested, I'm happy to share this tool in exchange for your feedback, corrections, etc. Of course, please double check all math yourself before finalizing your courses.</p><p>To access this resource:</p><ol><li>Click the following link: <a href="https://bit.ly/3ntJ6fx" target="_blank">https://bit.ly/3ntJ6fx</a></li><li>Choose "File" &gt; "Make a copy" to save to your own Google account.</li></ol><p>So that it populates with numbers instead of error cells, I've taken the liberty to add my most recent calibration data (calibration course length and counts) on the "Calibration" tab. You'll want to delete that and replace with your own. I recommend making a new copy for every measurement day.</p><p>Does anyone else use a mobile spreadsheet? If so, what features have you built into it?</p>

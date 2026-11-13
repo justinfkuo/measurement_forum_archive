@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019952901">
                       <div class="post-header">
                         <span class="post-author">neville</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/1/05 @ 9:45 PM</span>
                       </div>
                       <div class="post-body">
                         To mark a rim in decimal fractions takes about 45 minutes, but to do so in spoke intervals takes only a minute. Moreover, readings from spoke intervals are easier to take. The downside is thought to be the time lost in continually in making conversions to decimal fractions, and in the long run more time is lost than with the rim marked in decimals. Pete Riegel reports that most measurers mark with spoke intervals, so they appear to be taking the short-time view.<br /><br />I now find that with HP RPN calculators such as the 32SII and the 33S that handle fractions, measurers can work with spoke intervals almost as fast as with the decimal equivalents. In fractional display mode (FDISP), spoke intervals are entered directly in tenths and subsequent manipulations yield displays in the same mode. (The decimal equivalents are also readily shown if necessary.)<br /><br />Take the example of a calibration measurement on a 400-meter course with a 32-spoke wheel that yields 190 revs and the following spoke intervals: 22.4, 23.2, 22.8, and 23.1.<br /><br />Flags 8 and 9: set.<br />FDISP with denominator ( /c) fixed at 320.<br /><br />190 enter, 4 x, 224..320 +, 232..320 +, 228..320 +, 231..320 +, 0.625625 x. Display: 477 84/320 rev/ km. (Constant of 0.625625 factors in the 400 meters, the SCPF, and the 4 measurements.)<br />5 x. Display: 2386 102/320 rev. For a 5-km course ride 2386 rev and 10.2 spoke intervals.<br />5 /, 1.609344 x. Display: 768 26/320 rev/mile. Mark miles at intervals of 768 rev and 2.6 spoke intervals.

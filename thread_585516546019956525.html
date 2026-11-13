@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019956525">
                       <div class="post-header">
                         <span class="post-author">paulhronjak</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 4/1/06 @ 5:41 AM</span>
                       </div>
                       <div class="post-body">
                         In reviewing an application which was submitted by a new measurer, I decided to check his elevations by using Topo USA 5.0 which I usually use to get my elevations. He had used USGS maps at <a href="http://nmviewogc.cr.usgs.gov/viewer.htm" target="_blank">http://nmviewogc.cr.usgs.gov/viewer.htm</a>.<br /><br />I was amazed to see the differences! I went to the site he used and came up with the same numbers he did. We are talking streets in the middle of town here so it is easy to make sure the points sampled were identical.<br /><br />With Topo USA I got the following elevations:<br />S - 532<br />F - 537<br />H - 537<br />L - 432<br /><br />With the USGS maps I got:<br />S - 492<br />F - 500<br />H - 500<br />L - 412 (different location)<br /><br />I could understand some very slight variation but 40'!<br /><br />Have others had this experience? If so, does anyone have any idea why this is happening and which source is more likely to be accurate?
@@ -157,7 +183,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#2 &bull; 4/1/06 @ 6:18 AM</span>
                       </div>
                       <div class="post-body">
-                        I had the same experience with Topo USA. See the following thread from past posts.<BR><BR><A HREF="https://measure.infopop.cc/eve/forums/a/tpc/f/69510622/m/12610978/r/12610978#12610978" TARGET=_blank>Elevation Discussion</A><BR><BR>I believe the USGS maps to be the best source.
+                        I had the same experience with Topo USA. See the following thread from past posts.<BR><BR><A HREF="thread_12610978.html" TARGET=_blank>Elevation Discussion</A><BR><BR>I believe the USGS maps to be the best source.
                         
                       </div>
                     </article>

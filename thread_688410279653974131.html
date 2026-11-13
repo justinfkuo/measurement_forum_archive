@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-688410279653974131">
                       <div class="post-header">
                         <span class="post-author">guidobrothers</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/21/22 @ 6:17 AM</span>
                       </div>
                       <div class="post-body">
                         <p>During the "too cold to measure" season, we’ve been laying down calibration courses because some expired and some are needed for measurements not near an existing calibration course.&nbsp; Just for grins, after measuring 30+ calibration courses over the years, I decided to check the measurement manual (online version).&nbsp; I found that it recommends marking the 2<sup>nd</sup> steel tape measurement of the course on separate masking tape (the manual calls it duct tape in places).&nbsp; Does anyone do this?</p><p>We always mark the 2<sup>nd</sup> steel tape measurement on the same piece of masking tape that has the 1<sup>st</sup> set of marks.&nbsp; We use a line with a small arrowhead for the 2<sup>nd</sup> set of marks (no arrowhead for the 1<sup>st</sup> set).</p><p>Another nit.&nbsp; The Steel Taping Data Sheet asks for partial tape lengths.&nbsp; This is fine if measuring with a 60-ft tape, but if using a 100-ft tape for a 1000-ft calibration course, is there ever a partial tape length?&nbsp; The 2<sup>nd</sup> steel tape measurement should be measuring the same distance as the 1<sup>st</sup> steel tape measurement, not the distance between marks.</p>
@@ -234,8 +260,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#9 &bull; 1/31/22 @ 6:43 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Somewhat off topic, but when researching coordinates for the Cal Course database on GoogleMaps, thought it was cool that the endpoints were visible in the Street View photos of two of them.</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/688410279653974131/filePointer/690099228632921942/fodoid/690099228632921937/imageType/LARGE/inlineImage/true/CalCourse.png" title="CalCourse"><img alt="CalCourse" class="inline-attachment" height="266" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/688410279653974131/filePointer/690099228632921942/fodoid/690099228632921937/imageType/MEDIUM/inlineImage/true/CalCourse.png" title="CalCourse" width="478" /></a><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/688410279653974131/filePointer/690099228632921943/fodoid/690099228632921938/imageType/LARGE/inlineImage/true/DenverCal.png" title="DenverCal"><img alt="DenverCal" class="inline-attachment" height="218" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/688410279653974131/filePointer/690099228632921943/fodoid/690099228632921938/imageType/MEDIUM/inlineImage/true/DenverCal.png" title="DenverCal" width="279" /></a></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/690099228632921942">CalCourse.png</a>, <a href="files/690099228632921943">DenverCal.png</a></div>
+                        <p>Somewhat off topic, but when researching coordinates for the Cal Course database on GoogleMaps, thought it was cool that the endpoints were visible in the Street View photos of two of them.</p><p><a class="gallery-image" href="files/CalCourse.png" title="CalCourse"><img alt="CalCourse" class="inline-attachment" height="266" src="files/CalCourse.png" title="CalCourse" width="478" /></a><a class="gallery-image" href="files/DenverCal.png" title="DenverCal"><img alt="DenverCal" class="inline-attachment" height="218" src="files/DenverCal.png" title="DenverCal" width="279" /></a></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/CalCourse.png" target="_blank"><img src="files/CalCourse.png" alt="CalCourse.png" class="attachment-thumb" title="CalCourse.png"></a><a href="files/DenverCal.png" target="_blank"><img src="files/DenverCal.png" alt="DenverCal.png" class="attachment-thumb" title="DenverCal.png"></a></div></div>
                       </div>
                     </article>
                     

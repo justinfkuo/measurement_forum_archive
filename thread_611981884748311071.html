@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-611981884748311071">
                       <div class="post-header">
                         <span class="post-author">diana</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/6/20 @ 6:36 AM</span>
                       </div>
                       <div class="post-body">
                         <p>Am I correct that certifiers and final signatories who are measuring and certifying their own courses must do them as LDEs? If so, what category would we choose, assuming the course is one that doesn't fall under the choices in the drop-down menu?</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/611981884748311094">LDE screenshot.png</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/LDE%20screenshot.png" target="_blank"><img src="files/LDE%20screenshot.png" alt="LDE screenshot.png" class="attachment-thumb" title="LDE screenshot.png"></a></div></div>
                       </div>
                     </article>
                     

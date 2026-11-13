@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-730504093454408589">
                       <div class="post-header">
                         <span class="post-author">alanjones</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/5/25 @ 2:34 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I decided to see what response Google Gemini would give to the query, "What is the Jones Counter." I won't reproduce the response here unless someone requests it. I felt the response was very good and quite complete except for one item in the response which I quote here:</p><ul><li><strong>Recalibration:</strong> After measuring the course, the bicycle is ridden over the calibration course again to check for any changes in the wheel diameter (due to temperature, tire pressure, etc.) that might affect the accuracy of the measurement. An average of the calibration values before and after the measurement is used to determine the final course length. &nbsp;</li></ul><p>Isn't it true that the correct procedure is to use the calibration value which results in the longest course. Or has this changed?</p><p>Alan Jones</p>

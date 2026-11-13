@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019957626">
                       <div class="post-header">
                         <span class="post-author">neville</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/27/06 @ 8:43 AM</span>
                       </div>
                       <div class="post-body">
                         I have programmed a HP32SII calculator to automatically perform all the calculations involved with the pressure–monitoring and electronic counter method for a 5-km certification. Data are entered directly into the calculator as they are generated without recourse to pen and paper.<br /><br />During calibration only the fractional revolutions taken from the rim reading are taken. Tire pressure is also taken at the midpoint of calibration and during the race-course rides. At the latter points the calculator displays the number of revolutions necessary to complete the course and mark the mile splits. That ride which goes the furthest fixes the course length.<br /><br />The program assumes that the number of whole revolutions is 143 on a 300-meter calibration course as always is the case for course and tire pressure I use. Also assumed is a modified pressure coefficient of 1.33 rev/km/bar and the pressure at the midpoint of a measurement is a good representation of the average pressure. Obviously the program can be used readily for course distances that are greater than 5 km.<br /><br />The above method is more accurate and simpler than current practice. There are no worries about temperature readings, working constants, finish constants, constants of the day, setting up temporary calibration courses, postcalibration rides, calculation errors, and return trips to make course adjustments.

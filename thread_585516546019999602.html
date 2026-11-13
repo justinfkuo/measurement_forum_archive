@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019999602">
                       <div class="post-header">
                         <span class="post-author">matthewstudholme</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 4/10/12 @ 1:52 PM</span>
                       </div>
                       <div class="post-body">
                         Why do we use the average of the two raw measurements when measuring calibration courses rather than taking the measurement that yields the longest course length? For example, if a 300 meter course was desired and the first measurement was 300.00 meters and the second of the two measurements came to 299.98 meters, if the shorter of the two measurements was taken, an adjustment of 2 cm would be done (assuming no temp correction) as opposed to a 1 cm correction if the average measurement is taken. Taking the average for calibration courses seems inconsistent in comparison to taking the shorter of two measurements for a road course measurement. I realize that this may seem a trivial to some but a measurer asked me this question recently and I could not come up with a good answer. Can anyone help here please? Thanks.

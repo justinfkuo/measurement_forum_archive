@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019963097">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/7/07 @ 7:47 AM</span>
                       </div>
                       <div class="post-body">
                         <b>Protégé 9.0 Cyclocomputer – How It Works</b> <br /><br />The Protégé 9.0 cyclocomputer is a small calculator. The wheel circumference is programmed into it by the user, and wheel revolutions are calculated by counting magnetic impulses. Each impulse is multiplied by the wheel circumference, and when this total exceeds the next 0.01 km (10 meters) the display increases by 0.01. <br /><br />With the wheel circumference programmed at the maximum of 9999 mm, the internal memory will store 9999 mm (9.999 m) on the first revolution. However, since this is less than 0.01 km, the display will not change. In order for the unit to display properly it is necessary to reset the meter just BEFORE rolling to the mark. After one revolution the display will correctly count the wheel revolutions. Below is how the memory and the display will change as the wheel rotates. <br /><br /><img src="http://farm1.static.flickr.com/205/488269190_ccab65f8cc.jpg"></img> <br /><br />When the wheel has made 9999 revolutions, the memory will contain 99980.001 meters, and the display will read 99.98. If the unit has been properly zeroed, it will read 9999. So far, so good. Display matches revolutions.<br /><br />When revolutions reach 10,000, memory contains 99990.000 meters. Since this does not exceed 99990 the display continues to show 99.98 (corrected to 99.99). At this point the counter ceases to function usefully. There are two fixes for this: <br /><br />1) A mental correction can be made as Neville suggests, by adding one revolution to the displayed value<br />2) Reset the counter to zero at intermediate reference points so that the display never approaches 10,000. As 10,000 revolutions is equivalent to over ten miles, this is reasonable. It is what I do. To avoid having to remember, I make it a practice to reset the counter at each and every place I stop to record the revolutions. This becomes routine after a while.<br /><br />For reliability, the counter MUST be programmed to 9999, the counter must be zeroed before the magnet first passes the sensor, and the limit of 10,000 revolutions must be avoided. If these are done the unit will function reliably.<br /><br />When the unit is programmed to other values than 9999 it will not function reliably as a revolution counter. I’ve written an Excel program which can be used to show revolutions vs display for all programmed wheel sizes. It’s available to anyone who asks.

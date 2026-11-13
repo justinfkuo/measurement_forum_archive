@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019983860">
                       <div class="post-header">
                         <span class="post-author">scotthubbard</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/26/09 @ 5:46 AM</span>
                       </div>
                       <div class="post-body">
                         Can a measurer use only GPS numbers for the location of the start and/or the finish on a map? If not, why not? Is it because they're only accurate w/in X distance (and outside our need for accuracy) and not as accurate as old fashioned feet & inches from a permanent object?<br />Also, if not, how accurate is a # like: 42*56.505N/85*42.911W (*=degrees)? Is it to a spot the size of a basketball or more like, well, you tell me, please.

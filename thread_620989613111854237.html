@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-620989613111854237">
                       <div class="post-header">
                         <span class="post-author">Robert Muniz</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/20/20 @ 1:28 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I recently submitted a course through the online system. &nbsp;There were a few issues with the map so it was rejected. &nbsp;My concerns are that the online system does not generate a notification that my course was rejected so I have no idea how long it has been sitting there and the section for comments only allows so many characters so I don’t know the breadth of his comments. &nbsp;Is there any way an auto-email can be generated to the measurers when a course is accepted or rejected that includes the entirety of the certifier’s comments? &nbsp;</p>

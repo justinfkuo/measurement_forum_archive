@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019962008">
                       <div class="post-header">
                         <span class="post-author">stephencollins</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/12/07 @ 11:11 AM</span>
                       </div>
                       <div class="post-body">
                         These are photos of a Jones type Counter that I made using a proximity switch and a commercially available counter.<br />Comments welcome!<br />Steve Collins
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/585516546020036755">CounterOnBars.jpg</a>, <a href="files/585516546020036794">CounterWashers.jpg</a>, <a href="files/585516546020036813">CounterOnBike.jpg</a>, <a href="files/585516546020036818">CounterPickup.jpg</a>, <a href="files/585516546020036892">CounterBarsBack.jpg</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/CounterOnBars.jpg" target="_blank"><img src="files/CounterOnBars.jpg" alt="CounterOnBars.jpg" class="attachment-thumb" title="CounterOnBars.jpg"></a><a href="files/CounterWashers.jpg" target="_blank"><img src="files/CounterWashers.jpg" alt="CounterWashers.jpg" class="attachment-thumb" title="CounterWashers.jpg"></a><a href="files/CounterOnBike.jpg" target="_blank"><img src="files/CounterOnBike.jpg" alt="CounterOnBike.jpg" class="attachment-thumb" title="CounterOnBike.jpg"></a><a href="files/CounterPickup.jpg" target="_blank"><img src="files/CounterPickup.jpg" alt="CounterPickup.jpg" class="attachment-thumb" title="CounterPickup.jpg"></a><a href="files/CounterBarsBack.jpg" target="_blank"><img src="files/CounterBarsBack.jpg" alt="CounterBarsBack.jpg" class="attachment-thumb" title="CounterBarsBack.jpg"></a></div></div>
                       </div>
                     </article>
                     

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019994493">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/18/11 @ 9:34 AM</span>
                       </div>
                       <div class="post-body">
                         Mike Sandford has done some great work investigating the potential use of consumer-level electronic distance meters (EDM) for measuring calibration courses.<br /><br />Expanding on his work, I've come up with a methodology to use one of these instruments to measure a 300m cal course very quickly, and I think very robustly.<br /><br />One of the shortcomings of these consumer-level devices is that their stated maximum range is less than 300m. Therefore, it will be necessary to take two measurements in order to measure the necessary 300m. The strategy I came up with to do this is shown in the photo below, where I place two targets, one at either end of the cal course, and place the EDM somewhere close to the middle between them.<br /> <img class="inline_image" src="http://www.dukerdog.com/USATF/EDM/setup.jpg"></img> <br /><br />My targets are 18-inch square section of particle board with a smooth white finish. These are supported by a 4x4 with a groove cut out.<br /> <img class="inline_image" src="http://www.dukerdog.com/USATF/EDM/target.jpg"></img> <br /><br />The EDM is mounted on an equatorial mount similar to Mike's, which allows for fine adjustment in order to point the laser beam at the target. This is a necessity at a distance of 150m. The measurement is relative to the rear of the EDM so I use a square to place a piece of tape on the ground at this point.<br /> <img class="inline_image" src="http://www.dukerdog.com/USATF/EDM/offset1.jpg"></img> <br /><br />I then loosen the mount and spin it around 180 degrees to point at the other target, as shown in the video link below.<br /><a href="http://www.dukerdog.com/USATF/EDM/Spin180.mp4" target="_blank">http://www.dukerdog.com/USATF/EDM/Spin180.mp4</a><br /><br />Then I take the measurement to the other target, and again place a piece of tape at a location at the back of the EDM.<br /> <img class="inline_image" src="http://www.dukerdog.com/USATF/EDM/offset2.jpg"></img> <br /><br />Finally, I measure the distance between the two pieces of tape. This distance will be subtracted from the final measurement.<br /> <img class="inline_image" src="http://www.dukerdog.com/USATF/EDM/offset_measure.jpg"></img> <br /><br />In reality, this 180-spin offset measurement can be measured ahead of time, and doesn't need to be measured onsite. So the entire procedure consists of placing the two targets at the endpoints. Taking one measurement to one target, spinning the EDM around, and taking the second measurement to the second target.<br /><br />I tested this procedure out on a friend's cal course he measured in front of his house. This course is 1000 feet, or 304.8 meters.<br /><br />EDM measurement to south target: 151.128m<br />EDM measurement to north target: 153.866m<br />180-spin offset: 0.230m<br /><br />Total course distance = 151.128+153.866-0.230<br /> = 304.764m<br /><br />So the EDM measurement was 36mm shorter than the stated distance.
@@ -157,7 +183,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#2 &bull; 7/3/11 @ 9:07 AM</span>
                       </div>
                       <div class="post-body">
-                        I set up a couple years ago for the purpose of doing experiments.<BR><a href="https://measure.infopop.cc/eve/forums/a/tpc/f/69510622/m/620101968" target="_blank">https://measure.infopop.cc/eve/...69510622/m/620101968</a><BR><BR>This weekend I returned to that course to test out my EDM.  I placed my targets at the two endpoints.  However, I discovered that the nail was missing from my south endpoint.  My thick white line was still there, and I placed my target at the south edge of this line.  I then placed my mounted EDM at a point near the middle of the targets and took several measurements.<BR>Since my last test of my EDM I changed a couple things.  First, inspired by Mike Sandford's use of reflectors as targets, I put reflective tape on my targets.<BR> <IMG class="inline_image" SRC="http://www.dukerdog.com/USATF/target_reflective.jpg">   <BR>This isn't necessary for the EDM to receive the reflected laser and make a measurement, but it is helpful in assuring that it is targeting the right thing.  Usually with the naked eye at 150m, and always with a small pair of binoculars, the laser dot can be seen on the target before taking a measurement.<BR>The second change I made was that rather than spinning the mount as described before, I simply lift up the whole apparatus and turn it 180 degrees.  For both measurements I line up the back of the EDM with a piece of tape on the ground.  I changed this because I found that spinning the mount did not give a consistent offset from the back of the EDM.<BR><BR>My four measurements are shown below.<BR> <IMG class="inline_image" SRC="http://www.dukerdog.com/USATF/measurement_data.jpg">   <BR><BR>After seeing the measurements were about 10cm longer than 300m, I decided to remeasure the cal course with a steel tape.  Starting at the south edge of the white line at the south target (which is where I had placed my target) I got 300.085m.<BR><BR>So the average of all four EDM measurements was 16mm different from the steel tape measurement.  And the worst case for averaging only two EDM measurements was 20mm different from the steel tape measurement.
+                        I set up a couple years ago for the purpose of doing experiments.<BR><a href="thread_620101968.html" target="_blank">thread_620101968.html</a><BR><BR>This weekend I returned to that course to test out my EDM.  I placed my targets at the two endpoints.  However, I discovered that the nail was missing from my south endpoint.  My thick white line was still there, and I placed my target at the south edge of this line.  I then placed my mounted EDM at a point near the middle of the targets and took several measurements.<BR>Since my last test of my EDM I changed a couple things.  First, inspired by Mike Sandford's use of reflectors as targets, I put reflective tape on my targets.<BR> <IMG class="inline_image" SRC="http://www.dukerdog.com/USATF/target_reflective.jpg">   <BR>This isn't necessary for the EDM to receive the reflected laser and make a measurement, but it is helpful in assuring that it is targeting the right thing.  Usually with the naked eye at 150m, and always with a small pair of binoculars, the laser dot can be seen on the target before taking a measurement.<BR>The second change I made was that rather than spinning the mount as described before, I simply lift up the whole apparatus and turn it 180 degrees.  For both measurements I line up the back of the EDM with a piece of tape on the ground.  I changed this because I found that spinning the mount did not give a consistent offset from the back of the EDM.<BR><BR>My four measurements are shown below.<BR> <IMG class="inline_image" SRC="http://www.dukerdog.com/USATF/measurement_data.jpg">   <BR><BR>After seeing the measurements were about 10cm longer than 300m, I decided to remeasure the cal course with a steel tape.  Starting at the south edge of the white line at the south target (which is where I had placed my target) I got 300.085m.<BR><BR>So the average of all four EDM measurements was 16mm different from the steel tape measurement.  And the worst case for averaging only two EDM measurements was 20mm different from the steel tape measurement.
                         
                       </div>
                     </article>

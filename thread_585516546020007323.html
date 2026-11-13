@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020007323">
                       <div class="post-header">
                         <span class="post-author">matthewstudholme</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/18/13 @ 9:39 AM</span>
                       </div>
                       <div class="post-body">
                         Question 28 on the road course application form says: "Have you included your start, finish and turn-around (if applicable) diagrams on your map" (Answer "yes" or "no").<br /><br />I have always interpreted this question as start, finish & TA (if applicable) diagrams are required, yet, I've just done a quick search of the USATF database and many certified maps approved by other certifiers (other than me) do not have these diagrams. My reasoning for requiring them is that some people are not good at written descriptions for these most important points of a course. Having diagrams showing locations relative to permanent landmarks minimizes any ambiguity.<br /><br />Comments?

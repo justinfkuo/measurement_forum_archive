@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019951717">
                       <div class="post-header">
                         <span class="post-author">mike</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 8/26/05 @ 1:42 PM</span>
                       </div>
                       <div class="post-body">
                         Last December our team participated in the Nike Team Nationals in Portland.  For timing they had an up-link to GPS and fans saw instantaneous info on the Jumbo-Tron at each kilometer showing individual status and &quot;running&quot; team points.  The system apparently cost a million buck.  I am looking to replicate the system with available technology (wireless laptops, projectors, chips?, etc) at a MINIMAL price for our dual cross country meets!  Possible?  What do you think.......  Thanks

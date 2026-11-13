@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019996019">
                       <div class="post-header">
                         <span class="post-author">genenewman</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 10/9/11 @ 7:59 AM</span>
                       </div>
                       <div class="post-body">
                         I have seen some Certifier's have an expiration date that is less than the 10 year automatic life.<br />Certifier's beware of the following!<br /><br />If a certificate is issued with this ID: MN10xxxRR, the course will expire in 2020 no matter what you place on the certificate. The USATF site adds 10 years to the first two digits. There is no way to adjust this on the USATF site.<br /><br />What if one desires a course to have a life less than 10 years then you must use the correct first two numbers.<br /><br />Let's say a course was measured in 2012, but the race course can only be used for one year(highly unlikely). Hence the Certificate number would be something like NC02xxxPH, which would expire in 2012.

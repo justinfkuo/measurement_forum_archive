@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-690099228365855529">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/27/22 @ 11:27 AM</span>
                       </div>
                       <div class="post-body">
                         <p>A map page similar to the Measurers Map page has been set up showing the locations of all valid(unexpired) USATF certified calibration courses. Note that like the Measurer map the locations are near the center of the town listed in the database, and are not the precise locations of the courses. You can click on the link provided for a course to open its map and figure out exactly where it is.</p><p>If you are traveling to measure a course. you might want to take a look at this page to see what cal courses may be available nearby. Of course you should always be prepared to measure your own cal course in case there is an issue with the one that already exists.</p><p><a href="http://www.rrtc.net/Calibrations_map/calibrations_map.html" target="_blank">http://www.rrtc.net/Calibratio...alibrations_map.html</a></p><p>The above link is also available on the rrtc.net website in the "Information for Course Measurers" section.</p>
@@ -223,8 +249,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#8 &bull; 1/30/22 @ 6:51 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Another method for getting Lat/Long coords (in decimal degrees) for cal course ends is to:</p><ol><li>Locate the course on Google Maps (use Satellite view as the Map Type)</li><li>Right click on one end of the course (your best guesstimate) and the street and coords appear in a pop-up box at the bottom of the screen</li><li>Highlight and copy the coords for that point</li><li>Paste as text into file</li><li>Repeat steps 2-4 for the other end</li></ol><p>Here's an example from <a href="https://certifiedroadraces.com/certificate?type=c&amp;id=169" rel="noopener noreferrer" target="_blank">NY21004JG</a></p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/690099228365855529/filePointer/690099228561757160/fodoid/690099228561757154/imageType/MEDIUM/inlineImage/true/mceclip1.png" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/690099228561757160">mceclip1.png</a></div>
+                        <p>Another method for getting Lat/Long coords (in decimal degrees) for cal course ends is to:</p><ol><li>Locate the course on Google Maps (use Satellite view as the Map Type)</li><li>Right click on one end of the course (your best guesstimate) and the street and coords appear in a pop-up box at the bottom of the screen</li><li>Highlight and copy the coords for that point</li><li>Paste as text into file</li><li>Repeat steps 2-4 for the other end</li></ol><p>Here's an example from <a href="https://certifiedroadraces.com/certificate?type=c&amp;id=169" rel="noopener noreferrer" target="_blank">NY21004JG</a></p><p><img src="files/mceclip1.png" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip1.png" target="_blank"><img src="files/mceclip1.png" alt="mceclip1.png" class="attachment-thumb" title="mceclip1.png"></a></div></div>
                       </div>
                     </article>
                     

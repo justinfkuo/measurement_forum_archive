@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019971882">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/22/08 @ 11:09 AM</span>
                       </div>
                       <div class="post-body">
                         The accuracy of GPS location depends upon the operator being able to read the instrument to the desired level of precision. I don't own a GPS.<br /><br />If I want to know where I am, what will I read on my GPS? Degrees/minutes/seconds/fractional seconds? Fractional degrees? How many decimal places?<br /><br />Considering that one degree of latitude at the equator is a bit over 100 kilometers, it will take a pretty precise readout to get a location within a few centimeters.<br /><br />Can anyone provide information on this?
@@ -190,7 +216,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#5 &bull; 1/28/08 @ 10:21 AM</span>
                       </div>
                       <div class="post-body">
-                        Andy,<BR><BR>Based on my tests<BR><BR><A HREF="https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/8301003542" TARGET=_blank>https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/8301003542</A><BR><BR>adding 2m/km probably wouldn't be enough to ensure the course is not short if you are planning to use a single GPS measurement.  If you are planning to take several measurements and average them, you are probably safe with 2m/km.<BR><BR>But I believe the accuracy of the distance measurements do depend on what receiver you are using.  Current models appear to be much more accurate than older ones.<BR><BR>Actually, I have more data than is shown in that chart.  I'll post an updated chart on that thread in the next couple days.
+                        Andy,<BR><BR>Based on my tests<BR><BR><A HREF="thread_8301003542.html" TARGET=_blank>thread_8301003542.html</A><BR><BR>adding 2m/km probably wouldn't be enough to ensure the course is not short if you are planning to use a single GPS measurement.  If you are planning to take several measurements and average them, you are probably safe with 2m/km.<BR><BR>But I believe the accuracy of the distance measurements do depend on what receiver you are using.  Current models appear to be much more accurate than older ones.<BR><BR>Actually, I have more data than is shown in that chart.  I'll post an updated chart on that thread in the next couple days.
                         
                       </div>
                     </article>

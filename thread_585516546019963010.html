@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019963010">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/6/07 @ 4:42 AM</span>
                       </div>
                       <div class="post-body">
                         <b>A CYCLOCOMPUTER PUZZLER</b><br /><br />I received an application from a first-timer. He used a Protégé 9.0 and said he followed Neville’s instructions for setting it up. He says the calibration was set at a wheel diameter of 9999 mm as directed by Neville.<br /><br />He measured a calibration course at 354.98 meters.<br />His average reported calibration constant was 114.80 revolutions per ride.<br />This calculates out to 0.32369 revolutions per meter, or 3.09 meters per revolution<br /><br />He obtained 2587 revolutions on an 8 km ride. This calculates to a length of 7988.8 meters.<br /><br />I checked the length using America’s Running Routes and the distance is very close to correct.<br /><br />However – and here is where I am stuck – his wheel circumference comes out to 1/.32369 = 3.09 meters. This would put the wheel diameter at 98.3 cm or 3.22 feet or 38.7 inches, which is huge. He states that his tire is 700x25C, which has an approximate circumference of 2124 mm. This is a lot smaller than 3.09 meters<br /><br />The wheel size is obviously wrong, but the measurement came out close to correct.<br /><br />What am I missing here?

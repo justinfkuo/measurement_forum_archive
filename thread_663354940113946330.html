@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-663354940113946330">
                       <div class="post-header">
                         <span class="post-author">oscarwagner</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/11/21 @ 10:50 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>iPhone 11 and above have a U1 chip which is supposed to be much more accurate than phones without that chip.&nbsp; It uses UltraWideBand technology and (I read somewhere) it will get down to 30 cm.&nbsp; Here shown is a plot done with geo data (Details tab) from an iPhone 6 (no U1) photo.&nbsp; &nbsp; Has anyone tested a U1? <img height="342" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/630138259862404191/filePointer/663495677511467574/fodoid/663495677511467570/imageType/MEDIUM/inlineImage/true/mceclip0.png" width="370" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/663354940113946736">mceclip0.png</a></div>
+                        <p>iPhone 11 and above have a U1 chip which is supposed to be much more accurate than phones without that chip.&nbsp; It uses UltraWideBand technology and (I read somewhere) it will get down to 30 cm.&nbsp; Here shown is a plot done with geo data (Details tab) from an iPhone 6 (no U1) photo.&nbsp; &nbsp; Has anyone tested a U1? <img height="342" src="files/mceclip0.png" width="370" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -179,8 +205,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#4 &bull; 2/13/21 @ 4:58 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>In response to your second question:</p><div class="row collapse post-box-body medium-12 columns post-box-inner-body post-body"><p>"Somewhat on same subject: What is your favorite iPhone app for plotting points while riding or hiking?"</p></div><p>I use <a href="https://solocator.com/" rel="noopener noreferrer" target="_blank">Solocator</a> to take photos of my split points. The app stamps the photo with GPS data and any other labels I attach to the photo (split name, course name, my business name). I then supply these photos to my clients.</p><p>Example below.</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/663354940287627905/fodoid/663354940287627901/imageType/LARGE/inlineImage/true/Cowtown%252010K%25202020%2520Mile%25205.jpeg" title="Cowtown 10K 2020 Mile 5"><img alt="Cowtown 10K 2020 Mile 5" class="inline-attachment" height="600" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/663354940287627905/fodoid/663354940287627901/imageType/MEDIUM/inlineImage/true/Cowtown%252010K%25202020%2520Mile%25205.jpeg" title="Cowtown 10K 2020 Mile 5" width="450" /></a></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/663354940287627905">Cowtown 10K 2020 Mile 5.jpeg</a></div>
+                        <p>In response to your second question:</p><div class="row collapse post-box-body medium-12 columns post-box-inner-body post-body"><p>"Somewhat on same subject: What is your favorite iPhone app for plotting points while riding or hiking?"</p></div><p>I use <a href="https://solocator.com/" rel="noopener noreferrer" target="_blank">Solocator</a> to take photos of my split points. The app stamps the photo with GPS data and any other labels I attach to the photo (split name, course name, my business name). I then supply these photos to my clients.</p><p>Example below.</p><p><a class="gallery-image" href="files/Cowtown%2010K%202020%20Mile%205.jpeg" title="Cowtown 10K 2020 Mile 5"><img alt="Cowtown 10K 2020 Mile 5" class="inline-attachment" height="600" src="files/Cowtown%2010K%202020%20Mile%205.jpeg" title="Cowtown 10K 2020 Mile 5" width="450" /></a></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Cowtown%2010K%202020%20Mile%205.jpeg" target="_blank"><img src="files/Cowtown%2010K%202020%20Mile%205.jpeg" alt="Cowtown 10K 2020 Mile 5.jpeg" class="attachment-thumb" title="Cowtown 10K 2020 Mile 5.jpeg"></a></div></div>
                       </div>
                     </article>
                     
@@ -190,8 +216,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#5 &bull; 2/14/21 @ 3:10 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Solocator app seems to enhance accuracy based on what I see plotting point on GE and guessing where Gary was standing. The photo I was able to download did not have coordinates in Detail section of Photo Properties.&nbsp;</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/663354940375062800/fodoid/663354940375062796/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/663354940375062800">mceclip0.png</a></div>
+                        <p>Solocator app seems to enhance accuracy based on what I see plotting point on GE and guessing where Gary was standing. The photo I was able to download did not have coordinates in Detail section of Photo Properties.&nbsp;</p><p><img src="files/mceclip0.png" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -202,7 +228,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <p>Buddy took a couple of iPhone 12 photos.&nbsp; Best accuracy I have seen: get 'em all with one grenade! He is within shadow distance and my iPhone 6 is about 15' off.</p><p><img height="248" src="https://measure.infopop.cc/sendTempFile/fileUploadProcessOid/681961426/fileUsageType/ATTACHMENT/uniqueOid/663354940458845049/imageType/MEDIUM/inlineImage/true/mceclip0.png" width="375" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/663354940402683845">mceclip0.png</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -234,8 +260,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#9 &bull; 3/26/21 @ 5:37 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Keep realizing more things Gary Brumley's discovered Solocator can do faster and better.&nbsp; This is a shot of a reference bench leg that has the radial to the S F point right there and included.&nbsp; No more, "Oops, I forgot to record that."</p><p>Not sure how but it could make triangulation easy for faster, more accurate descriptions.&nbsp; I have asked the author if his app could generate actual links to a map location.&nbsp; Fewer and fewer people keep a regular computer and printer around.&nbsp; At $10,000 / gallon (my accountant cousin's calculation) HP inkject ink is a tougher and tougher sell.&nbsp; It is so expensive that you are afraid to use it and when you do, it has dried up!&nbsp; The world is going mobile. A big part of service to our customers is making it easy for them to find stuff the morning of the race.</p><p><img height="431" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/667999817839481769/fodoid/667999817839481765/imageType/MEDIUM/inlineImage/true/mceclip0.png" width="323" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/667999817839481769">mceclip0.png</a></div>
+                        <p>Keep realizing more things Gary Brumley's discovered Solocator can do faster and better.&nbsp; This is a shot of a reference bench leg that has the radial to the S F point right there and included.&nbsp; No more, "Oops, I forgot to record that."</p><p>Not sure how but it could make triangulation easy for faster, more accurate descriptions.&nbsp; I have asked the author if his app could generate actual links to a map location.&nbsp; Fewer and fewer people keep a regular computer and printer around.&nbsp; At $10,000 / gallon (my accountant cousin's calculation) HP inkject ink is a tougher and tougher sell.&nbsp; It is so expensive that you are afraid to use it and when you do, it has dried up!&nbsp; The world is going mobile. A big part of service to our customers is making it easy for them to find stuff the morning of the race.</p><p><img height="431" src="files/mceclip0.png" width="323" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -344,8 +370,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#19 &bull; 6/14/21 @ 3:45 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>My learning style is confabulation: make something semi-logical up and learn the truth when people crawl out of the woodwork to shoot you down: "The LIDAR function works and really gets close...at distances &lt; 16 feet.&nbsp; Still, nothing you would use to mark a 2 x 4.&nbsp; Quite disappointed at how little the sales people knew about these functions."&nbsp; <img height="249" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/673489562772081344/fodoid/673489562772081340/imageType/MEDIUM/inlineImage/true/mceclip0.png" width="540" /></p><p>That is BAD wrong!&nbsp; About 50 yards fom my truck yesterday morning with no tape and needed to describe a mile mark from a point about 50' away.&nbsp; Wondered if the 16' LIDAR limit could be used in multiples.&nbsp; Tried it and worked fine BUT also noticed that with the right app, you could keep going.&nbsp; Just now went out into street to my steel taped 200' horseback course and tried it.&nbsp; Fixed one point and started walking.&nbsp; Was admonished to move slower once but at the end, without trying for precision, it said 200' 2".&nbsp; No idea what limit it is but this should work fine for description of miles at least that far.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/673489562772081344">mceclip0.png</a></div>
+                        <p>My learning style is confabulation: make something semi-logical up and learn the truth when people crawl out of the woodwork to shoot you down: "The LIDAR function works and really gets close...at distances &lt; 16 feet.&nbsp; Still, nothing you would use to mark a 2 x 4.&nbsp; Quite disappointed at how little the sales people knew about these functions."&nbsp; <img height="249" src="files/mceclip0.png" width="540" /></p><p>That is BAD wrong!&nbsp; About 50 yards fom my truck yesterday morning with no tape and needed to describe a mile mark from a point about 50' away.&nbsp; Wondered if the 16' LIDAR limit could be used in multiples.&nbsp; Tried it and worked fine BUT also noticed that with the right app, you could keep going.&nbsp; Just now went out into street to my steel taped 200' horseback course and tried it.&nbsp; Fixed one point and started walking.&nbsp; Was admonished to move slower once but at the end, without trying for precision, it said 200' 2".&nbsp; No idea what limit it is but this should work fine for description of miles at least that far.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -355,8 +381,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#20 &bull; 6/14/21 @ 12:01 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>It gets even more astonishing.&nbsp; Next obvious question WAS: Will it go around corners or through objects?&nbsp; Ran a 25'&nbsp; tape under center line of my truck.&nbsp; Set one end at zero point of the tape, walked around vehicle and the set other point at 22' and took picture.&nbsp; A Riegel Hub at 23.xxx counts per rev on a 27" tire resolves down to about 3".</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/673348825300936672/fodoid/673348825300936668/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/673348825300936672">mceclip0.png</a></div>
+                        <p>It gets even more astonishing.&nbsp; Next obvious question WAS: Will it go around corners or through objects?&nbsp; Ran a 25'&nbsp; tape under center line of my truck.&nbsp; Set one end at zero point of the tape, walked around vehicle and the set other point at 22' and took picture.&nbsp; A Riegel Hub at 23.xxx counts per rev on a 27" tire resolves down to about 3".</p><p><img src="files/mceclip0.png" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -377,8 +403,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#22 &bull; 6/18/21 @ 7:02 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Hello ADMIN:&nbsp; Which phone are you using to get coordinates?&nbsp; Do you check "accuracy"&nbsp; with app like Solocator before recording?&nbsp; On my 12, I get fluctuating 9' and 13' indications.&nbsp; You seem to be proving the point that if the accuracy is right though, eventually indicated points will surround the correct point.&nbsp;</p><p>"Measure" app thing just gets crazier.&nbsp; Guy at work showed me "Measure" on his iPhone6 (probably a 6S) yesterday and it did fine on 10'.&nbsp; Net says you can run it on any machine with IOS 12.0 or newer which it goes on to say it iPhone6S or later.&nbsp; This is the icon.<img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/673489563086702208/fodoid/673489563086702204/imageType/MEDIUM/inlineImage/true/mceclip0.png" />So you may be able to use this with much less phone than I thought.&nbsp;</p><p>I tried it on 1,000' cal course and got 998' 5" moving maybe 3 feet / sec.&nbsp; Confusing info on Apple website talks about using LiDAR right next to info about this app but you can do a lot with a much older phone and plain old Measure app.&nbsp;</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/673489563086702208">mceclip0.png</a></div>
+                        <p>Hello ADMIN:&nbsp; Which phone are you using to get coordinates?&nbsp; Do you check "accuracy"&nbsp; with app like Solocator before recording?&nbsp; On my 12, I get fluctuating 9' and 13' indications.&nbsp; You seem to be proving the point that if the accuracy is right though, eventually indicated points will surround the correct point.&nbsp;</p><p>"Measure" app thing just gets crazier.&nbsp; Guy at work showed me "Measure" on his iPhone6 (probably a 6S) yesterday and it did fine on 10'.&nbsp; Net says you can run it on any machine with IOS 12.0 or newer which it goes on to say it iPhone6S or later.&nbsp; This is the icon.<img src="files/mceclip0.png" />So you may be able to use this with much less phone than I thought.&nbsp;</p><p>I tried it on 1,000' cal course and got 998' 5" moving maybe 3 feet / sec.&nbsp; Confusing info on Apple website talks about using LiDAR right next to info about this app but you can do a lot with a much older phone and plain old Measure app.&nbsp;</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -509,8 +535,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#34 &bull; 11/12/21 @ 2:43 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>I record GPS coords for splits with a Garmin 550t handheld (*.gpx), then copy/paste each split's coords (decimal degree format - DD) to a Google Sheet along with my split description. The coords can easily be copy/pasted into Google Maps for location 'on the fly' by whoever setting up the course and/or re-marking splits</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/663354940113946330/filePointer/683765115117338751/fodoid/683765115117338742/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p><p>In addition I use the GPS coords to edit/update "preliminary" splits in a Google My Maps map of the course, which is also provided to the client as a work product. A screen snip of the My Maps route is then used as the template for the map used for the USATF Measurement Certificate.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/683765115117338751">mceclip0.png</a></div>
+                        <p>I record GPS coords for splits with a Garmin 550t handheld (*.gpx), then copy/paste each split's coords (decimal degree format - DD) to a Google Sheet along with my split description. The coords can easily be copy/pasted into Google Maps for location 'on the fly' by whoever setting up the course and/or re-marking splits</p><p><img src="files/mceclip0.png" /></p><p>In addition I use the GPS coords to edit/update "preliminary" splits in a Google My Maps map of the course, which is also provided to the client as a work product. A screen snip of the My Maps route is then used as the template for the map used for the USATF Measurement Certificate.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     

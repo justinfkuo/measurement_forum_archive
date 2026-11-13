@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020023442">
                       <div class="post-header">
                         <span class="post-author">jimgilmer</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/12/15 @ 9:21 AM</span>
                       </div>
                       <div class="post-body">
                         A measurer recently wrote me asking about the use of IR (infrared) thermometers and I thought I'd post his question and observations to see what those in the wider measurement community had to say:<br /><blockquote class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content"><b>Are there specific USATF measurement guidelines on use of an IR thermometer?</b><br />I ask because I still see 'thermometer shaded from direct sun' on the form for steel taping a cal course, and 'To correct your taped distance for temperature, set out a thermometer on the pavement and shaded from the sun.' on the guidelines on <a href="http://www.usatf.org/Products-/-Services/Course-Certifications/USATF-Certified-Courses/Procedures-Manual/Laying-Out-a-Calibration-Course.aspx" target="_blank">http://www.usatf.org/Products-...ibration-Course.aspx</a><br />I know that pavement temp should ideally be recorded in shade. I have found myself to be in sunny areas where there is no or very limited shade (the sun is currently shading an area in the shadow of a TP, but it had been warming it previously). I also know that different colors of pavement will absorb more solar radiation and convert it to heat, then register higher temps. There is always the rhetorical question of how far from the measurement area one goes to record a temp in the shade.<br />Two days ago, I saw IR thermometer temps ranging from 47 to 73 in different parts of the roadway with different degrees of pavement darkness, in sun and in shade. To me, this amount of variability seems to have the potential to throw things off and I am wondering what your readings, communications, and experience have taught you in this regard.</div></blockquote>

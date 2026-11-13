@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-627323263089135154">
                       <div class="post-header">
                         <span class="post-author">marcellamontagne</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/3/20 @ 8:36 AM</span>
                       </div>
                       <div class="post-body">
                         <p>Short time ago this spring I was preparing to measure 12 course routes, now I have none to measure, suspect I am one of many to see their measure requests cancelled?</p>
@@ -191,7 +217,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <p>A friend of mine in our running club has been keeping members entertained with his GPS Logos. He is also a surveyor in his day job and maps out routes on an open field then runs them with a GPS watch. Members attempt to recreate the same image by following his marks. Here are a couple of examples.&nbsp;</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/631686427381020613">Uni image.PNG</a>, <a href="files/631686427381020614">R2R Logo.PNG</a>, <a href="files/631686427381020615">BFly image.PNG</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Uni%20image.PNG" target="_blank"><img src="files/Uni%20image.PNG" alt="Uni image.PNG" class="attachment-thumb" title="Uni image.PNG"></a><a href="files/R2R%20Logo.PNG" target="_blank"><img src="files/R2R%20Logo.PNG" alt="R2R Logo.PNG" class="attachment-thumb" title="R2R Logo.PNG"></a><a href="files/BFly%20image.PNG" target="_blank"><img src="files/BFly%20image.PNG" alt="BFly image.PNG" class="attachment-thumb" title="BFly image.PNG"></a></div></div>
                       </div>
                     </article>
                     

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020001533">
                       <div class="post-header">
                         <span class="post-author">bobthurston</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/25/12 @ 10:15 AM</span>
                       </div>
                       <div class="post-body">
                         Some folks in my area are planning to conduct a marathon to be run on a high school track. What is our current approach to certifying such an event? (Do you actually need to certify it?) Is it sufficient to check the measurements of the track and then specify the distance to be run on the final partial lap? <br />Let's say the track does not use an inside rail. I assume we will figure the distance around the track at a distance of 30 cm from the inside (left) edge of the inside lane. <br />Since this is a track, not a road race, I think we do not need to add a SCPF. <br />I would welcome corrections, comments, etc.

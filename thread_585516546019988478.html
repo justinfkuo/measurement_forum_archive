@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019988478">
                       <div class="post-header">
                         <span class="post-author">jaywight</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/6/10 @ 8:25 PM</span>
                       </div>
                       <div class="post-body">
                         This past Saturday I measured a half marathon course. The course started out with most of a loop, went out for more than five miles, had a loop at the other end, then came back the same way it went out (on the other side of the path), then closed the initial loop, finishing at the start.<br /><br />The original measurement yielded a length of 21135.23 meters using the pre-cal (larger) constant so the race director and I found a couple of alternate routes that would shorten the course. measured them, pasted them in, and ended up with a course that was 21090.53 using the larger constant, and would be 21099.48 using the average constant. I recalibrated, rode the course again, and ended up with course lengths of 21090.80 using the larger (pre) constant and 21098.90 using the average constant from the last two calibrations.<br /><br />Here's the question: Since it is entirely legitimate to calculate the length of the course using the larger constant, and it is entirely legitimate to calculate the length of the course using the average constant, does it then follow that it is entirely legitimate to calculate it using ANY constant between them?<br /><br />If so, I have a 21097.5 meter course. If not, I have one that's a little long. Either way it works- but since there's obviously a number in the range that gives me exactly what I want, I thought it was worth posing the question to the group.<br /><br />Your thoughts?

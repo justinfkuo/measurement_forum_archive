@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019949147">
                       <div class="post-header">
                         <span class="post-author">rickschumeyer</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/25/05 @ 10:46 AM</span>
                       </div>
                       <div class="post-body">
                         I have used a spreadsheet on my palm computer to make finding mile splits easier.<br /><br />I made a simple spreadsheet that calculates the JO counts corresponding to mile 1, mile 2, etc. The spreadsheet is designed on my "real" computer and tranferred to the palm. From there, I only have to enter five counts from the cal course (beginning, end, each turn-around) and the count at the beginning of the course. Not that these numbers were that hard to determine, but I think this makes it a little easier.<br /><br />Afterwards, I enter the five counts from the post cal and it bases the course length on the constant for the day.<br /><br />I should mention that so far, I have only used this to measure my own training loops. In other words, I don't adjust the course length. I suspect the spreadsheet could be adjusted to account for that.<br /><br />I would be happy to share the spreadsheet with anyone who is interested.<br /><br />I don't know how helpful this is, but I thought I should share it in case Pete follows through on his threat to pull the plug! <img alt="Smiler" height="15" src="/static/images/graemlins/icon_smile.gif" width="15"></img><!--graemlin::)-->

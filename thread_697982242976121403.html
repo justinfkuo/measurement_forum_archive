@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-697982242976121403">
                       <div class="post-header">
                         <span class="post-author">Gregory Chandler</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/4/22 @ 7:51 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I need to measure a 4 mile point to point course. The start line is fixed, the finish line is adjustable. The first 3 3/4 miles is paved, the final 1/4 mile is on grass. I would like to use a steel tape for the last 1/4 mile.</p><p>This will be my first time submitting an application that combines the bicycle measurement with a steel tape measurement and I would like to know what the application looks like.</p><p>My plan was to mark the transition point (from bicycle to steel tape) with a nail and measure the bicycle portion separately and completely to arrive at the distance for the paved portion.</p><p>Then subtract this distance from my desired 4 miles, leaving the required distance to be measured over the grass.</p><p>If the distance over the grass were to be 1200' I would actually measure 1201.2' to take the SCPF into account and I assume some correction for temperature.</p><p>What I don't understand is what form do I use for the steel tape section. Or is this something that would just be detailed in the processes and procedures section.</p>
@@ -157,8 +183,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#2 &bull; 7/5/22 @ 3:57 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>Never taped a section that long but in past just listed taped distances on Course Measurement Data Sheet, converted to miles and sum them.</p><p>Here, I taped under a gate.&nbsp; Usually put "See Attachment" on official CMDS and add a Snip of the spreadsheet on an attachment.</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/697982242976121403/filePointer/697982243002875780/fodoid/697982243002875776/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/697982243002875780">mceclip0.png</a></div>
+                        <p>Never taped a section that long but in past just listed taped distances on Course Measurement Data Sheet, converted to miles and sum them.</p><p>Here, I taped under a gate.&nbsp; Usually put "See Attachment" on official CMDS and add a Snip of the spreadsheet on an attachment.</p><p><img src="files/mceclip0.png" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     

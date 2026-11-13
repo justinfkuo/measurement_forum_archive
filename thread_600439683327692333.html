@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-600439683327692333">
                       <div class="post-header">
                         <span class="post-author">jimgilmer</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/16/19 @ 10:56 AM</span>
                       </div>
                       <div class="post-body">
                         <p>If you are a Certifier or FS, when creating your signature for uploading to the Account Settings page, please be sure to <span style="text-decoration: underline;">closely crop the image</span> to the top, bottom, and both side boundaries of the signature. See example below:&nbsp;</p><p><img height="126" src="https://lh3.googleusercontent.com/6q9Ax3StXbg-mcZydt_H32xIXMHvCdOJSRAOTFXBelrKdSe8h-qVU6b2f0VIyENhP1z0HDqqbLRDhedgM6nGHSEJsVqbM42mR7aHDeWMUh4yd2jyrW-KOsgICJaWYrZAcejKWRlH" width="421" /></p>

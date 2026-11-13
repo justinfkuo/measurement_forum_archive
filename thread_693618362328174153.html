@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-693618362328174153">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/31/22 @ 3:05 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I currently use a handheld GPS unit for this purpose, but I think phone GPS is now nearly as good, if not as good, as the handheld device. And the street mapping is often better. So I'm interested in using my phone instead.</p><p>Google Maps seems like it would do pretty well for this. My only complaint is that you touch and hold the spot on the map where you want to drop a pin. I'd rather just drop a pin at the current location, but that doesn't seem to be an option. I haven't actually used GM on a measurement, so I don't know how good it is at providing an easily portable file of waypoints at the end.</p><p>I'm not really interested in taking pictures of the mile marks. I just want to stop the bike, record my data, drop a pin, and move on.</p><p>Anybody have experience with GM or other app for viewing the route map and dropping pins?</p>

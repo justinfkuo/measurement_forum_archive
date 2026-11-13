@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019973558">
                       <div class="post-header">
                         <span class="post-author">mikesandford</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 4/30/08 @ 3:13 PM</span>
                       </div>
                       <div class="post-body">
                         I have built a portable calibration course. It is 7 foot long and carries steel tape which a pointer attached to the rim of the bike wheel contacts. This pointer can be read to around 0.2 mm. So the calibration constant for the wheel with a circumference of about 2.13 m can be determined to better than the SCPF factor of 0.1%. The overall accuracy goal was set as 0.03%, but I doubt that I will reach that. <br /><br />There are two experimental applications I forsee:<br />1. Roughly determining the calibration constant on off road surfaces - grass, gravel etc.<br />2. As a test bed for methods to be used for a 50 m calibration course. On such a 50m course it should prove possible to determine the calibration constant for a pushed bike about 20 times more accurately i.e. better than 0.005%. This may be useful for establishing the variation of constant between different road surfaces. It may also be useful for investigating the properties of different measuring tyres. It wont be much use to me in real course measurements, since I know I wobble, but I dont know by how much and how this varies. I will still need to do 4 rides on conventional 300m + calibration courses before and after each course measurement. <br /><br />Here is a link to my <a href="http://coursemeasurement.org.uk/measurers/7footcalibration.php" target="_blank">on-line notebook</a> -- too long to read, but there are some pictures which show the configuration and a table of the first results. I will be trying it out on grass as soon as it is dry then moving on to a 50 m cal course.

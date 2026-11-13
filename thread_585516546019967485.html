@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019967485">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/3/07 @ 9:31 AM</span>
                       </div>
                       <div class="post-body">
                         Sometimes it is difficult to find a road that has a 300m, flat, straight section that can be used for a calibration course. Especially the flat part.<br /><br />Pete suggests that riding downhill causes less weight on the front wheel, while the opposite is true for riding uphill. This would mean that riding in the downhill direction on a cal course would give more counts than riding uphill on the same course, and this has, in fact, been observed.<br /><br />What has not been observed, or proven, is the idea that if you do an equal number of uphill and downhill rides on a cal course, this hill effect will cancel out, and you will get the same cal constant as you would on a flat course.<br /><br />I decided this was worth testing. I have a cal course in front of my house that is 400m. The 200m on the west end has an elevation change of about 4m. The 200m on the east end has an elevation change of about 1.5m. I rode a total of 16 rides (8 out and 8 back) on each of the two 200m sections.<br /><br />Here's the results<br /> <img src="http://www.dukerdog.com/hilly_cal_1.jpg"></img> <br /><br />After I completed the experiment I realized that the pressure in my tire, 50psi, was on the low end. On another day I repeated the experiment with a higher pressure of about 63psi (the recommended pressure for my mountain bike tire is 35-65psi).<br /><br />Here's the results from that second test.<br /><br /><img src="http://www.dukerdog.com/hilly_cal_2.jpg"></img> <br /><br />The first thing we can observe is that downhill rides do result in higher counts than uphill rides, as expected. This was true for the hilly 200m section, but was also true for the "flat" 200m section, as the return direction on this course was downhill (by 1.5m) and gave a higher count than the uphill direction.<br /><br />The second, and much more surprising finding, is that the uphill and downhill effects do not appear to cancel themselves out. In both experiments (lower pressure and higher pressure) the average cal constant on the hilly course was about 10counts/km lower than the average cal constant for the "flat" course. This is a huge difference of nearly the entire SCPF!<br /><br />This experiment, along with the previous one on cal course length, suggests that you will get a more accurate cal constant by using a short, flat cal course than you will using a long, hilly one.

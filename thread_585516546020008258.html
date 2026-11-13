@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020008258">
                       <div class="post-header">
                         <span class="post-author">tommcbrayer</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 4/5/13 @ 10:17 AM</span>
                       </div>
                       <div class="post-body">
                         We&#x27;ve noticed lately that several cities have started limiting runs to certain areas where their events can be held-areas that can be easily controlled and would have  minimal impact on traffic and local residents. The next step is &quot;standard&quot; courses that would be used by all. One measurer in the Dallas/Fort Worth area will be doing this soon and he was asking about questions No.2 &amp; 5 on the app. Neither the Race Contact nor the Race Date would be known, so what goes in those fields? Unknown, TBD, NA, or what?

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-702908819233381665">
                       <div class="post-header">
                         <span class="post-author">oscarwagner</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 10/22/22 @ 6:01 AM</span>
                       </div>
                       <div class="post-body">
                         <p>I recently tried to show someone how to use Solocator to find coordinates determined using Google Earth.&nbsp; Difference was WAY off, like 50' when Solo was saying +-13'.&nbsp; From tracking down 6 trail cameras about monthly for 2 years, I know Solocator coordinates are repeatable relative to themselves.&nbsp; Anybody got an explanation or other similar experiences?&nbsp; My GPS Coordinates app was like Solocator.&nbsp;</p>
@@ -168,8 +194,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#3 &bull; 10/22/22 @ 12:15 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>I ran both tests. Two different phones, Motorola G5 Plus and Google Pixel 4a. And three different apps, MyTracks, SpotLens, and GPS Camera Map. I don't have Solocator on either phone because it's not free.</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/702908819233381665/filePointer/702908819257506752/fodoid/702908819257506744/imageType/LARGE/inlineImage/true/Screen%2520Shot%25202022-10-22%2520at%25203.05.41%2520PM.png" title="Screen Shot 2022-10-22 at 3.05.41 PM"><img alt="Screen Shot 2022-10-22 at 3.05.41 PM" class="inline-attachment" height="352" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/702908819233381665/filePointer/702908819257506752/fodoid/702908819257506744/imageType/MEDIUM/inlineImage/true/Screen%2520Shot%25202022-10-22%2520at%25203.05.41%2520PM.png" title="Screen Shot 2022-10-22 at 3.05.41 PM" width="600" /></a></p><p>The attached picture shows the results. A bit of a mixed bag. The Motorola results (yellow) would indicate that it depends mostly on the phone and not much on the apps. The Pixel4a results (green) would indicate the opposite.</p><p>The white Google Earth circle is where I was standing. Note that this doesn't mean GE is correct. I put that circle on the correct spot, and based on that the GPS coordinates the phones gave resulted in waypoints where they are shown. It's possible that Google Earth coordinates are all 20 feet too far south, and if that's the case then the 4 circles clustered together would be very close to correct. We have no way of knowing the correct answer. We can only do comparisons.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/702908819257506752">Screen Shot 2022-10-22 at 3.05.41 PM.png</a></div>
+                        <p>I ran both tests. Two different phones, Motorola G5 Plus and Google Pixel 4a. And three different apps, MyTracks, SpotLens, and GPS Camera Map. I don't have Solocator on either phone because it's not free.</p><p><a class="gallery-image" href="files/Screen%20Shot%202022-10-22%20at%203.05.41%20PM.png" title="Screen Shot 2022-10-22 at 3.05.41 PM"><img alt="Screen Shot 2022-10-22 at 3.05.41 PM" class="inline-attachment" height="352" src="files/Screen%20Shot%202022-10-22%20at%203.05.41%20PM.png" title="Screen Shot 2022-10-22 at 3.05.41 PM" width="600" /></a></p><p>The attached picture shows the results. A bit of a mixed bag. The Motorola results (yellow) would indicate that it depends mostly on the phone and not much on the apps. The Pixel4a results (green) would indicate the opposite.</p><p>The white Google Earth circle is where I was standing. Note that this doesn't mean GE is correct. I put that circle on the correct spot, and based on that the GPS coordinates the phones gave resulted in waypoints where they are shown. It's possible that Google Earth coordinates are all 20 feet too far south, and if that's the case then the 4 circles clustered together would be very close to correct. We have no way of knowing the correct answer. We can only do comparisons.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Screen%20Shot%202022-10-22%20at%203.05.41%20PM.png" target="_blank"><img src="files/Screen%20Shot%202022-10-22%20at%203.05.41%20PM.png" alt="Screen Shot 2022-10-22 at 3.05.41 PM.png" class="attachment-thumb" title="Screen Shot 2022-10-22 at 3.05.41 PM.png"></a></div></div>
                       </div>
                     </article>
                     

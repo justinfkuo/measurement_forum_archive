@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020023143">
                       <div class="post-header">
                         <span class="post-author">alanjones</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/3/15 @ 10:14 AM</span>
                       </div>
                       <div class="post-body">
                         This was sent to me by a friend. It's from the University of Salzburg.<br /> <a href="http://www.tandfonline.com/doi/pdf/10.1080/13658816.2015.1086924" target="_blank">GPS article</a> <br /> <br />Runners, mariners, airmen, and wilderness trekkers beware: Your global positioning system (GPS) is flattering you, telling you that you have run, sailed, flown, or walked significantly farther than you actually have. And it’s not the GPS’s fault, or yours.<br />Blame the statistics of measurement. Researchers at the University of Salzburg (UoS), Salzburg Forschungsgesellchaft (SFG), and the Delft University of Technology have done the math to prove that the distance measured by GPS over a straight line will, on average, exceed the actual distance traveled. They also derive a formula for predicting how big the error will be. The open-access paper was published in the International Journal of Geographical Information Science; an earlier version is available on Arxiv.<br />GPS course calculations are subject to both interpolation error (a function of the sampling interval) and measurement error (the everyday orneriness of real-world physical systems). The Salzburg team—including first author Peter Ranacher of UoS and senior author Siegfried Reich of SFG—discovered a systematic bias in distance measurement errors.<br />Measurement errors have many causes. The paper specifically cites: propagation delay (atmospheric fluctuations affect the speed of the GPS signal); ephemeris error (uncertainty in the precise position of the GPS satellite); satellite clock drift; hardware error (the shortcomings of the terrestrial GPS unit); signal reflections (which can increase the length of the signal path); and unfavorable satellite geometry (available GPS satellites are too low in the sky or too close together or too few, for example).<br />Put them together and you have readings that scatter around the true position. The Salzburg researchers found that distances derived from position measurements with randomly distributed errors will, on average, come up longer than the actual separation between two points. There are three components to their calculation:<br />• The reference distance (d0): the actual Euclidean distance between two points<br />• The variance (Vargps): the “mean of the square minus the square of the mean” of the position error, an index of how accurate the position measurement is. Variance is the square of the standard deviation, σ2<br />• The autocorrelation (C, perhaps more properly the autocovariance) of the measurement error. This can vary from a maximum of Vargps (if the errors are closely covariant) to 0 (if they are random) to -Vargps (if there is an inverse correlation). <br />The Salzburg formula for the average Overestimation of Distance (OED) is then,<br />OED = (d02 + Vargps - C)1/2 - d0<br />The variance is always positive, so if the autocorrelation is lower than the variance, the overestimation of distance will always be positive. And the autocorrelation is generally lower than the variance.<br />The problem becomes particularly acute when the user (or the GPS) calculates the total distance traveled by adding together the lengths of multiple segments. The differences between the true and measured distance will fluctuate—sometimes short, but more often long. Because the GPS-measured distance skews long, though, the total GPS distance error will tend to grow with each added segment.<br />Not content with mere calculation, Ranacher, Reich, and their colleagues went on to test their findings experimentally. In an empty parking lot, they staked out a square course 10 m on a side, reference-marked each side at precise 1-m intervals, and set a GPS-equipped pedestrian (a volunteer, one hopes) to walk the perimeter 25 times, taking a position reading at each reference mark.<br />The researchers analyzed the data for segment lengths of 1 meter and 5 meters. They found that the mean GPS measurement for the 1-m reference distance was 1.02 m (σ2 = 0.3) and the mean GPS measurement for the 5-m reference distance was 5.06 m (σ2 = 2.0). They also ran a similar experiment with automobiles on a longer course, with similar results.<br />Now, that pedestrian-course error of 1.2 to 2 percent isn’t huge. But it is big enough that your GPS watch could tell you you’re crossing the finish line of a 42,195-meter marathon while the real terminus is more than 400 meters ahead.<br />That’s not a hypothetical example. For years, runners have complained that their GPS watches and other devices have mismeasured the distances they’ve run over supposedly verified courses, or suddenly finding that they set personal record times the first time they use a GPS to measure their course. There have been a number of confident explanations. Most involved either interpolation error (measuring the distance between successive plots as a straight line, which will likely report a shorter-than-actual distance over a twisty course) or the runner’s non-optimal choice of routes (adding to the verified distance on each leg, and reporting a longer actual distance traveled). Maybe they’ll like this explanation better.<br />The Ranacher team’s results do not mean that measuring the lengths of complex courses by GPS is futile. They point out that moment-by-moment GPS velocity measurement is not subject to the same sources of error, so that calculating distance traveled by integrating velocity should yield reasonably accurate results.<br />Learn More<br />GPS GPS error Global Positioning System University of Salzburg

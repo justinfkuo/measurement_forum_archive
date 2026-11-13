@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019946911">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/9/04 @ 9:34 AM</span>
                       </div>
                       <div class="post-body">
                         How Do You Find Elevations?<br /><br />The person who owns two clocks never knows what time it is. The owner of one clock is certain. So it is with elevations above sea level.<br /><br />Before computers I used to go to the library and get USGS maps. These usually provided the elevation data I needed. After getting computerized I bought a copy of Topo USA (Version 2.0). This generally gave good agreement with the USGS maps. Then along came the Flying Pig Marathon.<br /><br />The start was at Fountain Square, in downtown Cincinnati, Ohio. The finish was in a park adjacent to the Ohio River. Both were shown on both Topo USA and USGS maps. I had fairly good agreement for the finish, at 485 feet above sea level. However, the start yielded surprising results. The USGS map showed the 550 foot contour line right on the start line near the south edge of the square. However, Topo USA showed:<br /><br />Southeast corner: 686 feet<br />Southwest corner: 672 feet<br />Northeast corner: 673 feet<br />Northwest corner: 637 feet<br /><br />In addition, a USGS benchmark shown at 543 feet was 575 feet using Topo USA.<br /><br />I’d normally expect better agreement than this. I wrote to Delorme, who makes Topo USA, but did not receive a responsive reply.<br /><br />Food for thought. Anybody else done any comparisons?

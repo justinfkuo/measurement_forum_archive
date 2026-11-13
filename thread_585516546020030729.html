@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020030729">
                       <div class="post-header">
                         <span class="post-author">duanerussell</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/25/17 @ 3:25 PM</span>
                       </div>
                       <div class="post-body">
                         If we do our pre-calibration when the temps are lower than when we measure, why do we post-calibrate?<br /><br />We calibrate, arrive at the course, and do our first measurement. The course is 54,000 clicks long. We measure the second time, and the course is 53,957 - 54,043 clicks. All is good, as it indicates we did not lose air during the rides. Or, if we did, we were still within tolerance, and adjusted the course accordingly. The course is slightly longer than if we had our second ride closer to 54,000 clicks.<br /><br />If we calibrated, and had a less-slow leak, then our second ride would not be within tolerance, most-likely. So, we would re-measure. Still not within tolerance. So, we would need to start over.<br /><br />If we calibrated when it was hot, then had a rain squall cool the pavement, our measurements, while consistent, would not really reflect an accurate measurement, since our tires shrunk due to the drop in temp. So, the course is actually short. If it warms up before we do our post-cal, everything (falsely) appears to be in order.<br /><br />A leak at the end of the second measurement would invalidate the measurement, due to the post-cal being bad, even if both measurements were within tolerance.<br /><br />If the counter is not functioning properly, we likely would not get two consistent measurements. And, as my ride in Houston shows, my calibrations were consistent, but the counter skipped during the measurement ride. Had I done two rides, instead of a team measurement, I likely would have had inconsistent rides.<br /><br />So, is there really a good reason for post-cal rides? Wouldn't problems show during the two rides? The exception is when the pre-cal is hotter than the measurement.

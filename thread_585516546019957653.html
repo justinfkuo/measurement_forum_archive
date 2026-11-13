@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019957653">
                       <div class="post-header">
                         <span class="post-author">matthewstudholme</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/27/06 @ 10:47 AM</span>
                       </div>
                       <div class="post-body">
                         Pete Riegel&#x27;s initial response to Jim Gerweck&#x27;s question in the &quot;A Validation Question&quot; discussion thread said that if during pre-validation the [5000 m] course was found to be &quot;less than 5005, then it should be adjusted to 5005&quot;. This begs the question, is formal pre-validation a good thing from the race director&#x27;s standpoint? As an alternative, the RD could recruit an expert measurer to do an &quot;unofficial check&quot; of the original measurement. As long as this &quot;unofficial check&quot; was more than 99.95% and less than 100.1% of the required distance, then why adjust upto 100.1%? Under this circumstance, is the RD not better off from a record-setting standpoint to wait for validation if a record is set before any course adjustment is made, so that potentially record-breaking runners run the shortest possible &quot;acceptable&quot; race distance, where &quot;acceptable&quot; means that it will pass validation?

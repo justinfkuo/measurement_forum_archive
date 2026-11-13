@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019952947">
                       <div class="post-header">
                         <span class="post-author">davidfox</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/6/05 @ 2:49 PM</span>
                       </div>
                       <div class="post-body">
                         I'd like to invite the running community to visit <a href="http://www.StateRunningRecords.com" target="_blank">http://www.StateRunningRecords.com</a> .<br />This is a project I started about a year ago and is designed so recordkeepers can maintain their state records there in a database. This provides some handy features like powerful search options and "alert me" emails when a record changes. Currently the site hosts official MO, NH, and TN records. GA and AL will be there soon.<br /><br />I encourage other state recordkeepers to consider using <a href="http://www.staterunningrecords.com" target="_blank">http://www.staterunningrecords.com</a> as their records repository.

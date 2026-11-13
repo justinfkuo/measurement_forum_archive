@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019947783">
                       <div class="post-header">
                         <span class="post-author">neville</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/17/04 @ 8:24 PM</span>
                       </div>
                       <div class="post-body">
                         I should like to correct an erroneous statement at the end of the following passage in the last issue of Measurement News concerning an evaluation of electronic counters:<br /><br />“Measurers who have tried Neville's method find that it can certainly produce reliable results. The key question is whether we can systematize this method to the extent that a certifier reviewing a measurement from a first-time measurer can trust that it was done correctly (at least to the same extent that we can trust measurements done with a Jones Counter). As an illustration of one of the possible pitfalls, one of the measurers testing Neville's method accidentally marked his wheel backwards, leading to incorrect values for fractional revolutions. The problem was caught eventually because this measurer also had a Jones Counter on his bike. But if the Jones Counter hadn't been present, he may<br />have had an apparently self-consistent set of data leading to a very inaccurate race course.”<br /><br /> Actually there were many inconsistencies in the data. Just to take two examples.<br />For the calibration course, the apparent average precalibration value was 146.09 rev at 19C and the postcalibration was 145.19 at 22C or a difference of 0.9 rev! The duplicate measurements for the 3 to 3.1 mile section were 83.78 rev and 81.94 rev or a difference of 1.94 rev!<br /> Even without the Jones data there is no way a reviewer would have certified the course with this data.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019987996">
                       <div class="post-header">
                         <span class="post-author">jimgerweck</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/27/10 @ 7:22 AM</span>
                       </div>
                       <div class="post-body">
                         I received the following question from a writer at <i>Runner's World:</i><br /> <blockquote class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">We’re running a Q+A in the magazine that asks “How much distance can you shave off a marathon course by running the inside corner of every turn?” The answer we’re giving is none—because (as I understand it) certified marathon courses must be measured so that they are at least 26.2 miles long—so even if you take the shortest possible route, you still cover at least 26.2 miles. What I’m trying to find out, though, is how much distance you could potentially add onto a marathon course by taking the longest possible route, or at least one that’s not super efficient (i.e., take wide turns, and factor in some weaving between racers, etc). Of course, the exact distance would depend on a number of factors and vary from race to race, but is there a way to calculate an estimate for this? Could you add on as much as a half mile, or just a few hundred meters?</div></blockquote><br /><br />Can anyone chime in with some educated guesses, or better yet, computational examples, of this? I'll try to make sure RRTC gets credit in <i>RW.</i>
@@ -157,7 +183,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#2 &bull; 5/27/10 @ 9:40 AM</span>
                       </div>
                       <div class="post-body">
-                        There's this, which shows the additional distance people typically add to courses.<BR><BR><a href="https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/9611072113" target="_blank">https://measure.infopop.cc/eve/...9510622/m/9611072113</a><BR><BR>And a similar study by Mike Sandford.<BR><BR><a href="https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/5661053823" target="_blank">https://measure.infopop.cc/eve/...9510622/m/5661053823</a>
+                        There's this, which shows the additional distance people typically add to courses.<BR><BR><a href="thread_9611072113.html" target="_blank">thread_9611072113.html</a><BR><BR>And a similar study by Mike Sandford.<BR><BR><a href="thread_5661053823.html" target="_blank">thread_5661053823.html</a>
                         
                       </div>
                     </article>

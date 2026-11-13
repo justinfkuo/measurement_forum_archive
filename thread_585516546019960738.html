@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019960738">
                       <div class="post-header">
                         <span class="post-author">neville</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/1/06 @ 10:11 PM</span>
                       </div>
                       <div class="post-body">
                         During the last two validations, others have brought to my attention calculation errors made in the setting up of calibration courses. <br />The last one was detected by Pete Riegel on a course he was thinking of using that was listed as 1000.125 ft. Shrewdly, Pete realized since the course was set up in February, it was likely to be less than 1000 ft. To be correct the temperature would have had to have been 88 degrees – highly unlikely for February!<br />The above errors were made by certifiers. Calculations made by certifiers for calibration courses are not normally checked by others. However because of the potential effect on many courses and records, certifiers might well be advised get someone else to look over their calculations.<br />In the pressure monitoring method only a home calibration course is necessary. Having once lavished a lot of care in setting up this course, the measurer is free from calibration course errors thereafter.

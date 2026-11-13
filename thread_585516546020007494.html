@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020007494">
                       <div class="post-header">
                         <span class="post-author">duanerussell</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/26/13 @ 7:37 PM</span>
                       </div>
                       <div class="post-body">
                         Measurers - when you put GPS coordinates on maps, please indicate the datum of your coordinates. NAD 27 and NAD 83 can be anywhere from 4 feet to 150 feet different locations for the same coordinates, depending on where you are. WGS 84 is also a different location than NAD 27 or NAD 83.<br /><br />If they don't have the correct datum set on their GPS device, the coordinates are unlikely to do any good.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-703613116750188102">
                       <div class="post-header">
                         <span class="post-author">David Anderson</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 12/21/22 @ 4:16 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>Does anyone else have an issue with only seeing a portion of the reviews comments when they send it back for correction? Also is there any plan to make it to the measurer can reply back to the reviewer in the program?<a href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/703613116750188102/filePointer/703613116750188126/fodoid/703613116750188117/imageType/LARGE/inlineImage/true/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" title="817E3472-D6FB-4DF5-BC1F-12023BA645C3" class="gallery-image"><img alt="817E3472-D6FB-4DF5-BC1F-12023BA645C3" class="inline-attachment" height="600" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/703613116750188102/filePointer/703613116750188126/fodoid/703613116750188117/imageType/MEDIUM/inlineImage/true/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" title="817E3472-D6FB-4DF5-BC1F-12023BA645C3" width="450" /></a></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/703613116750188126">817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg</a></div>
+                        <p>Does anyone else have an issue with only seeing a portion of the reviews comments when they send it back for correction? Also is there any plan to make it to the measurer can reply back to the reviewer in the program?<a href="files/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" title="817E3472-D6FB-4DF5-BC1F-12023BA645C3" class="gallery-image"><img alt="817E3472-D6FB-4DF5-BC1F-12023BA645C3" class="inline-attachment" height="600" src="files/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" title="817E3472-D6FB-4DF5-BC1F-12023BA645C3" width="450" /></a></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" target="_blank"><img src="files/817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" alt="817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg" class="attachment-thumb" title="817E3472-D6FB-4DF5-BC1F-12023BA645C3.jpeg"></a></div></div>
                       </div>
                     </article>
                     

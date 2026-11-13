@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-600298945841040441">
                       <div class="post-header">
                         <span class="post-author">matthewstudholme</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/16/19 @ 12:24 PM</span>
                       </div>
                       <div class="post-body">
                         <p>How do you enter measurement data where a turnaround point is not a halfway point?</p>
@@ -157,8 +183,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#2 &bull; 9/17/19 @ 6:59 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>In the layout measurement (Ride 1), after generating the&nbsp;Measurements Table, go to the Measured Point where the TA split will be added and click on the blue plus sign (+) on the right.</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/600580420824051619/fodoid/600580420824051612/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p><p>Enter the number of counts displayed on your counter at the TA split. Select mi/km for displaying the TA split distance.&nbsp; Click on Turn-Around Point in dropdown box and add a reference note, if desired. Click the SAVE button, which returns you to your Road Courses dashboard.&nbsp;</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/600580420824051620/fodoid/600580420824051613/imageType/MEDIUM/inlineImage/true/mceclip1.png" /></p><p>To check the entry of the split, click on the edit icon (pencil) for Measurement 1</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/600580420824051621/fodoid/600580420824051614/imageType/MEDIUM/inlineImage/true/mceclip2.png" /></p><p>Review the saved Measurements table</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/600580420824051622/fodoid/600580420824051615/imageType/MEDIUM/inlineImage/true/mceclip3.png" /></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/600580420824051619">mceclip0.png</a>, <a href="files/600580420824051620">mceclip1.png</a>, <a href="files/600580420824051621">mceclip2.png</a>, <a href="files/600580420824051622">mceclip3.png</a></div>
+                        <p>In the layout measurement (Ride 1), after generating the&nbsp;Measurements Table, go to the Measured Point where the TA split will be added and click on the blue plus sign (+) on the right.</p><p><img src="files/mceclip0.png" /></p><p>Enter the number of counts displayed on your counter at the TA split. Select mi/km for displaying the TA split distance.&nbsp; Click on Turn-Around Point in dropdown box and add a reference note, if desired. Click the SAVE button, which returns you to your Road Courses dashboard.&nbsp;</p><p><img src="files/mceclip1.png" /></p><p>To check the entry of the split, click on the edit icon (pencil) for Measurement 1</p><p><img src="files/mceclip2.png" /></p><p>Review the saved Measurements table</p><p><img src="files/mceclip3.png" /></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a><a href="files/mceclip1.png" target="_blank"><img src="files/mceclip1.png" alt="mceclip1.png" class="attachment-thumb" title="mceclip1.png"></a><a href="files/mceclip2.png" target="_blank"><img src="files/mceclip2.png" alt="mceclip2.png" class="attachment-thumb" title="mceclip2.png"></a><a href="files/mceclip3.png" target="_blank"><img src="files/mceclip3.png" alt="mceclip3.png" class="attachment-thumb" title="mceclip3.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -168,8 +194,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#3 &bull; 10/17/19 @ 12:49 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>Has anyone else had this problem with a turnaround point?&nbsp; I can enter the information for a turnaround point like shown above and I can save it.&nbsp; The first picture shows how I entered the information&nbsp;<a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626119/fodoid/602410489610626110/imageType/LARGE/inlineImage/true/problem%25201.png" title="problem 1"><img alt="problem 1" class="inline-attachment" height="302" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626119/fodoid/602410489610626110/imageType/MEDIUM/inlineImage/true/problem%25201.png" title="problem 1" width="600" /></a></p><p>When I try to enter the information for the Verification Ride (Measurement 2) there is an issue.&nbsp; I get a table to input the measurements that includes the turnaround point&nbsp;</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626121/fodoid/602410489610626111/imageType/LARGE/inlineImage/true/problem%25202.png" title="problem 2"><img alt="problem 2" class="inline-attachment" height="302" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626121/fodoid/602410489610626111/imageType/MEDIUM/inlineImage/true/problem%25202.png" title="problem 2" width="600" /></a></p><p>I can even enter the information&nbsp;<a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626122/fodoid/602410489610626113/imageType/LARGE/inlineImage/true/problem%25203.png" title="problem 3"><img alt="problem 3" class="inline-attachment" height="302" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626122/fodoid/602410489610626113/imageType/MEDIUM/inlineImage/true/problem%25203.png" title="problem 3" width="600" /></a></p><p>But when I try to save the information I get this error message&nbsp;</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626123/fodoid/602410489610626114/imageType/LARGE/inlineImage/true/problem%25204.png" title="problem 4"><img alt="problem 4" class="inline-attachment" height="302" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626123/fodoid/602410489610626114/imageType/MEDIUM/inlineImage/true/problem%25204.png" title="problem 4" width="600" /></a></p><p>Without getting the second measurement saved correctly the Measurement Comparison is all messed up</p><p><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626124/fodoid/602410489610626115/imageType/LARGE/inlineImage/true/problem%25205.png" title="problem 5"><img alt="problem 5" class="inline-attachment" height="302" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/602410489610626124/fodoid/602410489610626115/imageType/MEDIUM/inlineImage/true/problem%25205.png" title="problem 5" width="600" /></a></p><p>Is it something I am doing wrong or is it a glitch in the system.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/602410489610626119">problem 1.png</a>, <a href="files/602410489610626121">problem 2.png</a>, <a href="files/602410489610626122">problem 3.png</a>, <a href="files/602410489610626123">problem 4.png</a>, <a href="files/602410489610626124">problem 5.png</a></div>
+                        <p>Has anyone else had this problem with a turnaround point?&nbsp; I can enter the information for a turnaround point like shown above and I can save it.&nbsp; The first picture shows how I entered the information&nbsp;<a class="gallery-image" href="files/problem%201.png" title="problem 1"><img alt="problem 1" class="inline-attachment" height="302" src="files/problem%201.png" title="problem 1" width="600" /></a></p><p>When I try to enter the information for the Verification Ride (Measurement 2) there is an issue.&nbsp; I get a table to input the measurements that includes the turnaround point&nbsp;</p><p><a class="gallery-image" href="files/problem%202.png" title="problem 2"><img alt="problem 2" class="inline-attachment" height="302" src="files/problem%202.png" title="problem 2" width="600" /></a></p><p>I can even enter the information&nbsp;<a class="gallery-image" href="files/problem%203.png" title="problem 3"><img alt="problem 3" class="inline-attachment" height="302" src="files/problem%203.png" title="problem 3" width="600" /></a></p><p>But when I try to save the information I get this error message&nbsp;</p><p><a class="gallery-image" href="files/problem%204.png" title="problem 4"><img alt="problem 4" class="inline-attachment" height="302" src="files/problem%204.png" title="problem 4" width="600" /></a></p><p>Without getting the second measurement saved correctly the Measurement Comparison is all messed up</p><p><a class="gallery-image" href="files/problem%205.png" title="problem 5"><img alt="problem 5" class="inline-attachment" height="302" src="files/problem%205.png" title="problem 5" width="600" /></a></p><p>Is it something I am doing wrong or is it a glitch in the system.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/problem%201.png" target="_blank"><img src="files/problem%201.png" alt="problem 1.png" class="attachment-thumb" title="problem 1.png"></a><a href="files/problem%202.png" target="_blank"><img src="files/problem%202.png" alt="problem 2.png" class="attachment-thumb" title="problem 2.png"></a><a href="files/problem%203.png" target="_blank"><img src="files/problem%203.png" alt="problem 3.png" class="attachment-thumb" title="problem 3.png"></a><a href="files/problem%204.png" target="_blank"><img src="files/problem%204.png" alt="problem 4.png" class="attachment-thumb" title="problem 4.png"></a><a href="files/problem%205.png" target="_blank"><img src="files/problem%205.png" alt="problem 5.png" class="attachment-thumb" title="problem 5.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -179,8 +205,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#4 &bull; 10/17/19 @ 12:54 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>This is a known issue and will be corrected. For now, please use Issue Reports in the system to report this.&nbsp; The support team now has the ability to track/review/respond to Issue Reports -- and users have the ability to comment on their reports, too.&nbsp;</p><p>To report, click on the triangle-! icon. Track your report in the Issue Reports link on navigation menu</p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/601143692339010494/fodoid/601143692339010489/imageType/MEDIUM/inlineImage/true/mceclip0.png" /><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600298945841040441/filePointer/601143692339010495/fodoid/601143692339010490/imageType/MEDIUM/inlineImage/true/mceclip1.png" /></p><p>&nbsp;</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/601143692339010494">mceclip0.png</a>, <a href="files/601143692339010495">mceclip1.png</a></div>
+                        <p>This is a known issue and will be corrected. For now, please use Issue Reports in the system to report this.&nbsp; The support team now has the ability to track/review/respond to Issue Reports -- and users have the ability to comment on their reports, too.&nbsp;</p><p>To report, click on the triangle-! icon. Track your report in the Issue Reports link on navigation menu</p><p><img src="files/mceclip0.png" /><img src="files/mceclip1.png" /></p><p>&nbsp;</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a><a href="files/mceclip1.png" target="_blank"><img src="files/mceclip1.png" alt="mceclip1.png" class="attachment-thumb" title="mceclip1.png"></a></div></div>
                       </div>
                     </article>
                     

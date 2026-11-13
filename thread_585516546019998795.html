@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -147,7 +173,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         I found an extremely small and inexpensive ($14.99) bike light at Bike Nashbar. You can see how small it is relative to the quarter next to it. The black piece is a charging connector that attaches to the unit magnetically, and plugs into the USB port of a computer to recharge. It has 2 brightness levels plus a strobe setting, and attaches to the bike with a strap (not pictured). It would be easily mountable to the front fork to illuminate the counter on the axle. It comes in various colors for those of you who are fashion conscious. The catalog # is YL-FLEAFB. Now if only it had a remote on/off switch!
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/585516546020037869">photo_1.jpg</a>, <a href="files/585516546020037910">photo.jpg</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/photo_1.jpg" target="_blank"><img src="files/photo_1.jpg" alt="photo_1.jpg" class="attachment-thumb" title="photo_1.jpg"></a><a href="files/photo.jpg" target="_blank"><img src="files/photo.jpg" alt="photo.jpg" class="attachment-thumb" title="photo.jpg"></a></div></div>
                       </div>
                     </article>
                     

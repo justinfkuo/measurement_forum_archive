@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019971301">
                       <div class="post-header">
                         <span class="post-author">kenhardwick</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/10/08 @ 9:28 AM</span>
                       </div>
                       <div class="post-body">
                         I need to measure a course that includes entering a 800 meter stretch of a 4-lane road from one side and exiting from opposite side. Ideally,it would be most appropriate to measure diagonally but the road is hilly and most likely fairly busy even early Sunday AM.<br /><br />So, I am thinking I might should just ride on same side for the full length of the 800 meter stretch and then carry bike to opposite side to continue measurement. <br />The road appears to be fairly straight for the full length of the 800 meters.<br /><br />For a map of the course,click on the following link. (My questions is referring to the portion down NW 63rd.)<br /><br /><a href="http://trail.motionbased.com/trail/player/4751594" target="_blank">Course Map</a><br /><br />For a triangle with sides of 800 meters and 20 meters (est. width of 4 lane road), the Hypotenuse Side calculates to be 800.25 meters, so I would think that using this method to measure would be ok to do.<br /><br /><br />I would appreciate any feedback and/or suggestions.<br /><br />Thanks,<br /><br />Ken Hardwick<br />Norman, Ok
@@ -190,7 +216,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#5 &bull; 1/12/08 @ 9:34 AM</span>
                       </div>
                       <div class="post-body">
-                        Ken,<BR><BR>It's curious that the race committee asked for a remeasurement even though there's no change in the course, no construction, and the certification is only a couple of years old. Might they have asked for this remeasurement because runners were complaining the course to be inaccurate based on data from GPS units the runners were wearing? In any case, it's evident that you carried a GPS device while measuring, as <A HREF="http://trail.motionbased.com/trail/player/4751594" TARGET=_blank>your map on the MotionBased site</A> includes GPS data that you uploaded. I notice that you rode the course from Finish to Start, as we often do while measuring. On that MotionBased map, we can see where you did the offset maneuver (near Avalon Ln). Your path doesn't seem to align perfectly with the roads, but I assume that's due to imperfect match of the GPS coordinates and data in Google Maps. I assume that in addition to carrying this GPS device, you also did a standard calibrated bike measurement with Jones counter. Thus, your data contributes to the growing body of comparisons of GPS with calibrated bike measurements, as illustrated by other threads on this board such as <A HREF="https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/8301003542" TARGET=_blank>https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/8301003542</A><BR><BR>Incidentally, while your data on the MotionBased site is displayed initially in Imperial units, there's a "Switch to metric" button near the upper right (Curiously, even after switching to metric, Elevation is still displayed in feet, although Elevation gain and loss are displayed in meters; also, an incorrect symbol is displayed for kilometers per hour -- should be km/h, not kph).<BR><BR>After switching that display to metric, you can verify the length of the stretch on NW 63rd (a little over 1.2 km) from your GPS data.<BR><BR>The total length of the course was 5.06 km according to the GPS. I assume that the course measured a standard 5 km by calibrated bike (5.005 km including SCPF). Thus, the GPS measurement would appear to be about 55 m greater than calibrated bike. However, the GPS measurement includes the width of the street where you did the offset manueuver (about 17 m estimated by Google Earth), so this should be subtracted from the GPS figure. This reduces the discrepancy between GPS and calibrated bike to around 35 to 40 meters, or 0.7 to 0.8 percent.
+                        Ken,<BR><BR>It's curious that the race committee asked for a remeasurement even though there's no change in the course, no construction, and the certification is only a couple of years old. Might they have asked for this remeasurement because runners were complaining the course to be inaccurate based on data from GPS units the runners were wearing? In any case, it's evident that you carried a GPS device while measuring, as <A HREF="http://trail.motionbased.com/trail/player/4751594" TARGET=_blank>your map on the MotionBased site</A> includes GPS data that you uploaded. I notice that you rode the course from Finish to Start, as we often do while measuring. On that MotionBased map, we can see where you did the offset maneuver (near Avalon Ln). Your path doesn't seem to align perfectly with the roads, but I assume that's due to imperfect match of the GPS coordinates and data in Google Maps. I assume that in addition to carrying this GPS device, you also did a standard calibrated bike measurement with Jones counter. Thus, your data contributes to the growing body of comparisons of GPS with calibrated bike measurements, as illustrated by other threads on this board such as <A HREF="thread_8301003542.html" TARGET=_blank>thread_8301003542.html</A><BR><BR>Incidentally, while your data on the MotionBased site is displayed initially in Imperial units, there's a "Switch to metric" button near the upper right (Curiously, even after switching to metric, Elevation is still displayed in feet, although Elevation gain and loss are displayed in meters; also, an incorrect symbol is displayed for kilometers per hour -- should be km/h, not kph).<BR><BR>After switching that display to metric, you can verify the length of the stretch on NW 63rd (a little over 1.2 km) from your GPS data.<BR><BR>The total length of the course was 5.06 km according to the GPS. I assume that the course measured a standard 5 km by calibrated bike (5.005 km including SCPF). Thus, the GPS measurement would appear to be about 55 m greater than calibrated bike. However, the GPS measurement includes the width of the street where you did the offset manueuver (about 17 m estimated by Google Earth), so this should be subtracted from the GPS figure. This reduces the discrepancy between GPS and calibrated bike to around 35 to 40 meters, or 0.7 to 0.8 percent.
                         
                       </div>
                     </article>

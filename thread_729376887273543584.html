@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-729376887273543584">
                       <div class="post-header">
                         <span class="post-author">nickswalker</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/14/25 @ 11:48 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I’ve been measuring “short track/short loop” style courses and I’m interested to hear if folks have wisdom. The loops are generally &lt;200m, usually circular, like roundabouts.</p><p><br />The main two challenges I’ve experienced with these rides are that </p><ol><li>It’s very difficult to ride 30cm away from the curb&nbsp; while turning continuously. I measure out a couple dozen marks so I can monitor, but short of marking the entire riding line I’m not sure how to be confident here.</li><li>Starts are very difficult. You must follow the curve immediately, but when you start pedaling it’s most natural to continue straight as you get your balance. This means you’ll veer out long of the SPR and then turn back on. I think the strategy here is to ride many laps in a go so that the start can be averaged away, but I find that I can only focus on riding the curve correctly for so long before that problem starts to be a greater impact.</li></ol><br /><br /><p>On other courses, these problems would wash away on the straights. Here though, any kind of systematic error (e.g. bad starts or consistent curve-tracking-wobbliness leading to an extra 3 counts/30cm on measurements) blows past the SCPF. &nbsp;<br /><br />These errors are difficult for the measurer or certifier to detect. Unlike a track, nonstandard loops don’t come with a nominal length. There’s usually a well-defined curb, but usually no access across the middle, so clever cross-checks with steel tape are also out.<br /><br />All of this leads me to be skeptical that the calibrated bicycle method is actually appropriate/sufficient for measuring these. The likelihood of error seems too high. Thoughts?<br /><br />  Relevant previous discussion </p><ul><li><a rel="noopener noreferrer" href="https://measure.infopop.cc/topic/rrtc-2016-agenda-topic-certifying-tracks" target="_blank">2016 discussion, courses on tracks</a> and <a rel="noopener noreferrer" href="https://measure.infopop.cc/topic/my-conclusions-to-certifying-a-track-that-is-a-road-race" target="_blank">conclusion that only bicycle method is acceptable</a></li><li><a rel="noopener noreferrer" href="https://measure.infopop.cc/topic/measuring-wheel-inaccuracy?reply=703331639181895220#703331639181895220" target="_blank">2022 comment describing the difficulty of bike wobble for measuring a track, and the pros of using a measuring wheel instead</a><br /><br /></li></ul>

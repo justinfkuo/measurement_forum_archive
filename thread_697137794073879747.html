@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-697137794073879747">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/30/22 @ 6:03 PM</span>
                       </div>
                       <div class="post-body">
                         <p>This is primarily for LDE submissions. LDE (Limited Data Entry) submissions are course submissions performed by a certifier or final signatory when the measurer has used a process when measuring their course that the online system cannot handle (such as measuring in segments).</p><p>Previously, the only certification application available was a "fillable" PDF file. For some computer configurations the "fillable" part of that file did not work. This new google sheets version is "fillable" for any configuration.</p><p>Additional advantages:</p><ul><li>It can be shared, so a certifier is able to copy input fields in order to paste them to the online LDE form (like the measurer and race contact info).</li><li>The course name and measurer and race contact fields will truncate whatever the measurer inputs in the same way the online system will truncate those inputs on the certificate. So the measurer/certifier will know how much they need to shorten what they type in those fields to avoid truncation on the certificate.</li><li>Calculates the Drop and Separation correctly regardless of the units input by the measurer.</li></ul><br /><br /><p>The new google sheet certification application can be found on the rrtc website</p><p><a href="https://www.rrtc.net/">http://rrtc.net</a></p><p>near the top in the What's New? section.</p><p>Please check it out and let me know of any bugs, or where you think it can be improved.</p>

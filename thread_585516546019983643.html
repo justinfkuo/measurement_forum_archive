@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019983643">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 8/31/09 @ 2:41 AM</span>
                       </div>
                       <div class="post-body">
                         <b>A USE COUNTER FOR THE USATF COURSE SEARCH ENGINE?</b> <br /><br />The course registrar does a whale of a lot of work to make the USATF course search engine work. I am not sure how Gene does it, but what I did was:<br /><br />1) Put the just-received certificates in a pile and type in a line of data for each course.<br />2) Change the codes when various courses get replaced.<br />3) Feed the maps through the scanner and get a set of numbered files. Rename each file with the proper course ID.<br />4) Feed the certificates through the scanner and rename the resulting files.<br />5) File the certificates in a file cabinet.<br />6) Say “whew.”<br />7) Send files to USATF every so often<br /><br />As a result we have a pretty good system of making course lists and maps available. This results from a lot of hard work. Is the benefit worth the cost? We have no way to know, as the course search engine has no counter. <br /><br />It’s always nice to be able to know whether one’s work is paying off. I wonder what would have to be done to get a hit counter installed on the course search engine?

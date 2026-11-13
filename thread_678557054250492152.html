@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-678557054250492152">
                       <div class="post-header">
                         <span class="post-author">davidharriman</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/16/21 @ 5:20 AM</span>
                       </div>
                       <div class="post-body">
                         <p>I'm old school and like to write my data on paper as I do measurements.&nbsp; I am attaching my data sheets (calibration and course measurement).</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/678557054250492172">Field Course Measurement Sheets .pdf</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Field%20Course%20Measurement%20Sheets%20.pdf" target="_blank" class="attachment-file">📎 Field Course Measurement Sheets .pdf</a></div></div>
                       </div>
                     </article>
                     

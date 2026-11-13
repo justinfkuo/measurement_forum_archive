@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-600721158337169496">
                       <div class="post-header">
                         <span class="post-author">jimgilmer</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/16/19 @ 6:14 AM</span>
                       </div>
                       <div class="post-body">
-                        <p><strong>Q:</strong> A user asks: <em>"What's the procedure if you are using a pre-existing cal course? Wondering how that gets entered into My Steel Taped courses."</em></p><p><strong>A:</strong> The "New Steel Tape Sheet" selection in the New Sheets section of the menu is only for <span style="text-decoration: underline;">applying to certify a new cal course</span>.</p><p>After creating a new a road course in the system, if you are using&nbsp;a pre-existing certified cal course, there is a field on the Bicycle Calibration Data Sheet for both the pre-calibration and the post-calibration forms where the Cert ID of the existing cal course is&nbsp;entered. You will also need to specify the length of the calibration course and the measurement unit. <em>See the example below.</em></p><div class="gs"><div class="ii gt a3s aXjCH" id=":4zb"><div class="yj6qo">&nbsp;<img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600721158337169496/filePointer/600721158337169514/fodoid/600721158337169510/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></div><div class="adL">&nbsp;</div></div><div class="hi">&nbsp;</div></div><p>"</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/600721158337169514">mceclip0.png</a></div>
+                        <p><strong>Q:</strong> A user asks: <em>"What's the procedure if you are using a pre-existing cal course? Wondering how that gets entered into My Steel Taped courses."</em></p><p><strong>A:</strong> The "New Steel Tape Sheet" selection in the New Sheets section of the menu is only for <span style="text-decoration: underline;">applying to certify a new cal course</span>.</p><p>After creating a new a road course in the system, if you are using&nbsp;a pre-existing certified cal course, there is a field on the Bicycle Calibration Data Sheet for both the pre-calibration and the post-calibration forms where the Cert ID of the existing cal course is&nbsp;entered. You will also need to specify the length of the calibration course and the measurement unit. <em>See the example below.</em></p><div class="gs"><div class="ii gt a3s aXjCH" id=":4zb"><div class="yj6qo">&nbsp;<img src="files/mceclip0.png" /></div><div class="adL">&nbsp;</div></div><div class="hi">&nbsp;</div></div><p>"</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     
@@ -256,8 +282,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#11 &bull; 10/3/19 @ 12:25 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>I'm still not clear on the distinction between the fields for "calibration course used" and "calibration course certification code." The learning site&nbsp;isn't helping me on this, either.&nbsp;Anyway, I've looked at several course apps that show these conflicting pieces of information. Here are screen shots from the latest to show what I'm seeing:<a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600721158337169496/filePointer/600862217232638869/fodoid/600862217232638864/imageType/LARGE/inlineImage/true/Cal%2520course%2520listed.png" title="Cal course listed"><img alt="Cal course listed" class="inline-attachment" height="337" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600721158337169496/filePointer/600862217232638869/fodoid/600862217232638864/imageType/MEDIUM/inlineImage/true/Cal%2520course%2520listed.png" title="Cal course listed" width="600" /></a><a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600721158337169496/filePointer/600862217232638870/fodoid/600862217232638865/imageType/LARGE/inlineImage/true/No%2520cal%2520course%2520listed.png" title="No cal course listed"><img alt="No cal course listed" class="inline-attachment" height="337" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600721158337169496/filePointer/600862217232638870/fodoid/600862217232638865/imageType/MEDIUM/inlineImage/true/No%2520cal%2520course%2520listed.png" title="No cal course listed" width="600" /></a></p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/600862217232638869">Cal course listed.png</a>, <a href="files/600862217232638870">No cal course listed.png</a></div>
+                        <p>I'm still not clear on the distinction between the fields for "calibration course used" and "calibration course certification code." The learning site&nbsp;isn't helping me on this, either.&nbsp;Anyway, I've looked at several course apps that show these conflicting pieces of information. Here are screen shots from the latest to show what I'm seeing:<a class="gallery-image" href="files/Cal%20course%20listed.png" title="Cal course listed"><img alt="Cal course listed" class="inline-attachment" height="337" src="files/Cal%20course%20listed.png" title="Cal course listed" width="600" /></a><a class="gallery-image" href="files/No%20cal%20course%20listed.png" title="No cal course listed"><img alt="No cal course listed" class="inline-attachment" height="337" src="files/No%20cal%20course%20listed.png" title="No cal course listed" width="600" /></a></p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Cal%20course%20listed.png" target="_blank"><img src="files/Cal%20course%20listed.png" alt="Cal course listed.png" class="attachment-thumb" title="Cal course listed.png"></a><a href="files/No%20cal%20course%20listed.png" target="_blank"><img src="files/No%20cal%20course%20listed.png" alt="No cal course listed.png" class="attachment-thumb" title="No cal course listed.png"></a></div></div>
                       </div>
                     </article>
                     

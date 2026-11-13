@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019973470">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 4/26/08 @ 6:38 AM</span>
                       </div>
                       <div class="post-body">
                         <b>Pete's calibrations using John Disley's solid tire</b><br /><br />Each year when I check the London Marathon course I use the same bike, provided by John Disley. It has a Suretrak solid tire. Weather conditions have been generally similar each year.<br /><br />All calibrations shown are in counts per kilometer, all using a JO or, in 2008, a JR counter with a gear ratio of 23.636363… counts per revolution.<br /> <br />2002 10970.12<br />2003 10970.96<br />2004 10969.15<br />2005 10974.09<br />2006 10973.62<br />2007 10975.97<br />2008 10975.81<br /><br />This is posted for what interest it may have. I draw no universal conclusions.

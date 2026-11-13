@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020007919">
                       <div class="post-header">
                         <span class="post-author">jimgerweck</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/12/13 @ 10:24 AM</span>
                       </div>
                       <div class="post-body">
                         The saying goes it's an ill wind that blows nobody good. Here's a measurement proof of that.<br /><br />When Hurricane Sandy hit the East Coast in November, the storm surge flooded lower Manhattan. The Battery Park Underpass, which the NYC Half Marathon passes through at the 12-mile point, was damaged, and repairs are being conducted every evening. That made it easy (and much safer) for us to ride through it to measure last week, especially since the entire tunnel is basically a sweeping lefthand turn and cars can only see a little ways ahead as they pass through. When we did the original measurement last winter I kept waiting for someone to plow into the back of our escort vehicles. This year, it was eerily quiet in there.<br />Here's a shot of Dave Katz taken last night when he went back to mark the "To Go" points. Road closures allow us to ride with relative impunity - it's a nice change, especially in NYC.
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/585516546020037994">katztunnel.jpg</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/katztunnel.jpg" target="_blank"><img src="files/katztunnel.jpg" alt="katztunnel.jpg" class="attachment-thumb" title="katztunnel.jpg"></a></div></div>
                       </div>
                     </article>
                     

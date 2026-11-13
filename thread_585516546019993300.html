@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019993300">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/26/11 @ 11:16 AM</span>
                       </div>
                       <div class="post-body">
                         After the recent discussion on map drawing software, it occurred to me that it might be a good idea to create a map template that new measurers could use to make their maps.<br /><br />When David Reik mentioned OpenOffice, it seemed like the perfect environment for such a map template, since it is free software that works on both Windows and Macintosh PCs.<br /><br />With that in mind, I have created a map template using the OpenOffice Draw program. It includes all the elements necessary for a certification map, including example roads, course route, mile marks, mile mark descriptions, etc.<br /><br />David Reik and Duane Russell provided many helpful suggestions, corrections and comments during development, but it would be equally helpful to get the same from others as well.<br /><br />The map template and instructions are located at<br /><br /><a href="http://www.dukerdog.com/USATF/Measurer_Tools/" target="_blank">http://www.dukerdog.com/USATF/Measurer_Tools/</a>

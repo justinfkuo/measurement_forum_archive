@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020031328">
                       <div class="post-header">
                         <span class="post-author">davidkatz</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 10/31/17 @ 9:11 AM</span>
                       </div>
                       <div class="post-body">
                         Today is the last day to register (with the discount) for the USATF Annual Meeting.<br />This year's RRTC Meeting will be held on Saturday December 2 9:30 - 5 pm in Columbus, OH<br /><a href="http://www.usatf.org/Events---Calendar/2017/2017-Annual-Meeting/Registration-Information.aspx" target="_blank">http://www.usatf.org/Events---...ion-Information.aspx</a><br /><br />We will be rolling out a new online certification protocol. More to come in the next weeks + the agenda!

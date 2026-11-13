@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019994622">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/1/11 @ 9:37 AM</span>
                       </div>
                       <div class="post-body">
                         There's no reason to believe your counter isn't working properly, but I like to do the simple test shown below every now and then just to make sure. All it checks is that two fairly long rides of N wheel revolutions will result in exactly the same number of counts. This should always be the case regardless of road surface or tire pressure.<br /><br />1) Roll your bike forward until the valve stem of the front wheel is next to the ground. Record the counts on your counter. Call it count_A.<br />2) Ride your bike until the counter reads (count_A + 20000).<br />3) Roll the bike forward until the valve stem is next to the ground. Record the counts shown as count_B.<br />4) Ride your bike again until the counts shown is [count_B + (count_B - count_A)]. The valve stem should again be next to the ground.

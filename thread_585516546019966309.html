@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019966309">
                       <div class="post-header">
                         <span class="post-author">sturiegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/29/07 @ 7:44 PM</span>
                       </div>
                       <div class="post-body">
                         I ran across a binary encoder at work, and noted that it has the ability to determine rotation. Like a JO counter, you could back up with this type of counter.<br /><br />Disks are available that will fit a bike wheel. All that's necessary is a circuit board that powers the encoder and provides a readout. The readout could be mounted to your handlebars.<br /><br />You can have anywhere from 64 to 2500 counts per revolution. I think 100 is sufficient.<br /><br />Pricing for the encoder and disk is less than the Veeder-Root counters currently used. Pricing for the circuit board and display remains to be seen.<br /><br />If there is sufficient interest, I will pursue this design. I plan to build a prototype regardless and put it in the hands of an experienced measurer, but it could be a while before it happens.

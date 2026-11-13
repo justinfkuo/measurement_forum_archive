@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019972462">
                       <div class="post-header">
                         <span class="post-author">jurgenschoch</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/12/08 @ 1:30 PM</span>
                       </div>
                       <div class="post-body">
                         Hi there,<br />May I introduce myself, I am the statistician of the German Ultramarathon Federation (DUV).<br />As such I compile a ultra marathon results database <a href="http://statistik.d-u-v.org/geteventlist.php" target="_blank">http://statistik.d-u-v.org/geteventlist.php</a>and ranking lists for various distances, which can also be filtered to display rankings of a certain country.<br /><a href="http://statistik.d-u-v.org/overview_intbestlist.php" target="_blank">http://statistik.d-u-v.org/overview_intbestlist.php</a>.<br />Currently there are more than 1150 complete result lists of worldwide ultra events in the years 2005-2008. <br /><br />I have a question regarding the record eligibilty of the course in Caumsett State Historic Park, Huntington, N.Y.<br />I could not find this course in the list of certifed courses, but maybe I was looking wrong.<br />Can I include the results of this race in the rankings?<br />Thanks for your support.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019947249">
                       <div class="post-header">
                         <span class="post-author">davecundy</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/24/04 @ 4:08 PM</span>
                       </div>
                       <div class="post-body">
                         In my role as an IAAF/AIMS area administrator, I have received a measurement report for approval. The pre calibration was done at 8am with temperature of 29C and post calibration was done at 5pm at 30C. WC = 11382 and FC = 11428. The measurer has made no comment or suggestion on why the post cal is 46 counts higher than the pre cal. I have gone back to him and asked for more information as I suspect a slow leak or, indeed, something more sinister. To date I've had no response.<br /><br />This is an IAAF/AIMS measurement and measurers almost always take the average of the WC and FC to calculate the Constant for the Day. This has been done in this case to adjust the course.<br /><br />Re-measurement of the course prior to the race is probably not an option (race in one country, measurer in another country). Depending on any answers from the measurer, my plan is to use the WC as the Constant for the Day and ask that the marathon course be lengthened by (46/2 x 42.195) 970 counts (approx 85m).<br /><br />Any other thoughts? Has anyone seen such a large calibration variation with minimal temperature change? <br /><br />Dave Cundy

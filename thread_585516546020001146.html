@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020001146">
                       <div class="post-header">
                         <span class="post-author">duanerussell</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/30/12 @ 2:50 PM</span>
                       </div>
                       <div class="post-body">
                         When mapping (or reviewing a map, if you are a Certifier) a calibration course, each endpoint must be described precisely. Ideally, there would be two measurements on an endpoint that is not immediately next to a landmark. If the landmark is away from the curb, there should be two measurements (one from each of two landmarks).<br /><br />The point of the description and measurement is to enable anyone to replace a lost nail. A description of "about 29 meters south of the stairs" is not anywhere close enough for a calibration course endpoint description. We adjust for temperature when we tape a course, which may move the point ½" or ¼". "About" has no place on a calibration map. Please make sure that all calibration maps have good, precise descriptions of each endpoint, so you or I could take a tape out and replace a lost nail.

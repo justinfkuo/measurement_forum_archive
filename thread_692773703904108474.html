@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-692773703904108474">
                       <div class="post-header">
                         <span class="post-author">oscarwagner</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 3/14/22 @ 3:12 AM</span>
                       </div>
                       <div class="post-body">
                         <p>In the battle for full service supremacy, I find I am being upscaled by measurers using those expensive Mag Nails.&nbsp; It is a good looking nail and I figure the city people are less likely to fool with it if it looks like a real survey marker.&nbsp; At 75, I am suffering from the Green Bananas Syndrome: i.e. I hate to pay a bunch for something I might not stay capable of using up.&nbsp; Does anyone have a&nbsp; cheap source for ChrisNik Mag Nails?&nbsp;</p>
@@ -190,8 +216,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#5 &bull; 3/28/22 @ 10:56 AM</span>
                       </div>
                       <div class="post-body">
-                        <p>We've been using PK and concrete nails with washers for years.&nbsp; I chip a depression in the blacktop deep enough that the nail head is below the road surface.&nbsp; Never lost a nail head.&nbsp; <a class="gallery-image" href="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/692773703904108474/filePointer/693055180266263534/fodoid/693055180266263526/imageType/LARGE/inlineImage/true/PK-Nail-Sketch.jpg" title="PK-Nail-Sketch"><img alt="PK-Nail-Sketch" class="inline-attachment" height="290" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/692773703904108474/filePointer/693055180266263534/fodoid/693055180266263526/imageType/MEDIUM/inlineImage/true/PK-Nail-Sketch.jpg" title="PK-Nail-Sketch" width="600" /></a>I attached a sketch.&nbsp; For concrete I use a star drill to make a hole about 1/2inch deep.&nbsp; I fill the hole with paint.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/693055180266263534">PK-Nail-Sketch.jpg</a></div>
+                        <p>We've been using PK and concrete nails with washers for years.&nbsp; I chip a depression in the blacktop deep enough that the nail head is below the road surface.&nbsp; Never lost a nail head.&nbsp; <a class="gallery-image" href="files/PK-Nail-Sketch.jpg" title="PK-Nail-Sketch"><img alt="PK-Nail-Sketch" class="inline-attachment" height="290" src="files/PK-Nail-Sketch.jpg" title="PK-Nail-Sketch" width="600" /></a>I attached a sketch.&nbsp; For concrete I use a star drill to make a hole about 1/2inch deep.&nbsp; I fill the hole with paint.</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/PK-Nail-Sketch.jpg" target="_blank"><img src="files/PK-Nail-Sketch.jpg" alt="PK-Nail-Sketch.jpg" class="attachment-thumb" title="PK-Nail-Sketch.jpg"></a></div></div>
                       </div>
                     </article>
                     

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -190,8 +216,8 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#5 &bull; 10/3/19 @ 2:32 PM</span>
                       </div>
                       <div class="post-body">
-                        <p>Did you check My Road Courses? Broomfield Trails 10k #3 is on that dashboard.&nbsp;<span style="color: #c0504d;">Course Returned. Reason:&nbsp;<strong>"Cert should be map"</strong></span></p><p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/600862217231641672/filePointer/601143692230346348/fodoid/601143692230346344/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p><p>&nbsp;</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/601143692230346348">mceclip0.png</a></div>
+                        <p>Did you check My Road Courses? Broomfield Trails 10k #3 is on that dashboard.&nbsp;<span style="color: #c0504d;">Course Returned. Reason:&nbsp;<strong>"Cert should be map"</strong></span></p><p><img src="files/mceclip0.png" /></p><p>&nbsp;</p>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/mceclip0.png" target="_blank"><img src="files/mceclip0.png" alt="mceclip0.png" class="attachment-thumb" title="mceclip0.png"></a></div></div>
                       </div>
                     </article>
                     

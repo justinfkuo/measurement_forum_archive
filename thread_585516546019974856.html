@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019974856">
                       <div class="post-header">
                         <span class="post-author">jaywight</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/21/08 @ 6:43 AM</span>
                       </div>
                       <div class="post-body">
                         This might be a follow up to the rolling tire characteristics thread, but I'll start a new thread and see where it takes us.<br /><br />This weekend I travelled to Peoria to participate in a measurement of the Illinois High School Association's state final cross-country course. The course is in a large park, is fairly flat, and is pretty much conducted entirely on grass.<br /><br />The team measured it a number of different ways- GPS, measuring wheel, steel tape, and calibrated bicycle.<br /><br />One of the other team members and I set out a 300 meter calibration course on an asphalt street north of the park. I calibrated my bicycle on it, and ended up with a constant of 11.08 counts per meter.<br /><br />Then I rode back to the park, and calibrated the bicycle on the first 300 meters of the race course, using the flags the taping crew had set out. This time the constant worked out to 10.9833 counts per meter.<br /><br />The difference in the numbers is 0.827%, or almost 40 meters over three miles. I decided the grass calibration was more representative of the situation and used those numbers to calculate the course distance. My numbers were consistent with those obtained with the steel tape.<br /><br />The question is why were the numbers so different. I ran into a similar issue early this spring measuring a course that had sections on paved paths and sections on crushed limestone paths. The paths had been frozen and began to thaw during the measurement, and the post-thaw numbers were not at all consistent with the pre-thaw numbers. I managed to get consistent numbers by measuring the course twice after it had thawed, but now I question exactly how accurate that was.<br /><br />My hypothesis is that the harder surfaces deform the front tire more than the softer ones do, and as a result the constant for the wheel is larger on the softer surface. Any thoughts on this?<br /><br />I kind of came away from the exercise believing that when measuring a cross-country course, the extra time and effort involved in measuring it with a steel tape might very well be worth it.

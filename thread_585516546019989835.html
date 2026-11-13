@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019989835">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/10/10 @ 5:29 PM</span>
                       </div>
                       <div class="post-body">
                         A measurer sent me his cal course map with the endpoints defined by straight line distances from 2 fixed objects on the side of the road. For example he measured from his PK nail to a lamppost just south of the nail, and to a lamppost just north of the nail. He didn't measure the distance along the direction of the road, but straight to the lamppost. A person trying to locate the nail (or where the nail used to be) would need to find the intersection of the arcs.<br /><br />When there are no landmarks actually on the road, this seems to me like a much more precise way of defining the endpoint location than giving the distance in a direction along the road.

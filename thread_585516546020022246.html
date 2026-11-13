@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020022246">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/29/15 @ 6:29 AM</span>
                       </div>
                       <div class="post-body">
                         Convert Windows 7 to Windows 10?<br /><br />I see that the free conversion is possible, but is it desirable?<br /><br />Has anyone tried it?<br /><br />I'm not computer adept and each change is usually traumatic for a while.<br /><br />I was hugely disappointed when I went from Windows XP to Windows 7. My main complaint was the way Windows 7 divided up my document tree, so that when I saved files they sometimes wound up in strange Windows directories instead of my preferred “My Documents” folder.<br /><br />Has anyone tried the conversion yet? If so, have you discovered a downside? Online commentary is somewhat optimistic, but my needs are very simple compared to those who use all the extra bells and whistles that I neither want nor need.

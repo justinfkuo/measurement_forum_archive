@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020001416">
                       <div class="post-header">
                         <span class="post-author">genenewman</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/6/12 @ 5:31 PM</span>
                       </div>
                       <div class="post-body">
                         After several years of not being able to get some problems fixed on the USATF we have now fixed most! A special thanks goes to Blake Facey for helping make all this possible.<br /><br />Here they are with the fixes!<br /><br />a. Any course with a 3 letter identifier would not show on the site by entering it that way , but would show when entering their Race Name. However, after entering the Race Name and you click on the map you used to get the following message:” invalid course Certification number”. This applied to the following foreign courses: Canada, Puerto Rico, Bermuda, Bahama and Jamiaca. Where Afghanistan and Somoa couldn't even be entered in our Database. <br /><br />problem fixed!<br /><br />b. Along the same idea. Some of our Certifiers use course Identifiers with dashes or small letters(like NC-12001-PH) which when entered as such would not show on the USATF site.<br /><br />All will show now, hence problem are fixed!<br /><br />c. There was a problem with the new USATF rule about separation and sanctioning being record eligible. Before when a course was separated by more than 30% it would state "wind dependent" for record eligible. Now any course 50% or less as the separation and has a USATF sanction is record eligible. It now states for record eligible "if the course is sanctioned". However,no courses that are more than 50% are wind dependent and will not be record eligible.<br /><br />Problem fixed!<br /><br />d. There was a problem with all courses that have expired as it's clear they are no longer record eligible, but the site used to state "record eligible" for any expired courses. Now it states not record eligible!<br /><br />problem fixed!

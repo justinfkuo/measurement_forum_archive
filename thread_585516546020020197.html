@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,10 +169,10 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020020197">
                       <div class="post-header">
                         <span class="post-author">robfrench</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 6/5/15 @ 12:36 PM</span>
                       </div>
                       <div class="post-body">
-                        Last weekend I measured out my first course. It's a one mile "lollipop" configuration, and I followed the advice posted in this discussion:<br /><br /><a href="https://measure.infopop.cc/eve/forums/a/tpc/f/69510622/m/5311047343?r=5311047343#5311047343" target="_blank">https://measure.infopop.cc/eve/...311047343#5311047343</a><br /><br />I am considering measuring again, start and finishing with the marks I laid down a week ago, not because I have to, or because I have doubts about the measurement, but because I am curious about the repeatability of measurements. And perhaps I'm overthinking things, but I find it easy to get wrapped up in the numbers and the specification of the methodology. <br /><br />I work in a world of motor vehicle fuel economy and emissions testing, data collection, and analysis, and I (and the auto companies) live and die by accuracy, repeatability, precision, and rounding (e.g., as a general rule, intermediate rounding is frowned upon unless there is a specific technical reason for doing so). My preference, for example, is to use ASTM rounding when rounding comes into play, but the manual doesn't specify a rounding protocol, meaning that someone else might take the same values and get different results. I also worry about such things as displaying results with a false sense of precision, e.g., are our techniques actually able to measure a 5,000 meter course to the millimeter? <br /><br />I have searched on a number of relevant terms, and read much about these issues, answering most of the questions that I have had. However, the one thing I am curious about is the measurement to measurement variability in race courses. There's much discussion about variability and required or desired tolerances in the back-to-back calibration taping, or calibration rides, or course measurements performed on the same day. <br /><br />What I am interested in knowing is the degree to which one certification-worthy measurement done on one day might differ from another measurement effort on another day. In other words, pretend the second measurement is a "confirmation" measurement. Were I to re-measure, I fully expect that I will not land at exactly the same place. I'd be surprised if I was within 1 cm, but this is why I'm asking you folks, since I don't have the breadth of measurement experience. What kind of variability would you expect to see?<br /><br />Thanks!
+                        Last weekend I measured out my first course. It's a one mile "lollipop" configuration, and I followed the advice posted in this discussion:<br /><br /><a href="thread_5311047343.html" target="_blank">https://measure.infopop.cc/eve/...311047343#5311047343</a><br /><br />I am considering measuring again, start and finishing with the marks I laid down a week ago, not because I have to, or because I have doubts about the measurement, but because I am curious about the repeatability of measurements. And perhaps I'm overthinking things, but I find it easy to get wrapped up in the numbers and the specification of the methodology. <br /><br />I work in a world of motor vehicle fuel economy and emissions testing, data collection, and analysis, and I (and the auto companies) live and die by accuracy, repeatability, precision, and rounding (e.g., as a general rule, intermediate rounding is frowned upon unless there is a specific technical reason for doing so). My preference, for example, is to use ASTM rounding when rounding comes into play, but the manual doesn't specify a rounding protocol, meaning that someone else might take the same values and get different results. I also worry about such things as displaying results with a false sense of precision, e.g., are our techniques actually able to measure a 5,000 meter course to the millimeter? <br /><br />I have searched on a number of relevant terms, and read much about these issues, answering most of the questions that I have had. However, the one thing I am curious about is the measurement to measurement variability in race courses. There's much discussion about variability and required or desired tolerances in the back-to-back calibration taping, or calibration rides, or course measurements performed on the same day. <br /><br />What I am interested in knowing is the degree to which one certification-worthy measurement done on one day might differ from another measurement effort on another day. In other words, pretend the second measurement is a "confirmation" measurement. Were I to re-measure, I fully expect that I will not land at exactly the same place. I'd be surprised if I was within 1 cm, but this is why I'm asking you folks, since I don't have the breadth of measurement experience. What kind of variability would you expect to see?<br /><br />Thanks!
                         
                       </div>
                     </article>
@@ -179,7 +205,7 @@ a:hover { text-decoration: underline; }
                         <span class="meta">#4 &bull; 6/5/15 @ 3:42 PM</span>
                       </div>
                       <div class="post-body">
-                        Thanks Gene, this helps.<BR><BR>I run into your final point about what not to do frequently in many different contexts and definitely understand the impact. Rounding and order of operations matters!<BR><BR>Assuming I do go re-measure, mostly for experience and my thirst for data, my inclination would be to use the second set of marks rather than the first. Normally, all other things being equal, there would be no technical reason to pick one over the other, as neither one is likely to be more accurate. But, with another measurement my experience will have increased by 100%, which might mean a more accurate result. Or, to be safe, I could choose to submit for certification the longer of the two.<BR><BR>There are two sources of error/judgment that have bothered me, and your input would be welcome. <BR><BR>The first is in measuring the calibration course with a steel tape. Let's say you have a 100 foot tape with 1/10 and 1/100 graduations, as I do. You stretch the tape and find that your pen mark on the masking tape lies between two 1/100 marks, e.g., between 77.63 and 77.64 feet. What do you do? Do we minimize the error by recording it as 77.635? Or do we use our judgment and guess that it's actually 77.633 or 77.636, which seems to me to be stretching our visual and mental capability. <BR><BR>The second issue is really the same thing, but with partial counts on the Jones Counter. Is it acceptable to submit measurements to the nearest half count, or is that met with raised eyebrows? (I did find a discussion here: <BR><BR><a href="https://measure.infopop.cc/eve/forums/a/tpc/f/69510622/m/9901049892?r=2461097992#2461097992" target="_blank">https://measure.infopop.cc/eve/...461097992#2461097992</a><BR><BR>where Mark Neal suggested that we could read accurately to the 0.5 counts, and Duane Russell suggesting reading accuracy of 0.25 clicks, so I guess I'm looking for confirmation of what is desirable and what is acceptable.) (Your example kind of gets to this by rounding up to get the 5km mark, acknowledging that we have no way of "seeing" a 0.7805 click.)<BR><BR>Thanks for joining me on my foray down into the weeds!<BR><BR>Rob
+                        Thanks Gene, this helps.<BR><BR>I run into your final point about what not to do frequently in many different contexts and definitely understand the impact. Rounding and order of operations matters!<BR><BR>Assuming I do go re-measure, mostly for experience and my thirst for data, my inclination would be to use the second set of marks rather than the first. Normally, all other things being equal, there would be no technical reason to pick one over the other, as neither one is likely to be more accurate. But, with another measurement my experience will have increased by 100%, which might mean a more accurate result. Or, to be safe, I could choose to submit for certification the longer of the two.<BR><BR>There are two sources of error/judgment that have bothered me, and your input would be welcome. <BR><BR>The first is in measuring the calibration course with a steel tape. Let's say you have a 100 foot tape with 1/10 and 1/100 graduations, as I do. You stretch the tape and find that your pen mark on the masking tape lies between two 1/100 marks, e.g., between 77.63 and 77.64 feet. What do you do? Do we minimize the error by recording it as 77.635? Or do we use our judgment and guess that it's actually 77.633 or 77.636, which seems to me to be stretching our visual and mental capability. <BR><BR>The second issue is really the same thing, but with partial counts on the Jones Counter. Is it acceptable to submit measurements to the nearest half count, or is that met with raised eyebrows? (I did find a discussion here: <BR><BR><a href="thread_9901049892.html" target="_blank">https://measure.infopop.cc/eve/...461097992#2461097992</a><BR><BR>where Mark Neal suggested that we could read accurately to the 0.5 counts, and Duane Russell suggesting reading accuracy of 0.25 clicks, so I guess I'm looking for confirmation of what is desirable and what is acceptable.) (Your example kind of gets to this by rounding up to get the 5km mark, acknowledging that we have no way of "seeing" a 0.7805 click.)<BR><BR>Thanks for joining me on my foray down into the weeds!<BR><BR>Rob
                         
                       </div>
                     </article>

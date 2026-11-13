@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020004785">
                       <div class="post-header">
                         <span class="post-author">justinkuo</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/22/12 @ 4:55 AM</span>
                       </div>
                       <div class="post-body">
                         I have been using GIMP for converting certificates and maps into PNG files for posting on the USATF Certified Course database. The files for the database must be PNG files of 2550 x 3300 pixels and must have a size of less than 400 kB. GIMP is the free image editing program that is roughly equivalent to Adobe Photoshop or Jasc Paintshop Pro. GIMP is available at <a href="http://www.gimp.org" target="_blank">www.gimp.org</a>.<br /><br />I put together a short slide show with instructions on how to use GIMP to create a PNG file. <br /><br /><a href="https://docs.google.com/a/usatfne.org/presentation/pub?id=1UUgrcS2rKLG8cJb3Bi2BNf0hwpo0ttqJunxQ_mKGDhQ&start=false&loop=false&delayms=3000#slide=id.p" target="_blank"><img class="inline_image" src="http://usatfne.org/measurement/i/gimp-how-to-convert-certificate-to-png-file_tn.png"></img></a> <br /><br />There are plenty of other methods to accomplish the same. For example, Adobe Acrobat Pro allows one to export a PDF file to PNG, JPG, TIFF, etc. <a href="http://www.imagemagick.org" target="_blank">ImageMagick</a>, the command line utility, will convert almost any image file into another format.<br /><br />Thank you. -- Justin

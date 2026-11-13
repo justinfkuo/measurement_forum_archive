@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019962960">
                       <div class="post-header">
                         <span class="post-author">neville</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/4/07 @ 8:55 AM</span>
                       </div>
                       <div class="post-body">
                         <b>Procedure</b><br /><br /><b><span class="ev_code_BLUE">For every increase in pressure of one division from calibration, subtract two meters from a 5000-m course.</span></b><br /><br />1. One division refers to that on outer scale of Accu-Gage (20 kPa).<br />2. For one division decrease, add two meters.<br /><br /><br /><b>Discussion</b><br /><br />I formulated the above simplified procedure in response to recent comments that the method was too difficult to understand, and that a tire history would have to be accumulated before it could be applied. Error of simplification is probably very small compared with other errors involved in measurement.<br />I do not like the use of meters in course measurement because it is unsophisticated and unnecessarily complicated. However, I realize I have not convinced anyone else of these facts, and the quoting of meters in the above procedure does allow all measurers to readily incorporate pressure monitoring into their own traditional procedure. Ideally pressure readings should be taken at the mid-point of rides, but for 5-km courses it probably makes little difference if they are taken at the beginning or the end.<br />Measurers can easily test the procedure by riding a calibration course early in the day and riding the same number of counts over the course a few hours later. If the course is 400 meters and pressure is one division higher on the second ride, it will end 16 cm (200x0.4/5) beyond the end of the course.

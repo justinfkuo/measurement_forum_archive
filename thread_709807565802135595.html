@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-709807565802135595">
                       <div class="post-header">
                         <span class="post-author">alanjones</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/18/23 @ 12:15 PM</span>
                       </div>
                       <div class="post-body">
                         <p>Most of us know this history but there are some details here that are interesting. In particular, it seems Pheidippides never did run from Marathon to Athens, announced the victory over the Persians, and then dropped dead. Read <a rel="noopener noreferrer" href="https://www.nationalgeographic.com/history/article/marathon-ancient-history-modern-origins?rid=B0CEA3FAD43B88066B2CFAA4D3F6E56D&amp;cmpid=org=ngp::mc=crm-email::src=ngp::cmp=editorial::add=Daily_NL_Thursday_Science_20230518" target="_blank">about it here</a>.</p>
@@ -169,7 +195,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <p>Sorry about that. I have fetched the article, converted it to a PDF and posted here.</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/709807565848318393">Who invented the marathon.pdf</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Who%20invented%20the%20marathon.pdf" target="_blank" class="attachment-file">📎 Who invented the marathon.pdf</a></div></div>
                       </div>
                     </article>
                     

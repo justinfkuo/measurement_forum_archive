@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019987922">
                       <div class="post-header">
                         <span class="post-author">chrismontgomery</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/8/10 @ 8:12 AM</span>
                       </div>
                       <div class="post-body">
                         Hi all. I am relatively new to measuring courses compared to most here, but have been "unofficially measuring" small local races for a couple years where I live, using the USATF standards.<br /><br />I have what might seem an obvious question to some, but would like to get input on it. I have used a 1000 meter course before, and the math on that was easy as it relates to the counts per kilometer when actually measuring the course.<br /><br />What if you use a 300 meter course? If I do my calibrations and at the end of all of the procedures I come out with a working constant of say 2800 counts for 300 meters, how does that get turned into what the count should be for a kilometer. Is it simply 300 meters is 2800 counts, 100 meters is 933.333333 counts, and therefore 933.33333 x 10 = 9333.3333.<br /><br />Therefore 9333.33333 counts = 1000 meters?<br /><br />Again this might be obvious, but just want to make sure I'm going about this the right way.<br /><br />Thanks in advance,<br />Chris

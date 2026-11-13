@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019992816">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/20/11 @ 4:53 AM</span>
                       </div>
                       <div class="post-body">
                         I had occasion to certify an indoor track in Ada, Ohio, for the Polar Bear Marathon. A potential contestant wanted to use it to qualify for Boston.<br /><br />This morning's Wall Street Journal mentioned it in their article on the subject.<br /><br /><a href="http://online.wsj.com/article/SB10001424052748704515904576076343670470456.html?KEYWORDS=indoor+marathon" target="_blank">Indoor marathons</a><br /><br />I have no idea how laps were counted. Given that there had to be few competitors, electronic counting was seen to be prohibitively expensive, leaving more primitive options.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020031139">
                       <div class="post-header">
                         <span class="post-author">genenewman</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/21/17 @ 3:07 PM</span>
                       </div>
                       <div class="post-body">
                         All,<br /><br />The following url --&gt; <a href="http://www.onthegomap.com" target="_blank">www.onthegomap.com</a><br /><br />This will give you a way to see the distance in meters or miles from the start to the finish. if the road has bends, no worry it will adjust for that. It will also show elevation changes along the course.<br /><br />Enjoy -Gene
@@ -367,7 +393,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <p>I second Mark's thanks.&nbsp;</p><p>I generally plot out the draft route for my RDs using Google Earth or GMaps (milermeter), take a screenshot of the route, then drop the screen shot into Corel Draw. Then, I trace the route with colored dotted arrow lines (sample attached). I save the image as a PDF and email it. This seems to do the job.</p><p>Of course, not everyone has CorelDraw or Adobe Illustrator (comparable programs). I have found Open Office Draw less friendly to create this kind of image. Where PlotARoute will really come in handy is when I am proposing a multiple-loop course, or one in which the same path is traversed more than once. A great tool to have. Thanks, Jeff!</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/590725800965430082">T Chase 10K &amp; 2 Mile Draft Map 2018.pdf</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/T%20Chase%2010K%20%26%202%20Mile%20Draft%20Map%202018.pdf" target="_blank" class="attachment-file">📎 T Chase 10K &amp; 2 Mile Draft Map 2018.pdf</a></div></div>
                       </div>
                     </article>
                     

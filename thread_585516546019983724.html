@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019983724">
                       <div class="post-header">
                         <span class="post-author">kenhardwick</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 9/13/09 @ 7:34 AM</span>
                       </div>
                       <div class="post-body">
                         Just a thought after using a calibration course with a length of 500 meters...<br /><br />Some calibration course are measured to a set length like 500 meters or 1000 meters. In order to make on-side calculations even easier, seems on could make the length of the calibration course such that it would include the 1.001 adjustment factor, then the calculation of the constant would even easier to do...see table below.<br /><br /><br /><img align="left" src="http://www.kenhardwick.com/calibration.bmp"></img>

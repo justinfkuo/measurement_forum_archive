@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020013501">
                       <div class="post-header">
                         <span class="post-author">jimgerweck</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/14/14 @ 8:24 AM</span>
                       </div>
                       <div class="post-body">
                         Saw this on Facebook this morning. Congrats Rick!<br />"At Get Lucky! 7K & Triple 7K Rick Recker will celebrate the completion of his 2500th road race! Running approximately 50 races a year for 50 years- Rick Recker continues to be a leader and an inspiration to the Twin Cities running community. FYI his PR in the one mile is 4:34 and in the Marathon distantce 2:38! Thanks Rick for all the years of inspiration and contributions to the running community and for sharing this MILESTONE with all of US at the 2014 Get Lucky! Friends of Rick- be sure to mark your calendars and join him at Get Lucky!"
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/585516546020038073">recker.jpg</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/recker.jpg" target="_blank"><img src="files/recker.jpg" alt="recker.jpg" class="attachment-thumb" title="recker.jpg"></a></div></div>
                       </div>
                     </article>
                     

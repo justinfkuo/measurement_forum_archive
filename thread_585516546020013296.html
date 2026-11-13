@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020013296">
                       <div class="post-header">
                         <span class="post-author">bobthurston</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/22/14 @ 3:52 PM</span>
                       </div>
                       <div class="post-body">
                         What is the current understanding of how elevation data can be used to assess course difficulty? I recall that someone suggested a formula for this, but it was quite some time ago. <br /><br />I am asking about this because I got talked into participating on a panel with the aim of ranking or comparing local courses for the purpose of assisting in area runner rankings. <br /><br />This is against my better judgement; I told them the best way is to collect enough results so that you could compare times achieved by the same runners on the various courses. But since I don't yet have that information I would like to know if there is a valid (or possibly valid!) way to use elevation data to do this.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-615782005180051848">
                       <div class="post-header">
                         <span class="post-author">guidobrothers</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 2/19/20 @ 2:21 PM</span>
                       </div>
                       <div class="post-body">
                         <p>I have a course that has been submitted 8 times, returned 7.&nbsp; There are a myriad of problems, missing data, collaborator data used in the wrong place, extra copies of maps and one attachment for the map and another (extra data) for the 2nd map sheet.&nbsp; I think the fact that we are 2 riders is beyond the capability of the system.&nbsp; Is anyone else collaborating?&nbsp; Is anyone else having problems with the online system?</p>
@@ -169,7 +195,7 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <p>No, it's not one of the choices available to me.&nbsp; See attached list</p>
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/616485694593814885">Choices.pdf</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/Choices.pdf" target="_blank" class="attachment-file">📎 Choices.pdf</a></div></div>
                       </div>
                     </article>
                     

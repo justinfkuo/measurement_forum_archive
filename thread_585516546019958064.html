@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019958064">
                       <div class="post-header">
                         <span class="post-author">jimgerweck</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 8/14/06 @ 7:39 PM</span>
                       </div>
                       <div class="post-body">
                         I received the following inquiry from a certifier:<br /><br /> <blockquote class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">On a an application for a calibration course certification, the applicant had hired an engineering firm to measure the course (half mile). The method of measurement was listed as 'Survey Grade GPS Receiver.' I hadn't heard of this device, and don't want to plunge forward with the certifications if you feel there's any question about the method. Do you know if this is acceptable?</div></blockquote><br /><br />I did some digging around and found the following:<br /><br /><blockquote class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">Survey-grade GPS units are used for surveying tasks that require very high accuracy (within 1 cm), such as bridge construction. Survey-grade GPS units use differential correction for highest accuracy.</div></blockquote><br /><br /> <a href="http://kellylab.berkeley.edu/SODmonitoring/GPS.htm" target="_blank">Global Positioning Systems</a> <br /><br />These things aren't cheap; $20K is listed as the price.<br /><br />The question remains: is this close enough for government (i.e. RRTC) work? For a course measurement, I'd say yes; cal course, maybe?

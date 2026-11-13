@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019946862">
                       <div class="post-header">
                         <span class="post-author">johndehaye</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 11/4/04 @ 1:57 PM</span>
                       </div>
                       <div class="post-body">
                         I&#x27;ll be measuring a 50-kilometer outback course on a Rails-to-Trails path this weekend. Since the out and back segments are identical, is it acceptable for the first measurement to be the out segment and the second measurement to be the back measurement? If so it would save a second 50-km ride. That would certainly be acceptable if the course was a 25-km point-to-point so I believe it should be ok for the 50 km.

@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019957206">
                       <div class="post-header">
                         <span class="post-author">davidreik</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 5/20/06 @ 9:36 AM</span>
                       </div>
                       <div class="post-body">
                         New WMA (formerly WAVA) Age Grade Tables<br /><br />If you look at race results from around the country, you'll sometimes see "Age Grade Percentages" listed for each performance. The basic idea is to make it easier to compare performances from different events, by males and females of different ages, by showing how each performance relates to what is, or could be, the record for the athlete's age and sex. If you run a performance with an age grade of 60%, the theoretical best possible performance for your age and sex is approximately 60% of the time you ran. One way to get the most-recent tables to compute your own Age Grades is to go to <a href="http://jick.net/%7Ejess/track/mtf/index.php" target="_blank">http://jick.net/~jess/track/mtf/index.php</a> then click on "2006 Tables" then click on "Microsoft Excel File." The data were assembled by Rex Harvey of the WMA which used to be the WAVA.<br /><br />The now-defunct national USATF road running results website used to display Age Grade percentages.<br /><br />David Reik, davidreik@comcast.net

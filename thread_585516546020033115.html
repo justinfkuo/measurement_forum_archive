@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,11 +169,11 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546020033115">
                       <div class="post-header">
                         <span class="post-author">alanjones</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 1/25/18 @ 6:17 PM</span>
                       </div>
                       <div class="post-body">
                         These are photos of the first Jones Counter built in 1971. The gear was attached to the front axle like we do today but the counter was attached to the fork. Note the Patent dates: 1896 and 1911!
-                        <div class="attachments"><strong>Attachments:</strong> <a href="files/585516546020038219">counter2.tif.jpg</a>, <a href="files/585516546020038228">counter1.tif.jpg</a></div>
+                        <div class="attachments"><strong>Attachments:</strong><div class="attachment-gallery"><a href="files/counter2.tif.jpg" target="_blank"><img src="files/counter2.tif.jpg" alt="counter2.tif.jpg" class="attachment-thumb" title="counter2.tif.jpg"></a><a href="files/counter1.tif.jpg" target="_blank"><img src="files/counter1.tif.jpg" alt="counter1.tif.jpg" class="attachment-thumb" title="counter1.tif.jpg"></a></div></div>
                       </div>
                     </article>
                     

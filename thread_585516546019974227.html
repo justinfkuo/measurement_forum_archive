@@ -121,6 +121,32 @@ a:hover { text-decoration: underline; }
   border-top: 1px dashed var(--border);
   font-size: 0.88rem;
 }
+.attachment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.attachment-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.attachment-file {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+.attachment-file:hover {
+  background: var(--border);
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -143,7 +169,7 @@ a:hover { text-decoration: underline; }
                     <article class="post-card" id="post-585516546019974227">
                       <div class="post-header">
                         <span class="post-author">Admin</span>
-                        <span class="meta">#1 &bull; Unknown date</span>
+                        <span class="meta">#1 &bull; 7/3/08 @ 8:20 AM</span>
                       </div>
                       <div class="post-body">
                         As you all know I have done a number of GPS tests for accuracy. Most of my tests have been with my bike mounted Garmin 60csx, but I've also done a few tests with a friend's Garmin Forerunner 205. My tests with the 60csx show an average difference of about 0.2% when compared to Jones counter measurements, with the error never exceeding 0.4% in any test. Three tests done while wearing the 205 while biking a course showed only slightly higher differences.<br /><br />Scott Hubbard suggested that I should wear the 205 to see what effect the running motion has on results. I did this for one test and got a difference of 0.24%, which was in the middle of the three other tests I did with the 205, all performed while biking. Up until now, that was the only test I performed while running with a 205.<br /><br />This all leads to my next experiment. I help organize a corporate competition that includes 5k and 10k road runs. I measured the courses for these two runs, but since they weren't being USATF certified I did not follow all the usual certification requirements. More on that later.<br /><br />Before the race all the runners were asked to report their GPS measurements of the course to me, if they were wearing a GPS of course. 12 runners reported their measurements in the 10k and 11 in the 5k. 6 people reported in both races. The results are shown below.<br /><img src="http://www.dukerdog.com/5k_GPS_1.jpg"></img> <br /><img src="http://www.dukerdog.com/10k_GPS_1.jpg"></img> <br /><br />After seeing these results I worried about my original measurement. Because there was no good place to lay out a long calibration course, I used a 100m course and recorded my measurement with the Jones. I decided to remeasure both courses, and this time I managed to find a spot for a 160m cal course and used rim readings rather than Jones counts when calibrating. The remeasurement of the courses resulted in:<br /><br />5k - 4987 meters<br />10k - 9996 meters<br /><br />During the measurements I also measured the courses with my bike-mounted 60csx. I also ran the 5k course while wearing a Garmin 205 and carefully following the SPR. The charts below are adjusted for the new Jones counter measurements of the course and also include the results of the 60csx and my run with the 205.<br /><br /><img src="http://www.dukerdog.com/5k_GPS_4.jpg"></img> <br /><img src="http://www.dukerdog.com/10k_GPS_4.jpg"></img> <br /><br />I have not yet run the 10k course with the 205, but after I do I will update the chart above.<br /><br />Part of the error seen in the "runner-held" GPS measurements can be explained by runners not following the SPR, but it seems unlikely that is the source of all the error, especially since my 5k run, which did follow the SPR, was still more than 60 meters over the Jones measurement.<br /><br />This is significantly more error than I've seen with the 205 while wearing it when riding my bike. It's possible the Forerunner GPS's are not as accurate when they are worn while running. All of this has convinced me to do more tests of the Forerunner while running, since I still have only two such measurements when I know the SPR was followed.<br /><br />But regardless of whether it is caused by not following the SPR or by GPS inaccuracy, it is clear that it is quite common for runners to get GPS results that are 1-2% longer than the race course they are measuring.
