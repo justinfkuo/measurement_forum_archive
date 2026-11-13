@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A look at the article “Vertical Accuracy of the National Elevation Dataset,... - Measurement Forum Archive</title>
+  <style>
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --badge-bg: #eff6ff;
+  --badge-text: #1e40af;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1120;
+    --surface: #111827;
+    --surface-alt: #1e293b;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border: #1e293b;
+    --accent: #60a5fa;
+    --accent-hover: #93c5fd;
+    --badge-bg: #1e3a8a;
+    --badge-text: #dbeafe;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.topbar-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand h1 { margin: 0; font-size: 1.25rem; }
+.brand p { margin: 0.15rem 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.search-form { display: flex; gap: 0.5rem; }
+.search-form input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  min-width: 230px;
+}
+.search-form button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container { max-width: 1040px; margin: 1.5rem auto; padding: 0 1.25rem 3rem; }
+.breadcrumbs { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; }
+.banner {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
+  margin-bottom: 0.9rem;
+}
+.card-title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.3rem; }
+.meta { font-size: 0.85rem; color: var(--text-muted); }
+.post-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 1.1rem;
+  overflow: hidden;
+}
+.post-header {
+  background: var(--surface-alt);
+  padding: 0.65rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+.post-author { font-weight: 700; }
+.post-body { padding: 1.25rem; overflow-wrap: break-word; }
+.post-body img { max-width: 100%; height: auto; }
+.attachments {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <h1><a href="index.html" style="color: inherit;">Measurement Forum Archive</a></h1>
+        <p>Read-only historical archive of measure.infopop.cc</p>
+      </div>
+      <form class="search-form" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search threads & posts..." aria-label="Search archive">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <main class="container">
+    <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_0.html">Forum Area #0</a> &rsaquo; A look at the article “Vertical Accuracy of the National Elevation Dataset,...</nav>
+    <h2>A look at the article “Vertical Accuracy of the National Elevation Dataset,...</h2>
+                    <article class="post-card" id="post-585516546019995163">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#1 &bull; Unknown date</span>
+                      </div>
+                      <div class="post-body">
+                        A look at the article “Vertical Accuracy of the National Elevation Dataset,” cited in my post of August 13, reveals that the relative vertical accuracy of two points is given as 1.64 meters, with a standard deviation of 2.08 meters. This indicates in my mind that I can expect an error averaging about 5 feet (for elevation difference of two points)if I use Google Earth or any product depending on the base USGS data.<BR><BR>The only time this is likely to be a problem is when the drop of a course is near 1 m/km. If I measure a 10k, and get an elevation difference of 9 meters using USGS data through Google Earth, that’s great. But if the error of the method amounts to 1.6 meters, is my course really within record limits?<BR><BR>Moreover, suppose a record is set on the course. The validator looks at the drop. If he uses Google Earth there may not be a problem. Or there may – I don’t know. If one reads an elevation using Google Earth, will one get the same value six months later? <BR><BR>I would hate to see us get into an SCPF for Drop and Separation. It would be a can of worms. Instead, I’d suggest that if one is really concerned, it would be wise to print out a screen shot of the Google Earth areas of start and finish. These, unless proven wrong, would be the readings that count. And proof of wrongness would require either a level survey or use of Google earth with an allowance for error of 4 or 5 meters.<BR><BR>This is a tiny problem and I see no reason to turn the world upside down over it.
+                        
+                      </div>
+                    </article>
+                    
+  </main>
+  
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>An electronic version of Jones Counter ideally would need to count forwards... - Measurement Forum Archive</title>
+  <title>Demo of the e-Jones Counter prototype - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; An electronic version of Jones Counter ideally would need to count forwards...</nav>
-    <h2>An electronic version of Jones Counter ideally would need to count forwards...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Demo of the e-Jones Counter prototype</nav>
+    <h2>Demo of the e-Jones Counter prototype</h2>
                     <article class="post-card" id="post-585516546020004881">
                       <div class="post-header">
                         <span class="post-author">mikesandford</span>
@@ -147,6 +147,83 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         An electronic version of Jones Counter ideally would need to count forwards and backwards with same counts/revolution as the mechanically geared model. This would make it very easy to check that the count on e-Jones remains in synch with the count on a mechanically geared Jones. By operating both counters in parallel the measurer would be able to detect a failure in either the mechanical Jones (a rare but not unknown occurrence), or in the new e-Jones Counter (important for a new measuring device). <br /><br />Today I demonstrated a prototype of the e-Jones Counter which meets the above requirements at least over a limited range of about 30 metres with my old push bike turned upside down and the wheel rocked back and forth by hand.<br /><br />e-Jones Counter zeroed when the Jones Counter read 10000<br /><br /> <img class="inline_image" src="http://coursemeasurement.org.uk/e-Jones/e-JonesCounter-0.jpg"></img> <br /><br />Move wheel backwards and forwards- no counts lost: <br /><br /><img class="inline_image" src="http://coursemeasurement.org.uk/e-Jones/e-JonesCounter-12.jpg"></img> <br /><br />Continue backwards and forwards reaching a maximum of 326 counts: <br /><br /><img class="inline_image" src="http://coursemeasurement.org.uk/e-Jones/e-JonesCounter-326.jpg"></img> <br /><br />Turn wheel backwards to reach zero:<br /><br /><img class="inline_image" src="http://coursemeasurement.org.uk/e-Jones/e-JonesCounter-0_0.jpg"></img> <br /><br />Conclusion: The e-Jones Counter prototype tracks perfectly the count on the Jones Counter.<br /><br />Tomorrow I am going to have my electrically assisted measuring bike fitted with suitable mounting points for the e-Jones Counter. This will involve having a suitable new front wheel built to carry the sensor targets. Once this has been done I can start to package my prototype electronics in a form suitable for handle bar mounting, and test on the road at higher measuring speeds.<br /><br />The e-Jones Counter with its large LCD display will be capable of providing the following characteristics:<br /> <ul type="SQUARE"><li>Easily visible on the handle bars - no more peering at an axle mounted Jones<br /></li><li>Since the count is held in the electronics it will be possible to provide an additional readout on the LCD directly in metres or miles (using the working constant) with a resolution of 1 e-Jones count (0.1 metres)<br /></li><li>There is room on the LCD to display the intermediate distances in metres, or a count down in metres to the next split location.<br /></li><li>The e-Jones counts at the splits could be stored electronically for readout after the measurement into a spreadsheet ready to be used for the measurement report<br /></li></ul>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004892">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#2 &bull; 9/25/12 @ 7:20 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Okay, Mike, now how about some details?<BR><BR>When you reverse the direction of rotation, did you have to flip a switch on the electronic counter for it to reverse?<BR><BR>What kind of interface is needed to get the various readouts you mention?  <BR><BR>How difficult will this be to wire everything together?<BR><BR>I like everything you have presented here.  I currently use a VR electronic counter for my "approaching-split" counts, but have not tried to set it to mimic the Jones Counter (23 2/3 clicks per revolution, I believe).  That is a good idea, and I may try to re-set the electronic to mimic the Jones.  Makes sense to do so.<BR><BR>Thanks for your efforts, as this could be a great tool for those of us with less-than-perfect eyesight!
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004897">
+                      <div class="post-header">
+                        <span class="post-author">mikesandford</span>
+                        <span class="meta">#3 &bull; 9/26/12 @ 4:04 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Duane,<BR>To answer your queries:<BR><BR> <I>When you reverse the direction of rotation, did you have to flip a switch on the electronic counter for it to reverse?</I> <BR><BR>Yes a switch has to be changed over to count down if the wheel moves backwards. However I have implemented this as an automatic electronic switch. So the measurer does not have to remember to do anything. The e-Jones counts up or down just as if it was geared like a mechanical Jones. The trick is to continuously sense the direction of wheel rotation and use this to switch the up/down counting. <BR><BR> <I>What kind of interface is needed to get the various readouts you mention?</I> <BR><BR>The different readouts will be calculated in a microprocessor. I have not yet built it. My first step is to get some good electronic Jones counts which I can rely on. Once you have the Jones counts in electronic form inside a computer it is comparatively easy job to write programmes which do the arithmetic to convert Jones counts to metres or what whatever fancy numerical units you want and then to display these. <BR><BR>Orginally back in 1997 when <a href="https://measure.infopop.cc/eve/forums/a/tpc/f/1174074887/m/8514084887?r=8384084887#8384084887" target="_blank">I wrote a specification for an electronic Jones counter</a>, I envisaged putting a laptop computer on my handle bars. However, I could not find suitable cheap interfacing. It would have been a bit unwieldy. A few years ago I bought a little Acer net-book computer. It is convenient to have in my pannier bag ready to fire up and look at a spreadsheet, but I would be nervous of mounting it on my handlebars, because I am not sure whether the hard disc would survive being operated on bumpy roads. <BR><BR>In any case my review of interfacing components a few years ago did not reveal anything cheap and easy to use. So the project remained on hold. What changed for me was last summer when I built an electronic ammeter to sample and record the current consumption of my electrically assisted bike. I wanted to take about 10 samples per second and average these over a few seconds, and then record the averaged values for later display on the LCD screen. I achieved this using readily available components and wiring them together. In fact the electronics board and LCD you see in the pictures above is in fact that same ammeter modified to do the e-Jones counting job.<BR><BR> <I>How difficult will this be to wire everything together?</I> <BR>Quite difficult, and you will need electronic test equipment. I had to buy a second hand oscilloscope in order to study the pulse timing when I was running my bench test rig at the equivalent of 40mph on the end of an electric drill! I find soldering small components really hard now. I also make wiring mistakes. 40 to 50 years ago I  had no problems wiring up circuits using 74TTL to count photons. I then stopped doing practical electronics, but some of my engineers used to build digital processing units to control experiments, so I obtained some understanding of modern electronics.  What I saw of what professional engineers did made me think I would not be able to do modern electronics at home. However, this is not so. When you get pointed in the right direction by electronic hobbyists you discover the amazing capability of modern ICs and how to tackle complex electronic problems on your kitchen table.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004902">
+                      <div class="post-header">
+                        <span class="post-author">justinkuo</span>
+                        <span class="meta">#4 &bull; 9/26/12 @ 7:46 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Mike,<BR><BR>Nice work! I imagine you found that you can avoid the switch flipping by using a rotary encoder. These electronic mechanisms are used everywhere, including consumer radios and alarm clocks. You can find them on eBay and other electronic hobby shops. A small rotary encoder could replace the current Jones Counter mechanism.<BR><BR>Thank you. --  Justin
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004910">
+                      <div class="post-header">
+                        <span class="post-author">mikesandford</span>
+                        <span class="meta">#5 &bull; 9/26/12 @ 2:26 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Justin,<BR><BR>We did think about optical encoders. The first discussion which I had about these was with Tom Riegel over breakfast before the viewing London Marathon several years ago. Normally these would be fitted onto an existing a rotating shaft which you wanted to measure. The problem with the bicycle wheel there is no rotating axle. One possibility might be to use some gear arrangement such has Tom has on his counters. In fact one might try to use Tom's gears and replace the mechanical Veeder Root unit with the shaft encoder. <BR><BR>In August 2011 Dougie Roxburgh was wondering about shaft encoders to feed the  <a href="https://measure.infopop.cc/eve/forums/a/tpc/f/89510622/m/7994021718?r=7994021718#7994021718" target="_blank">iOS measurement app UKCM</a> which he was developing.  In fact he pointed me to some optical encoders with a <a href="http://www.phidgets.com/products.php?product_id=1057" target="_blank">USB interface</a> which could directly interface with a normal computer. I think these are probably the sort of device you are referring to.<BR><BR>I decided not to pursue standard optical encoders but continued with my approach which had been derived from my thoughts all those years ago of how to set up to count each spoke passing.  As far as I know it was the now retired measurer, Jack Selby, back in the 1980s who first tried to use a photo electric device to count the passage of spokes. I am not sure how well it worked, but it never caught on. Of course the very first bicycle measuring in the early 1960s was done by John Jewell who used a mechanical whole rev counter supplemented by manual spoke coke counting for the fractions of a revolution. That method is analogous to that developed by Neville Wood with the cheap cyclocomputers.<BR><BR>My bike is still in the workshop having the new front fork fitted. They are able to buy a suitable wheel for me rather than having to build one up. It is the particular mechanical fitting arrangements for the sensor which means I have to change the wheel and fork- rather a disadvantage, but then even the mechanical Jones Counter does not fit absolutely every bike.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004916">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#6 &bull; 9/27/12 @ 3:03 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Mike - what is your sensor for your e-Jones?  I can't see the photos now, but I don't recall seeing the sensor shown.<BR><BR>I re-programmed by electronic VR counter last night, and it tracks the Jones clicks every 23 2/3 clicks.  I have a magnetic sensor, so it registers every wheel revolution.  This will allow me to get close to the spot, but I will still have to look at the Jones for a reading between full revolutions.  <BR><BR>Just wondered how you are handling the sensor, so that you increment on your digital counter for every Jones count.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004924">
+                      <div class="post-header">
+                        <span class="post-author">mikesandford</span>
+                        <span class="meta">#7 &bull; 9/28/12 @ 6:36 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <BLOCKQUOTE class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">what is your sensor for your e-Jones?  </div></BLOCKQUOTE><BR>Magnetic<BR><BR><BLOCKQUOTE class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">I re-programmed by electronic VR counter last night, and it tracks the Jones clicks every 23 2/3 clicks. I have a magnetic sensor, so it registers every wheel revolution. This will allow me to get close to the spot, but I will still have to look at the Jones for a reading between full revolutions. </div></BLOCKQUOTE><BR>23 2/3 is wrong. It is 23.6666666. You should be using 260/11 =23.63636363. This differs by about 3 parts in 2363 which is more than the SCPF. An advantage of having the electronics counts in a microprocessor is that it is very easy to divide by the electronic counts per rev and then multiply the result by 260/11 and get a display exactly equivalent to the Jones counter.<BR><BR><BLOCKQUOTE class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">Just wondered how you are handling the sensor, so that you increment on your digital counter for every Jones count. </div></BLOCKQUOTE><BR>I will post a block diagram in a few days time. Today I have just got my bike back from the bike workshop. Nice new telescopic front forks and a new wheel. The total cost, £180, was more than I expected but the parts were expensive. Labour was just £25 which was certainly worth it for a good job. I fitted the prototype and demonstrated that the counts tracked at slow speed. At higher speeds as expected it lost a few counts when the microprocessor was trying to do two jobs at once. I anticipated this timing problem and I have a design for a new prototype with new software which I hope will operate  up to about 40mph in order to have a good margin over the normal measuring speed which should be well under 20mph. (10mph is the target speed of course, but I want to be sure of correct operation if one does occasional short bursts of say 20mph when maneuvering in gaps in the traffic.)
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020004931">
+                      <div class="post-header">
+                        <span class="post-author">mikesandford</span>
+                        <span class="meta">#8 &bull; 9/30/12 @ 1:39 PM</span>
+                      </div>
+                      <div class="post-body">
+                        I have been working on the electronics for my prototype Version 0.2. I am testing a new OLED display instead of an LCD. <BR> <IMG class="inline_image" SRC="http://coursemeasurement.org.uk/e-Jones/OLEDdisplay.jpg">   <BR>I am pleased with its clarity. I will try it in sunlight tomorrow. At worst I may need to fit a short viewing tube to ensure the screen is shadowed from direct sunlight.<BR><BR>It uses about 0.1 watts from the 4.5V battery, so battery life should be around 100 hours.
                         
                       </div>
                     </article>

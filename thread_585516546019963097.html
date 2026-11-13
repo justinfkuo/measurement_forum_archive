@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protégé 9.0 Cyclocomputer – How It Works The Protégé 9.0 cyclocomputer is a... - Measurement Forum Archive</title>
+  <title>Protégé 9.0 Cyclocomputer – How It Works - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Protégé 9.0 Cyclocomputer – How It Works The Protégé 9.0 cyclocomputer is a...</nav>
-    <h2>Protégé 9.0 Cyclocomputer – How It Works The Protégé 9.0 cyclocomputer is a...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Protégé 9.0 Cyclocomputer – How It Works</nav>
+    <h2>Protégé 9.0 Cyclocomputer – How It Works</h2>
                     <article class="post-card" id="post-585516546019963097">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
@@ -147,6 +147,94 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         <b>Protégé 9.0 Cyclocomputer – How It Works</b> <br /><br />The Protégé 9.0 cyclocomputer is a small calculator. The wheel circumference is programmed into it by the user, and wheel revolutions are calculated by counting magnetic impulses. Each impulse is multiplied by the wheel circumference, and when this total exceeds the next 0.01 km (10 meters) the display increases by 0.01. <br /><br />With the wheel circumference programmed at the maximum of 9999 mm, the internal memory will store 9999 mm (9.999 m) on the first revolution. However, since this is less than 0.01 km, the display will not change. In order for the unit to display properly it is necessary to reset the meter just BEFORE rolling to the mark. After one revolution the display will correctly count the wheel revolutions. Below is how the memory and the display will change as the wheel rotates. <br /><br /><img src="http://farm1.static.flickr.com/205/488269190_ccab65f8cc.jpg"></img> <br /><br />When the wheel has made 9999 revolutions, the memory will contain 99980.001 meters, and the display will read 99.98. If the unit has been properly zeroed, it will read 9999. So far, so good. Display matches revolutions.<br /><br />When revolutions reach 10,000, memory contains 99990.000 meters. Since this does not exceed 99990 the display continues to show 99.98 (corrected to 99.99). At this point the counter ceases to function usefully. There are two fixes for this: <br /><br />1) A mental correction can be made as Neville suggests, by adding one revolution to the displayed value<br />2) Reset the counter to zero at intermediate reference points so that the display never approaches 10,000. As 10,000 revolutions is equivalent to over ten miles, this is reasonable. It is what I do. To avoid having to remember, I make it a practice to reset the counter at each and every place I stop to record the revolutions. This becomes routine after a while.<br /><br />For reliability, the counter MUST be programmed to 9999, the counter must be zeroed before the magnet first passes the sensor, and the limit of 10,000 revolutions must be avoided. If these are done the unit will function reliably.<br /><br />When the unit is programmed to other values than 9999 it will not function reliably as a revolution counter. I’ve written an Excel program which can be used to show revolutions vs display for all programmed wheel sizes. It’s available to anyone who asks.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963108">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#2 &bull; 5/9/07 @ 4:44 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <B>Effect of  Improperly Calibrated Protégé 9.0</B><BR><BR>What happens when the Protégé 9.0 is set at miles/hr instead of km/hr? A look at the chart below will show the effect. The unit’s memory will begin to accumulate 9.999 meters each time the wheel makes a rotation. However, the display will not change until the memory exceeds the next 0.01 miles. This results in the same displayed revolutions for two different actual revolutions. For example, when the display reads 0.06, either 10 or 11 actual revolutions have occurred.<BR><BR>Because of this uncertainty, the unit, when set at miles/hour, will not reliably record actual revolutions. In addition, fractional readings taken from the rim are invalid.<BR><BR><IMG SRC="http://farm1.static.flickr.com/226/491130331_ad30e4c89f.jpg">
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963113">
+                      <div class="post-header">
+                        <span class="post-author">neville</span>
+                        <span class="meta">#3 &bull; 5/13/07 @ 9:26 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Pete:<BR>      Your last table is in error because you did not take into account the 9.999 m in computer memory at 0 rev. The following shows the display of the Protege for the first three revolutions when the cicumference is set correctly to 9.999 m but incorrectly to M/HR rather than KM/HR:<BR><BR>    Rev,,     Rev Sensed,  Meters Sensed,    Mi Sensed,,   Display<BR>     0.............1.............9.999 ..........0.00621.......0.00<BR>     1.............2............19.998...........0.01243.......0.01<BR>     2.............3............29.997...........0.01864.......0.01<BR>     3.............4............39.996...........0.02485.......0.02<BR><BR>I now realize from these calculations that even if you had got Bill to make my old installation check, he would still not have detected his error of setting the computer to M/HR unless he had done two revolutions. Of course, in my new version I have included a check for KM/HR in the display.<BR>By the way the fraction of a revolution shown on the rim at the end is always correct wether the meter is operated correctly or not. In a series of four calibration rides, I usually only set and read the meter on the first.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963118">
+                      <div class="post-header">
+                        <span class="post-author">dickblum</span>
+                        <span class="meta">#4 &bull; 6/28/07 @ 12:36 PM</span>
+                      </div>
+                      <div class="post-body">
+                        It would seem that programming the wheel to a circumference to 5.000 and mounting two magnets would solve the issue of the display accuracy, and remove one variable (and thus one more potential error) in measuring.<BR><BR>What are your thoughts on this procedure?
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963123">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#5 &bull; 6/28/07 @ 4:03 PM</span>
+                      </div>
+                      <div class="post-body">
+                        I prefer programming to 9999. Two magnets doubles the care that must be taken to avoid stopping with one near the sensor.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963128">
+                      <div class="post-header">
+                        <span class="post-author">jimgerweck</span>
+                        <span class="meta">#6 &bull; 6/30/07 @ 7:13 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Today I had to measure a couple of courses - not for certification, just to ascertain the length, so the organizers could decide among the options as to which route they will choose to be certified.<BR><BR>I jumped in both feet and used my Protegé 9.0. One bonus was when one of the courses came up short, I simply went back to the last mile mark, zeroed it out, and rode an alternate route to the requisite finish.<BR><BR>What I find takes extra time (and creates some degree of uncertainty and worry in my mind) is when calibrating and then doing subsequent calculations.<BR><BR>I've got my rim marked off in fractions of .125/revolution. Each spoke is about .025/revolution (a bit more, actually). So, when I calibrate, I'll record a figure like "152.125 + 1 spoke" or "152.5 - 2 spokes." Then I'll do the math when I'm figuring out the constant, but I wonder if such "guesstimation" is being extrapolated in the measurement itself.<BR><BR>When I use the J/O Counter, the toughest judgement call I have to make is whether it's a full or half count. For right now, that seems more reassuring to me.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963133">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#7 &bull; 7/1/07 @ 2:10 AM</span>
+                      </div>
+                      <div class="post-body">
+                        jim-<BR><BR>One more good reason to take the time to mark your rim in 20 even increments of 0.05 rev each. You get a direct decimal reading and the subsequent math is easier. Fast isn't always best. It took me about 20 minutes to mark my rim decimally, and I have used it to measure a score of courses since.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963138">
+                      <div class="post-header">
+                        <span class="post-author">neville</span>
+                        <span class="meta">#8 &bull; 7/1/07 @ 8:21 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Jim:<BR>     Marking the rim in decimal fractions or numbering the spokes allows for faster and more accurate readings than with the Jones. Therefore,I find it odd that you should have found it necessary to develope your own more complex method of taking rim readings, especially as you find it creates more uncertainty in your mind than with the Jones.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019963143">
+                      <div class="post-header">
+                        <span class="post-author">neville</span>
+                        <span class="meta">#9 &bull; 7/1/07 @ 8:41 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Dick:<BR>     One minor advantage of using two magnets with the Protege is that the zeroing at the start is more intuitive as it is done after rolling slightly forward. Another is that you do not have to add one revolution after riding for more than a halfmarathon, although hardly any measurers ever do this. <BR><BR>However the disadvatages far outweigh these advantages. An extra magnet can be inconvenient to obtain. Also, an inattentive measurer is twice as likely to create spurious revolutions.
                         
                       </div>
                     </article>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Here&#x27;s a taping puzzle based on a recent check of a 1000 foot calibration c... - Measurement Forum Archive</title>
+  <title>Steel Taping Puzzle: - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Here&#x27;s a taping puzzle based on a recent check of a 1000 foot calibration c...</nav>
-    <h2>Here&#x27;s a taping puzzle based on a recent check of a 1000 foot calibration c...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Steel Taping Puzzle:</nav>
+    <h2>Steel Taping Puzzle:</h2>
                     <article class="post-card" id="post-585516546020023318">
                       <div class="post-header">
                         <span class="post-author">peteriegel</span>
@@ -147,6 +147,127 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         Here's a taping puzzle based on a recent check of a 1000 foot calibration course:<br /><br />Tape was checked by NIST and found to have a length of 30.00948 m at 20C<br />Temperature while taping = 42F<br /><br />Measurements:<br />10 lengths at 30 m = 300 m<br />partial length of 4.80815 m<br /><br />What is the correct result of the single measurement?
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023329">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#2 &bull; 11/20/15 @ 4:02 AM</span>
+                      </div>
+                      <div class="post-body">
+                        OK, here's what I got:<BR>						<BR>	#	Units		#	Units			<BR>Tape (NIST)	30.00948	meters	at	20.00	C	convert	68.00	F<BR>Measured								<BR>Partial	4.80180	m						<BR>10 Full	300.00							<BR>Course Raw	304.80180		at 				42.00	F<BR>Divide 30 / NIST								<BR>NIST Corrected	304.70551	m						<BR>				T dif F				<BR>Factor		1.00	plus	26.00	times	0.00000645	1.00016770	<BR>								<BR>Corrected	304.7566122	<BR><BR>Oscar
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023334">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#3 &bull; 11/21/15 @ 3:09 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Dear Oscar,<BR><BR>We differ. Check your work and I will check mine.<BR><BR>Steel taping correction is the most error-prone part of our measurement process.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023339">
+                      <div class="post-header">
+                        <span class="post-author">guidobrothers</span>
+                        <span class="meta">#4 &bull; 11/21/15 @ 3:51 AM</span>
+                      </div>
+                      <div class="post-body">
+                        How's this?<BR><BR>tape	         30.948<BR>10 tapes	309.48<BR>extra	          4.80815<BR>total tapes	314.28815<BR>	<BR>temp	         42<BR>temp -68	-26<BR>CF=1+0.00000645x(-26)	<BR>CF=	          0.9998323<BR>Corrected measurement	<BR>	        314.2354439
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023344">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#5 &bull; 11/21/15 @ 4:02 AM</span>
+                      </div>
+                      <div class="post-body">
+                        OK, I see.  NIST/30 so raw measurement is actually longer.<BR><BR>Ooooopscar
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023349">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#6 &bull; 11/21/15 @ 8:18 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Here's how I calculated it. It was nice to see how well my years-old 1000 feet checked out.<BR>Bash me with commentary. I have sweated for hours on this blasted thing.<BR><BR><B>Raw Data</B>	<BR>							<BR>10 pulls at 30 m per pull = 	300 m				<BR>Partial length = 		4.80815	m	(4 m plus 80.815 cm)		<BR>Total Raw Length		304.8082 m				<BR>								<BR>The tape was checked by NIST and found to have a length of 30.00948 m at 20C (68F)<BR>	<BR>Because the true length is greater than the 30m indicated length, the tape marking error must be accounted for.<BR><BR>We must correct for both temperature and tape marking error				<BR>								<BR> <B>Calculations</B> <BR>							<BR>Temperature Correction factor =(1+.00000645x(4268)) = 0.999832	<BR>Raw measurement corrected for temperature = 304.8082*.999832 =304.757 m<BR>								<BR>Because the tape was cold, the temperature corrected raw length is less than the total raw length.<BR>								<BR>Tape marking correction = 30.00948/30 =	1.000316				<BR>								<BR>Total corrected course length = 304.757x1.000316 = 304.8533 m = 1000.175 feet<BR>					Oversize =	0.17499	feet<BR>						This is 1.7 parts in 10,000<BR>								<BR>This is within reasonable agreement for comparison with a single tape measurement 	<BR>of 1000 feet obtained on a different day. The checked course is considered to pass validation check.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023354">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#7 &bull; 11/22/15 @ 7:14 PM</span>
+                      </div>
+                      <div class="post-body">
+                        I get the same answer as Pete. <BR><BR>I haven't studied all the answers but Guido it's 30.00948 not 30.948, gotta respect those zero's.<BR><BR>I think it's simplest to first pretend that the tape is exactly 30 meters, do all the calculations, then multiply by the "Riegel tape factor" (30.00948/30 = 1.000316).<BR><BR>So, Raw measurement: 304.80815<BR>Temp correction factor 68-42=26 degrees x 0.00000645=0.000168<BR>304.80815 x 0.000168 = 0.051116.<BR>(Subtract because it's cold, the tape contracts) 304.80815 - 0.051116 = 304.757034.<BR>Now multiply by the Riegel tape correction factor:<BR>304.757034 x 1.000316 = 304.853337 <BR>(which I would round to 304.853, about as close as you can read a tape-- ok if you like, take another digit, then 304.8533)<BR><BR>Looking at it now I think my steps are essentially the same as Pete's-- I just like to get the temperature correction amount, then wrestle with the question of whether to add or subtract.<BR><BR>Thanks for the challenge, Pete! But can you tell how you got 4.80815 (that's down to a hundredth of a millimeter, did you carry a machinist's vernier out there?)
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023359">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#8 &bull; 11/23/15 @ 1:15 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <IMG class="inline_image" SRC="http://i195.photobucket.com/albums/z117/riegelpete/tape%20001_zpsqgr0qnqq.jpg">  <BR>Here’s a shot of my tape at the 80 cm mark of the 4 meter length. Could be I made a mistake reading, could be I didn’t.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023364">
+                      <div class="post-header">
+                        <span class="post-author">guidobrothers</span>
+                        <span class="meta">#9 &bull; 11/23/15 @ 4:34 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Thanks for checking.  Stupid zeros!
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023369">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#10 &bull; 11/23/15 @ 8:34 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Pete, I can see the marks for 80.8 cm and 80.9 and I think you could reasonably interpolate to get one more decimal place-- but I don't see how you could pick out 80.815 cm (i.e. 0.80815 m). Or maybe you look at 1/5ths of a millimeter, and if it's just under one fifth then estimate is 0.15? <BR>I'm open to a new way of looking at it, I'm just curious about it.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023374">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#11 &bull; 11/24/15 @ 1:11 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Bob,<BR><BR>I am also puzzled. I think I have the correct computation for length if we accept 4.80815 as correct, but I obviously couldn't read the scale that closely. Of the likely correct possible readings I see 81.5 as a possible. The difference is about 7 mm, which still leaves the agreement with the original layout at less than 1/5000.<BR><BR>I have always had a bad time reading metric tapes. A foot is user-friendly - you can see the whole thing while taping. A whole meter, however, is less easy to visualize as a whole.<BR><BR>Looks like a flawed puzzle (rather a flawed puzzle-master) to me.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020023379">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#12 &bull; 11/24/15 @ 7:27 AM</span>
+                      </div>
+                      <div class="post-body">
+                        I've noticed that a lot depends on the way the tape is marked and laid out. My metric tape has a "reminder" printed at every 10 cm, telling you what meter you're working in. But I have to warn folks I'm measuring with that not every place that says "14 m" is the 14 m mark, you have to find the FIRST place where it says 14 and not 13. <BR><BR>With a metric tape I pick the nearest mm, so I record 3 digits after decimal point. With a tape in feet, I find a surveyor's tape marked in tenths of a foot is really handy. You can read the marks to hundredths of a foot, then interpolate to nearest thousandth.<BR><BR>To me the most elusive part about measuring with a steel tape is getting a good temperature reading-- a few degrees difference in temperature can make a surprising amount of difference in length, and in some conditions it's pretty hard to know what temperature to use. I suppose the best is when temps stay pretty steady with no sun shining on the tape.<BR><BR>A few days ago we measured a cal course in Newport News. I almost jumped for joy when we finished, and the recorded temperature throughout was 68 degrees F. Hooray, none of those treacherous temp adjustment calculations!!
                         
                       </div>
                     </article>

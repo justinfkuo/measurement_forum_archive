@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A measurer needs to add a known distance D to a race course by turning up D... - Measurement Forum Archive</title>
+  <title>Turnarounds - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; A measurer needs to add a known distance D to a race course by turning up D...</nav>
-    <h2>A measurer needs to add a known distance D to a race course by turning up D...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Turnarounds</nav>
+    <h2>Turnarounds</h2>
                     <article class="post-card" id="post-598328156159984012">
                       <div class="post-header">
                         <span class="post-author">oscarwagner</span>
@@ -148,6 +148,171 @@ a:hover { text-decoration: underline; }
                       <div class="post-body">
                         <p>A measurer needs to add a known distance D to a race course by turning up Diversion Street and returning to Continuous Street.&nbsp; The curbs have a known radius R.&nbsp; The street has a known width W and the turnaround point is exactly in the middle of the street.&nbsp; The rider’s path is exactly 1’ out from the curb.&nbsp; The streets intersect at a right angle. &nbsp;&nbsp;</p><p>&nbsp;<img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/598328156159984012/filePointer/598328156159984028/fodoid/598328156159984020/imageType/MEDIUM/inlineImage/true/mceclip1.png" /></p><p>&nbsp;</p><p>How do you calculate the distance from Point A to Point C?</p>
                         <div class="attachments"><strong>Attachments:</strong> <a href="files/598328156159984027">mceclip0.png</a>, <a href="files/598328156159984028">mceclip1.png</a></div>
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418654047063">
+                      <div class="post-header">
+                        <span class="post-author">genenewman</span>
+                        <span class="meta">#2 &bull; 7/19/19 @ 11:36 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>i will send you some info on this</p><p>gene</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598328156187646953">
+                      <div class="post-header">
+                        <span class="post-author">michaelbowen</span>
+                        <span class="meta">#3 &bull; 7/22/19 @ 4:14 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Might be a little simplistic and overlooking the radius issue.&nbsp;Line segment AB is approximately&nbsp;32.015621.</p><p>w= Square of street width (20') =&nbsp;400.<br />h= Square of distance up center of street to turn point (25')&nbsp;=&nbsp;625</p><p>w+h =&nbsp;1025</p><p>Square root of w+h =&nbsp;32.015621</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598468893719426121">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#4 &bull; 7/25/19 @ 10:06 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <div>This from a friend / college math professor Dr. Michael Coleman at U of Albany:</div><div>"Now we hit the bad news - since we've got both inverse trig and some square roots floating around, the easiest way to envision the solution - just substitute in until it's a single variable problem, and solve - is bad news. VERY bad news. We need to solve:</div><div>&nbsp;</div><div>d = sqrt((y-sqrt(r^2-a^2))^2 - ((((r^2-a^2)-y*sqrt(r^2-a^2))/a)^2)) + arccos(-a/r)*r</div><div>&nbsp;</div><div>which is a nasty enough symbolic manipulation problem that the solvers I have access to on my home PC are throwing a <strong>"computation time exceeded" error</strong>, and I'm suspicious there's at least one branch in there. So I'm going to see if I can be more clever and present the problem in a way that doesn't cause that. Realistically, though, this says a numerical approximation is your best bet."</div><div>So, while there (likely) IS a direct solution, what Michael Bowen suggests is a more practical approach mathematically.</div><div>Knowing all this, I will stick with about 6 brute force successive approximations.</div><div>&nbsp;</div>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598609631236684052">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#5 &bull; 7/25/19 @ 1:15 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Could you restate the problem a little better? I don't know what "25 high" means in your picture, and I don't know what "a" and "y" are in your equation.</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418705540168">
+                      <div class="post-header">
+                        <span class="post-author">michaelbowen</span>
+                        <span class="meta">#6 &bull; 7/25/19 @ 3:22 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Crikey. If I had known trigonometry and calculus would have been this important, so many years after college.<br /><br />And I just realized - reading the problem again - I goofed.</p><p>Line segment AB² = (½ Diversion Street Width)² + (Distance from Continuous Street up Diversion Street)² -or-</p><p>Line Segment AB² = (10²) + (25²) -or-</p><p>Line Segment AB² = (100) + (625) -or-</p><p>Line Segment AB² =&nbsp;725 -or-</p><p>Line Segment AB = 26.925824</p><p>Sorry, Oscar!</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598609631238457707">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#7 &bull; 7/25/19 @ 6:21 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>The smaller green circle is a complete circle of the radius of curvature of the curb.&nbsp; &nbsp;Larger orange circle would be the other 3/4 of 1' wider path ridden.&nbsp; &nbsp; "25 HIGH" (height of a right triangle) is distance from Continuous Street curb to a line running through the actual turnaround point.&nbsp;</p><p>Very astute, also, Admin: I do not know what Dr. Coleman is calling "a" either.&nbsp; I need to ask.&nbsp;</p><p>After seeing that it was not a simple problem, I have been coding to calculate the distances for known angles.&nbsp; Am in the process of trying to condense that code which is based on a different approach. Major value of the Coleman Equation is that it shows if a college prof does not say, "Hey, that's simple" then it is going to take a while.&nbsp; Fun exercise even if mainly academic.&nbsp; &nbsp;</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418710851941">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#8 &bull; 7/26/19 @ 7:02 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>I kind of assumed "a" was the width of the street (or half the width?) and "y" was the vertical distance from the cross street to the turn-around point. And you are solving for "y" for known values of "a" and "d." But just wanted to confirm that's the case.</p><p>I think the problem becomes trivial if you assume the path turns abruptly at a single point back at the cross street rather than following a turning radius. And the change in distance will also be trivial between the those two paths. If you use the solution to that simpler path as the starting point for iteratively solving the equation for the more complex path, you would probably be able to converge pretty quickly.</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418711276200">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#9 &bull; 7/26/19 @ 8:01 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>I thought "a" was the half width of the road in his equation, but that can't be the case since for reasonable values of "r" and "a" the term sqrt(r^2-a^2) would be the square root of a negative number.</p><p>y = sqrt[ (d-r)^2 - a^2 ]</p><p>In the above equation y is the vertical distance from the cross street to the TA point,&nbsp;given a required path distance d,&nbsp;a street half width a, and turning radius r. This is for a path that starts at point A and ends at a point along the edge of the cross street even with the center of the turning radius (same horizontal coordinate as point C), and passes through the point that is the intersection of the curb edges.</p><p>A path that follows the circular arc around the street intersection and ends at point C will be slightly longer, so the value of y solving his equation will be slightly smaller than the solution to the above equation.</p><p>I think if you (or he)&nbsp;uses&nbsp;the value of y given by the above equation as a starting point in your iterative solver, convergence will happen much more quickly. But I don't understand his equation because I don't know what "a" is, or what "y" is for that matter.</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418758162209">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#10 &bull; 7/31/19 @ 7:45 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p><img src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/598328156159984012/filePointer/598187418758162211/fodoid/598187418758162207/imageType/MEDIUM/inlineImage/true/mceclip0.png" /></p><p>This is how the problem was set up to get the equation shown.&nbsp; I have not yet converted it to my version of Basic to test it.&nbsp; &nbsp; More later.&nbsp;</p><p>Oscar&nbsp;</p><p>&nbsp;</p>
+                        <div class="attachments"><strong>Attachments:</strong> <a href="files/598187418758162211">mceclip0.png</a></div>
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598187418759589530">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#11 &bull; 7/31/19 @ 11:02 AM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>I'm still confused. In the real world the only value that you control is "x." The street width and curb radius are what they are.</p><p>So I assume the problem statement is, given values of&nbsp;y and r, find the value of&nbsp;x that gives the desired distance d. But you would still need an equation for "a." "a" is not an independent variable. It's a function of x, y, and r.</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598468893776534167">
+                      <div class="post-header">
+                        <span class="post-author">Race Resources LLC</span>
+                        <span class="meta">#12 &bull; 7/31/19 @ 12:50 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Oscar - why would you need to calculate this? I do not get the practical application you have in mind for this.</p><p>Anyway, if you know the radius or diameter of the circle on which points B and C lie, you can calculate the circumference easily enough, right? Then, using a graphics program - or even just eyeballing it - calculate or estimate the % the segment represents of the circumference.&nbsp;</p><p>I could determine the % very closely in Corel Draw. However, in your diagram, it appears to me that the segment is about 20% of the circumference. If you then calculate 20% of the circumference, would this then not be accurate enough for your application?</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598609631293412966">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#13 &bull; 7/31/19 @ 4:37 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Yes, Race Resources that would be a very practical approximation method.</p><p>I started out thinking that there must be some simple way to do this exactly. After a bunch of smart people looked at it, turns out it IS an extremely difficult math problem. Because of that, it is nothing we are ever going to use.&nbsp; Today I was just trying to explain what the variable&nbsp; 'a' was.&nbsp; Dr. Coleman started using x1, y1 etc but it got so hairy so fast, he went to single character Cartesian points for simplicity, or a,b.&nbsp;&nbsp;</p><p>Yes, even knowing d (distance needed), r and y (half the width of the road) you still have to solve for 'a'.&nbsp; I am guessing that is what crashed his program.</p><p>I tried to get that equation to execute with 'a' as a known and solving for d.&nbsp; Somewhere in those 8 sets of nested parentheses, is something that JustBasic does not like.&nbsp;&nbsp;</p><p>It is a tough problem with a minimal payoff but my hat is off to anyone who can solve that equation for 'a'!</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598609631294110006">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#14 &bull; 7/31/19 @ 6:28 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>I edited my previous post to switch x and y. y is the half width of the road and x is the distance out to the turn-around.</p><p>But anyway, I don't think the equation you posted for d is correct.&nbsp;Consider the case of no turn-around. Then the distance traveled is 2y, the width of the road. In this case a would be 0. Plugging a=0 into the equation gives a division by 0. But even setting a to a very small value doesn't result in a distance traveled that is approaching 2y. Actually it results in a square root of a negative number.</p>
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-598750592564871936">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#15 &bull; 8/10/19 @ 5:07 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Final Answer:&nbsp; Prize for best solution goes to Mark Neal who caught the minus sign that should have been a plus.&nbsp; Everything worked fine after that.&nbsp; He came up with an Excel Goal Seeker routine that gets the right answer to 5 places in the blink of an eye.&nbsp;&nbsp;My “copycat” Basic routine took about 20 seconds for higher angles.&nbsp;<img height="443" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/598328156159984012/filePointer/598750592564871938/fodoid/598750592564871933/imageType/MEDIUM/inlineImage/true/mceclip0.png" width="541" /></p><p>&nbsp;&nbsp;Dr. Coleman says he does not like to “let practical considerations get in the way of interesting math” but pointed out you can:</p><p>Draw the problem with the curve represented by the radius from –r,0 to –r, r.</p><ol><li>Subtract 2 * r from the distance needed. This is the hypotenuse of a right triangle with a height ALWAYS = to half the street width – 1 or Y.</li><li>X for this triangle is the square root of the hypotenuse squared minus height squared.</li></ol><p><img height="346" src="https://measure.infopop.cc/fileSendAction/fcType/0/fcOid/598328156159984012/filePointer/598750592564871939/fodoid/598750592564871934/imageType/MEDIUM/inlineImage/true/mceclip1.png" width="574" /></p><p>&nbsp;Example:&nbsp; Need = 100’&nbsp; more&nbsp; &nbsp;Street = 20’ wide&nbsp; &nbsp;Curb radius = 2’&nbsp;&nbsp;&nbsp;Ride radius = 3</p><p>&nbsp;100’ – &nbsp;(2 * 3) = 94.&nbsp; &nbsp;Then&nbsp;&nbsp;&nbsp; 94 / 2 = 47&nbsp; Next&nbsp;&nbsp;x = sqrt(47^2 – 9^2) =&nbsp;&nbsp; 46.13</p><p>This is from a point 1 foot W of curb line so out 45.13 feet.&nbsp;&nbsp;This is exact at “no extra distance needed.&nbsp; For very long distances, this is never more than 1.30 feet short.&nbsp;&nbsp;</p>
+                        <div class="attachments"><strong>Attachments:</strong> <a href="files/598750592564871938">mceclip0.png</a>, <a href="files/598750592564871939">mceclip1.png</a></div>
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-599172805066290365">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#16 &bull; 8/11/19 @ 12:19 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <p>Good job Oscar on coming up with an interesting math problem that is relevant (although admittedly not very useful in a practical sense) to the forum's purpose.</p>
+                        
                       </div>
                     </article>
                     

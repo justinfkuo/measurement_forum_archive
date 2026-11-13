@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I was using the forms at http://www.usatf.org/usatf/fil...d5d-58ee97c196bb.... - Measurement Forum Archive</title>
+  <title>temperature correction - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; I was using the forms at http://www.usatf.org/usatf/fil...d5d-58ee97c196bb....</nav>
-    <h2>I was using the forms at http://www.usatf.org/usatf/fil...d5d-58ee97c196bb....</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; temperature correction</nav>
+    <h2>temperature correction</h2>
                     <article class="post-card" id="post-585516546020011838">
                       <div class="post-header">
                         <span class="post-author">briankeith</span>
@@ -147,6 +147,127 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         I was using the forms at <a href="http://www.usatf.org/usatf/files/b9/b9d51286-106c-4430-bd5d-58ee97c196bb.pdf" target="_blank">http://www.usatf.org/usatf/fil...d5d-58ee97c196bb.pdf</a> to create a calibration course.<br /><br />The temperature corretion formula is:<br />correction factor = ((temp - 68) x .00000645) + 1<br /><br />then multiply that by your avg raw measurement.<br /><br />So if your temperature is above 68 your adding and if its below 68 your subtracting.<br /><br />I understand this is correct if your measuring the distance between A and B but when your just measuring out 1000' it seems like it's backwards.<br /><br />If the tape is hotter than 68 you will actually measure more than 1000' and the correction should actually make it smaller.<br /><br />When it's colder your measurement will actually be less than 1000' and your correction should make your measurement longer.<br /><br />I really don't see how if a 1000' tape expands to 1000.5 then you should add .5 to your measurment. Then it would be 1001 not 1000.<br /><br />Am I totally wrong about this? Can anyone help explain this?<br /><br />Thanks,<br />Brian
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011848">
+                      <div class="post-header">
+                        <span class="post-author">peteriegel</span>
+                        <span class="meta">#2 &bull; 8/12/13 @ 4:00 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Brian,<BR><BR>Here’s an example:<BR><BR>For 1000 feet you lay out ten lengths of 100 feet each at 80F. The second raw measurement is 999.98 feet. Average raw measurement is 999.99 feet.<BR><BR>The correction factor is .00000645*(80-68) +1 = 1.0000774.<BR><BR>The corrected length of the measurement is 1.0000774*999.99 = 1000.067 feet<BR><BR>The layout should be shortened by 0.067 feet for an even 1000 foot cal course.<BR><BR>Or,<BR><BR>You lay out ten lengths of 100 feet at 60 F. The second raw measurement is 999.98 feet. Average raw raw measurement is 999.99 feet.<BR><BR>The correction factor is .00000645*(60-68) +1 = 0.9999484<BR><BR>The corrected length of the measurement is 0.9999484*999.99 = 999.938 feet<BR><BR>The layout should be lengthened by 1000-999.938 = 0.062 feet for an even 1000 feet.<BR><BR>There is no way a steel-taped 1000 foot measurement could become 1000.5 this side of hell. The corrected length would indeed be 1001 if we rounded off to the nearest foot, but we round off to the 0.01 or .001 feet. The rounded length in this case would be 1000.50 feet.<BR><BR>Do not round off anything until you have calculated the corrected length. Then you can round off to the nearest 0.001 foot and move the mark to locate the desired 1000.000 feet.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011853">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#3 &bull; 8/12/13 @ 5:00 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Brian,<BR>When it is hotter than 68 degrees you are lengthening your MEASUREMENT of the course, not lengthening the course.  The final result of this is that you will be shortening your course on a hot day, as shown in Pete's example.<BR><BR>The way I keep this straight in my head is by considering a ridiculously exaggerated situation.  Assume it is so hot that the tape stretches 100%.  If points A and B are truly 1000' feet apart, your hot tape is going to tell you they are 500' apart, right?  And 2 points that your hot tape tells you are 1000' feet apart are actually 2000' apart.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011858">
+                      <div class="post-header">
+                        <span class="post-author">briankeith</span>
+                        <span class="meta">#4 &bull; 8/12/13 @ 6:18 AM</span>
+                      </div>
+                      <div class="post-body">
+                        I should have stated but I was just using 1000.5 as an exaggerated simple example. What your saying makes sense to me now. The confusion I had was from the wording "corrected measurement" on the form.  I thought that's what the correct measurement should be. But it's really calculating you what you actually measured and you need to adjust from that.<BR><BR>Thanks for the help.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011863">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#5 &bull; 8/12/13 @ 1:48 PM</span>
+                      </div>
+                      <div class="post-body">
+                        I&#x27;m glad to see that I&#x27;m not the only one who has to think this through each time just to make sure!
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011868">
+                      <div class="post-header">
+                        <span class="post-author">genenewman</span>
+                        <span class="meta">#6 &bull; 8/13/13 @ 7:06 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Brian&#x27;s comment is correct as the final adjustment is the actual measured distance. As an example, on a day when the temperature exceeds 68 degrees the course measurement would be longer(you would use the correction factor, which is greater than &quot;1&quot; making the course longer).
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011873">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#7 &bull; 8/26/13 @ 7:42 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Brian, maybe the easiest way to remember this is: cold tape = cal course is too short, add to adjust (according to the chart); hot tape, cal course is too long, subtract to adjust. Obviously the amount added or subtracted is small. Whatever difference there might be between an unadjusted &quot;100 meter&quot; cal course and a cal course of exactly 100 meters, when multiplied out over a course measurement,could begin to make a material error in the course measurement.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011878">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#8 &bull; 8/26/13 @ 9:00 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Over the weekend I re-measured a half mile calibration course (Mount Trashmore in Virginia Beach) because I thought my counts were coming out a little high. Result: 2640.952 feet. Not a lot but that extra almost-foot made a noticeable difference in the measuring job at hand, as Manny Cordero and I were measuring a marathon and half marathon in Norfolk. Temperature adjustments were 0.5 and 0.3 feet for two measurements (much hotter for first measurement). <BR><BR>We also measured a 300 meter calibration course which is way quicker to use. But I will also certify the half mile course since we measured it. We did NOT put a new nail at what we think is exactly a half mile-- that could get kind of confusing I thought. <BR><BR>Now should I call this cal course Mount Trashmore Half Mile or Mount Trashmore "Half Mile"? (This relates to another thread about names of races). Either way I will put the measured distance in feet and meters in a prominent position on the map. Right now I'm thinking "Mount Trashmore Half Mile".
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011883">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#9 &bull; 8/27/13 @ 9:12 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Why not &quot;Mount Trashmore Calibration Course?&quot;  As you say, the distance will be shown elsewhere on the map.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011888">
+                      <div class="post-header">
+                        <span class="post-author">bobthurston</span>
+                        <span class="meta">#10 &bull; 8/27/13 @ 8:48 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Well that&#x27;s a good idea but my hesitation is that there are now two Mt T cal courses, one is 300 m and one is 2640.952 feet. But I guess if the distance is shown it shouldn&#x27;t be a big problem.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011893">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#11 &bull; 8/28/13 @ 8:42 PM</span>
+                      </div>
+                      <div class="post-body">
+                        For clarity, I would name the courses &quot;Mount Trashmore 300 meter&quot;, and &quot;Mount Trashmore &#x27;Half-mile&#x27; cal course&quot;.  Good differentiation in the listings of courses.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020011898">
+                      <div class="post-header">
+                        <span class="post-author">mikewickiser 2</span>
+                        <span class="meta">#12 &bull; 10/8/13 @ 5:38 AM</span>
+                      </div>
+                      <div class="post-body">
+                        A long time back I let Lotus 123 ( I said a long time back!) to generate a table for 1000 foot calibration adjustments.<BR>It works great for setting cal courses away from home.<BR>I make this available to new measurers since it is a lot handier than trying to calculate the temperature correction sitting at a park bench.<BR>As a reminder I added the notation "add length when temp is below 68F, Deduct when above 68F.<BR>I believe John Disley & Pete Riegel put a similar chart in the IAAF Measurement Manual for metric calibration courses
                         
                       </div>
                     </article>

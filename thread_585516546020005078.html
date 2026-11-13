@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hey guys. I&#x27;m wondering what format most timing systems output times as tim... - Measurement Forum Archive</title>
+  <title>Timing Results Format? - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Hey guys. I&#x27;m wondering what format most timing systems output times as tim...</nav>
-    <h2>Hey guys. I&#x27;m wondering what format most timing systems output times as tim...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Timing Results Format?</nav>
+    <h2>Timing Results Format?</h2>
                     <article class="post-card" id="post-585516546020005078">
                       <div class="post-header">
                         <span class="post-author">luke</span>
@@ -147,6 +147,28 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         Hey guys. I&#x27;m wondering what format most timing systems output times as times come in? How do you guys get times in a format that results websites accept? I&#x27;m assuming some sites and/or timing systems use CSV?
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020005101">
+                      <div class="post-header">
+                        <span class="post-author">oscarwagner</span>
+                        <span class="meta">#2 &bull; 11/28/16 @ 2:31 AM</span>
+                      </div>
+                      <div class="post-body">
+                        I use home made code to get them into a text format.  Watch out for CSV files: if you &quot;sucker&quot; for the 2nd or 3rd nuisance SAVE options in EXCEL, it will left truncate the hours.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546020005112">
+                      <div class="post-header">
+                        <span class="post-author">jeffjohn 2</span>
+                        <span class="meta">#3 &bull; 12/16/16 @ 8:02 AM</span>
+                      </div>
+                      <div class="post-body">
+                        For our websites we must work with output from many timers.  There are many differences in both data storage format and file types that some outfits like to use.<BR><BR>For maximum flexibility we have adopted and promoted as "standard" that all road race results times should be reported in "h:mm:ss" format.  E.g., a 10K time of 32:21 should always be expressed  as 0:32:21.  That way you never have to know the context to decipher the meaning.  ("h" or "hh" for hours, "mm" for 2 digit minutes, "ss" for two digit seconds.)<BR><BR>If you use Excel or similar then we advise expressing times as TEXT.  We don't usually want Excel's defualt AM/PM time formats - which it will use if you let it.  Use TEXT.  You can't go wrong with that.  TEXT can readily and accurately be converted to any number of TIME formats, if need be, but it does not always work well the other way around. <BR><BR>The actual file format is less troublesome:  CSV, TEXT, XLS, PDF, HTML... we work with all.  But simple ASCII text files, consistently formatted in fixed fields, tend to be the least troublesome.<BR><BR>An example of an excellent text format is the results of LEONETIMING.COM.  Pat Leone has searchable HTML tables too but always also presents a standardized, fixed field, text file version of his results -- very easy to work with. <BR><BR>An example of results that are very difficult to work with is RUNNERS HIGH (runhigh.com).  S. Mark Courtney adopted his format decades ago.  It made some sense then.  He has dynamic context sensitive results lines, asterisks "*" to indicate a female runner, may or  may not have a hometown and state, and does not uses fixed length fields.  In order to parse these results I must write code to either evaluate each line separately or create a sieve to gradually sort his data into the proper fields.<BR><BR>JJ
                         
                       </div>
                     </article>

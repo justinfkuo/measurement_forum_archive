@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>From: Bob Baumel Re: Format used for our maps on the USATF site and how it ... - Measurement Forum Archive</title>
+  <title>Format used for our maps on the USATF site and how it came about! - Measurement Forum Archive</title>
   <style>
 :root {
   --bg: #f8fafc;
@@ -138,8 +138,8 @@ a:hover { text-decoration: underline; }
   </header>
   <main class="container">
     <div class="banner">Read-Only Historical Archive &mdash; Posting and registration are permanently closed.</div>
-    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; From: Bob Baumel Re: Format used for our maps on the USATF site and how it ...</nav>
-    <h2>From: Bob Baumel Re: Format used for our maps on the USATF site and how it ...</h2>
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <a href="area_582983104099246695.html">Road Course Measurement Forums</a> &rsaquo; Format used for our maps on the USATF site and how it came about!</nav>
+    <h2>Format used for our maps on the USATF site and how it came about!</h2>
                     <article class="post-card" id="post-585516546019984917">
                       <div class="post-header">
                         <span class="post-author">genenewman</span>
@@ -147,6 +147,160 @@ a:hover { text-decoration: underline; }
                       </div>
                       <div class="post-body">
                         From: Bob Baumel<br />Re: Format used for our maps on the USATF site and how it came about!<br /><br />First, the question of raster or vector formats. To the extent that we need to scan hard-copy maps, raster is the only option. Vector formats are possible only for computer-generated maps, but only if the map is generated with the specific intention of making it fully scalable (I'm sure that, in practice, a lot of computer-generated maps aren't fully scalable, but contain combinations of vector and raster elements). And for a map to remain fully scalable, it must remain in electronic form throughout the process. If it ever gets printed out, requiring us to scan the hard copy, the result will be a raster image, and we'll have no way to get back to the vector graphic.<br /><br />There's also an issue of file formats for vector graphics. Most vector graphics are produced in proprietary formats, such as Adobe Illustrator. We certainly won't adopt a proprietary format of that sort as our standard. There is a non-proprietary vector format that's been under development for many years called SVG (Scalable Vector Graphics), but I doubt that it's supported widely enough to consider using it as our map standard.<br /><br />Anyway, given that we needed to choose a single format as our standard, and given that we definitely need to support scanned hard copy maps, it had to be a raster format. Given that we needed to pick a raster format, the optimal choice was clearly PNG, which is superior to older raster formats such as GIF, JPEG and TIFF. The PNG format is lossless and non-proprietary -- and among all lossless raster formats, it provides the best compression.<br /><br />Note that aside from choosing PNG as our format, we also made choices involving color and resolution; it needs to be monochrome (black & white) and 300 dpi resolution, so an 8.5" x 11" map is 2550 x 3300 pixels.<br /><br />JPEG is a "lossy" format, which loses quality every time the image is edited and re-saved. JPEG tends to be best for photographic images, not maps. Our choice was definitely the lossless PNG format. <br /><br />What about PDF format? Every time somebody suggests PDF, I must emphasize: PDF IS NOT A GRAPHICS FORMAT. It's a file format that can contain all sorts of stuff, including text, vector graphics and raster graphics. Simply because a map was saved in a PDF file doesn't mean that it's scalable. The graphics inside that PDF may be raster images, of any resolution (so when you "zoom in" within that PDF, they may look terrible, full of "jaggies"). Thus, if we simply say that we want maps in PDF format, we haven't said anything about image resolution.<br /><br />People often produce PDF files by initially generating a document in some proprietary format (such as Microsoft Word for text) and then "printing" to a PDF file. In the same way, if they start with fully scalable graphics generated in a proprietary program such as Adobe Illustrator, and then convert to PDF, they will indeed get a PDF with fully scalable graphics. But even in this case, if a measurer sends such a PDF to a Certifier, I suspect that many of our Certifiers will have a difficult time adding the necessary annotations (Remember that the Certifier needs to write in the assigned course number and dates of certification validity) and then preserving it as a fully scalable PDF.<br /><br />Another issue involving PDF files is that our maps are posted on the USATF site where they must be easily available for both screen display and printing. If we post PDF files, screen display can be problematic. Web browsers cannot display PDF files directly, but require a plug-in (usually Adobe's PDF plug-in) to display them in a browser window. Displaying a PDF file this way (using PDF plug-in) tends to be slower than direct display of a PNG graphic by the web browser. More seriously, the required plug-in isn't even available for all web browsers on all platforms. For example, on the Macintosh platform, people running the popular Firefox browser cannot view PDFs in a browser window (mainly because Adobe hasn't seen fit to provide its PDF plug-in for any Mac browser except Safari); thus, Mac users running Firefox would be forced to download the PDF file for every map they wish to view.<br /><br />PNG files are handled directly by all modern browsers and work well for both screen display and printing. Along these lines, it's interesting to recall some history. Pete referred below to discussions between Stu Riegel, Keith Lively, myself (and Pete), in which we chose the current PNG format. Those discussions took place in early 2006. However, as Mike indicated, I had extensive correspondence with Keith several years earlier regarding the methodology for posting and displaying maps on the USATF site. Interestingly, even at that early date, we decided to post only PNG files on the website (which might have been considered somewhat "bleeding edge" at the time, since some of the browsers still in use didn't support PNG very well). The techniques adopted then weren't as efficient as possible: Keith posted two PNG files for each map -- a low-resolution version for screen display and somewhat higher resolution version for printing. Also, RRTC wasn't sending the data to Keith in PNG format. As Mike described, he scanned maps into very high resolution TIFF files, which (I believe) weren't compressed at all, so were huge files. Mike sent those big TIFF files to Keith, who ran a script to convert them into the two PNG files that Keith posted on the website.<br /><br />When several of us revisited the issue in early 2006, we simplified the procedure greatly, by selecting a single PNG format that could be scanned directly by the RRTC Registrar, posted on the USATF site without any conversion, and used for both screen display and printing. At 300 dpi, this new PNG standard was somewhat higher resolution than both of the files Keith was posting previously, but it was a single file that replaced two files, and by keeping it monochrome, file sizes were small enough to work well on the web.<br /><br />The format selected in 2006 is probably still optimal, given that we can't avoid working with scanned hard-copy maps, which require a raster format -- and PNG remains the best raster format. People periodically say we should use some other format, and the format mentioned most often is PDF. But as I've said, PDF isn't a graphics format. PDF files can contain all sorts of things. PDF files are extremely useful for transmitting information, precisely because they can contain so many things. But we can't base our map standard on the PDF format. Saying that a file should be in PDF format says nothing about the nature or resolution of the graphics inside the file. It may contain scalable graphics, but it might contain nothing but low-resolution raster graphics. And for screen display of maps on the website, we must remember that not everybody can view PDF files in a browser window.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984927">
+                      <div class="post-header">
+                        <span class="post-author">alanjones</span>
+                        <span class="meta">#2 &bull; 1/10/10 @ 2:45 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Many thanks to Bob, and the others, for their work on this. They are certainly right that PNG (Portable Network Graphics) is the way to go. This past year I learned to write PNG files at the programming level. We had been using Windows bitmap files. When we converted to PNG, the result was visually identical, since PNG is a lossless compression, but the files were less than 5% the size of the bitmap files.<BR><BR>I hope as time goes by that more and more certifiers will be submitting maps in PNG format resulting in better quality maps.<BR><BR>Alan
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984932">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#3 &bull; 1/12/10 @ 4:12 AM</span>
+                      </div>
+                      <div class="post-body">
+                        The primary advantage of having PDF as an alternate format would be to facilitate a move towards electronic submission of maps.<BR><BR>One of the main arguments against allowing electronic submission is that measurers will submit maps in the wrong PNG format.  PDF would avoid this issue, because the only way a PDF map could be in the wrong format (i.e., would not display correctly on the USATF website) would be if it was not 8.5x11 in size.  If that was the case it would be immediately obvious to both the measurer and the certifier.<BR><BR>PDF also allows the creator of an electronic map much more flexibility.  For example, although some do, most of our maps don't need 300 dots per inch.  A map creator could reduce the resolution to say, 200dpi, and use the file space he saves to include other elements that might make his map more readable or aesthetically pleasing, such as small images or color.  After saving in PDF there would be no issue in displaying it on the USATF website.<BR><BR>For hard-copy maps that are scanned, there would no benefit to changing to PDF, but for the case of an electronic submission, allowing PDF as an alternative format would definitely have advantages.<BR><BR> <I>More seriously, the required plug-in isn't even available for all web browsers on all platforms. For example, on the Macintosh platform, people running the popular Firefox browser cannot view PDFs in a browser window (mainly because Adobe hasn't seen fit to provide its PDF plug-in for any Mac browser except Safari); thus, Mac users running Firefox would be forced to download the PDF file for every map they wish to view.</I><BR><BR>As a Mac owner I can tell you this is a not an issue.  Anyone who owns a Mac has long ago figured out the one extra click necessary to view PDF files.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984937">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#4 &bull; 1/14/10 @ 5:30 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Mark - while I agree that PNGs in the wrong format are a definite problem, another major factor in electronic submission is the time involved with the Regional VCs and the Registrar.  If the VC is not willing/able to check file specs of a PNG, they should not pass PNG files on to the Registrar.  That is one issue. <BR><BR>The next issue is the time involved by the Registrar.  If a measurer submits a PNG file, but the VC prints the cert to hard copy, including the map on the back, then mails the cert to the Registrar, he still has to email the PNG file to the Registrar.  Registrar then has to keep track of which PNG file he has already received, so he doesn't re-create it when the paper copy arrives.  Since the process is currently taking a stack of certs, scanning, flipping them, scanning the backs, the duplicate PNG file is an issue.<BR><BR>Yes, I can sit here and conceive organizational scenarios, but I have not had to actually do the Registrar's job.  Just like Monday-morning quarterbacks (we could all win the game if we had been allowed to play), we can think of simple methods.  As much as I would like to believe it would be not much problem to adjust, the fact is, we have more certifications to handle each year.<BR><BR>I don't know how much time Gene spends on the Registrar duties, but I imagine that it is more time than he is reasonably compensated for.  I bet Carol has better things for him to do than shuffle papers for a bunch of us.  We have to keep that in mind, also.  Should there be more compensation for the position, since it takes so much time?<BR><BR>I would love to offer to work with any measurer or Certifier that would like to submit maps as a PNG file, but before I do, Gene must be agreeable to accepting them.  We need to have a process in place, so it doesn't create more work for the Registrar or VC.  <BR><BR>Gene will be the lead on how the process works.  Until I can get to Arizona to sit with him while he does his magic, I must defer to his judgment (even though I argue with him about it often!).  I do know that right now, Gene does not feel like we have a viable method for accepting numerous PNG files.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984942">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#5 &bull; 1/15/10 @ 10:55 AM</span>
+                      </div>
+                      <div class="post-body">
+                        Gentlemen:  I am new to this forum.  I appreciate this discussion.  I understand that USATF still accepts paper maps and then scans them into the PNG format.<BR><BR>Yesterday, I searched on USATF.org for a map in a city where I was asked to score a race.  The RD did not know if her course was certified.  I found it is not certified, but not before opening a map that was, without exaggeration, atrocious in its reproduction.  The execution/art work was not of high quality, but it appears to me it would have been readable if it had been simply photocopied.  Or, if the creator had submitted his/her map in PDF.  Instead, what was available for viewing and downloading in png was essentially worthless.  My view is that the scanning used by USATF is not of high quality.  I know because some of my own maps look poor on USATF.org.  And, many other maps do not print well.  Some I have seen are nearly unusable.<BR><BR>Having read this discussion, I still do not understand why all maps are not submitted electronically.  Scanners are cheap these days.  <BR><BR>I asked my regional USATF official to whom I submit everything electronically today why it is that he prints what I send him for snail mail submission to USATF.  And why he prints the certificate and mails it to me.  He did not have an answer.  Now, since I received a hard copy, I have to scan the certificate to mail to my race director client.  I am not going to photocopy it, put it in an envelope,stamp it, and carry it to a mailbox when I have a perfectly good computer at my desk.<BR><BR>My personal process is to draw my maps, insert the images into Word, add the text, and save the document as a PDF in Word 2007.  For older versions of Word, free PDF creators such as Primo PDF do the same thing, almost as easily.<BR><BR>Seems to me all measurers should submit their maps as PDFs.  Then, there is no need for any intervening scans or format changes.  The regional receives the PDF in an email from the measurer and emails it with the certification number and effective dates along with the application.  Assuming no problems with the measurement, USATF simply uploads the PDF.  The resulting images are clear, the download easy, and the printed copy of the PDF is crisp.<BR><BR>The current USATF process seems unnecessarily complicated to me.  But I am a newbie, so maybe I don't understand.<BR><BR>Am I missing something here?<BR><BR>Kind regards to all,<BR><BR>Lyman
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984947">
+                      <div class="post-header">
+                        <span class="post-author">genenewman</span>
+                        <span class="meta">#6 &bull; 1/15/10 @ 12:16 PM</span>
+                      </div>
+                      <div class="post-body">
+                        All this is interesting, but some of you have not read Bob's comments in reference to png format as the choice.  <BR><BR>The maps that are problems are few.  Yes, Lehman two of your 9 maps are not as clear as they could be.  However, if you followed the guidelines and submitted your maps with black print then all would be fine.  Scanning is not the problem!  Most of our Certifiers have gotten the measurers to comply. Next, Our VC's must put their foot down and not accept inferior maps.  Lehman if you don't like the look of any of your maps please send me a corrected look and I will do an overwrite of these. My email is: newmangc@cox.net  <BR><BR>Here are Bob's comments on PDF for all to see again:<BR><BR>What about PDF format? Every time somebody suggests PDF, I must emphasize: PDF IS NOT A GRAPHICS FORMAT. It's a file format that can contain all sorts of stuff, including text, vector graphics and raster graphics. Simply because a map was saved in a PDF file doesn't mean that it's scalable. The graphics inside that PDF may be raster images, of any resolution (so when you "zoom in" within that PDF, they may look terrible, full of "jaggies"). Thus, if we simply say that we want maps in PDF format, we haven't said anything about image resolution.<BR>Another issue involving PDF files is that our maps are posted on the USATF site where they must be easily available for both screen display and printing. If we post PDF files, screen display can be problematic. Web browsers cannot display PDF files directly, but require a plug-in (usually Adobe's PDF plug-in) to display them in a browser window. Displaying a PDF file this way (using PDF plug-in) tends to be slower than direct display of a PNG graphic by the web browser. More seriously, the required plug-in isn't even available for all web browsers on all platforms. For example, on the Macintosh platform, people running the popular Firefox browser cannot view PDFs in a browser window (mainly because Adobe hasn't seen fit to provide its PDF plug-in for any Mac browser except Safari); thus, Mac users running Firefox would be forced to download the PDF file for every map they wish to view.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984952">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#7 &bull; 1/15/10 @ 2:04 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Hey, thanks for the response, Gene.<BR><BR>I am not a MAC user.  But I thought all MACs come prepared ready to run Windows these days.  I guess it may be a pain to switch to Windows just to access USATF maps.  But I thought that MAC users are still less than ~ 10% of us out here.<BR><BR>I still do not understand what PDF not being a graphics format has to do with anything.  Maybe I am dense.  But I view, create, upload, download, zoom, select from and save PDFs every day.  The quality and clarity are always fine.  Much better than the PNGs I get from USATF, on average.<BR><BR>I do not know of any computer user in the free world who doesn't use Adobe's plug in.  You can't download tax forms, MVA forms, or much of any documents anymore without it.  Every government page and most other web sites offering any kind of document to download has a link right there on that page to get the quick, free download (I have no connection to Adobe).  PDFs are the coin of the realm for document viewing, transfer, and printing.  I still do not understand why USATF maps need to be saved in any graphics format unless we anticipate that USATF will need to open them to make modifications.  <BR><BR>Further, it seems to me that USATF should find a way to accept electronic submissions of maps.  Despite the limitations that you mention that might affect a small percentage of measurers - and for which there are easy work-arounds - the future is that all of this should be done electronically, IMHO.<BR><BR>Penultimately, USATF can set up a system for direct uploading of Word or PDF documents - and other formats, too, from its web site.  Then USATF can save the documents in any format it likes.<BR><BR>Finally, I and others I have spoken to find the downloading, saving, and printing of maps in the PNG format from USATF's site to be cumbersome.  When I send my small race RDs and other less computer-savvy folks to look up maps and download them from USATF, they sometimes have difficulty.  These people tell me they have no problem accessing, viewing, downloading, or printing PDFs.<BR><BR>Thanks for making these maps available to the general public.<BR><BR>Lyman<BR><BR>Lyman
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984957">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#8 &bull; 1/15/10 @ 2:54 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Lyman, I tried looking up your maps, but nothing came up when I searched for "Lyman".  So, I can't respond directly to your map situation.<BR><BR>But, as Bob explained, a graphic can be a vector-based or raster-based image.  A vector graphic can be reduced or enlarged with little, if any, loss of clarity.  Since computer monitors are 72 dpi, a low-res image still looks okay on-screen.<BR><BR>It is when a map is printed that a low-res image looks bad.  A raster image has jagged edges around most type, while a vector image has much smoother edges.  Thus, fine type is much easier to read in a vector image than a raster image.<BR><BR>I agree that png files are a little more difficult to print than a PDF.  But, all one has to do is download the image (save to their computer), then open that file on their computer.  They can then print rather simply.  Conversly, a PDF can be printed directly from the view online.<BR><BR>You may find that many of the hand-drawn maps don't convert to PDF files clearly.  When zooming-in on a detail area, you may only see a blur, which is not good.<BR><BR>The biggest problem with accepting digital files is that too many measurers don't understand resolution, and create their maps "for the Web", or at 72 dpi.  These are basically garbage after one scan.  They need to create them in at least 300 dpi.  But, instead, some choose to change a 72 dpi file into a 300 dpi file for submission.  This also doesn't work, since they are simply adding 4 dots to each dot in the 72 dpi image.  This does not improve clarity at all.<BR><BR>So, for the time being, png files are the only digital files acceptable for maps.  Many measurers still can't follow the simple requirements of 300 dpi, 8½x11, single sheet, no screens/photos.  PDF files often don't meet those specs, even when someone tries to do it correctly.  Your method of putting a map into Word, then adding the type should work.  But, many can't seem to manage that, either.  We have hurdles that some of us can jump, but others can't get over.  So, for now, png is the only acceptable file format.<BR><BR>Believe me, I have been trying to figure out a way to accept PDF files for a couple years. It can't happen at the moment.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984962">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#9 &bull; 1/15/10 @ 3:30 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Thanks for the response, Duane.  I always save my stuff in very large files and then compact it, and PDF does this automatically, of course, but when I print my PDFs, they are fine. I can print one, then scan the print, and email it to you if you like, so you can verify this statement.<BR><BR>Based on some of the blurry maps I see on USATF.org, I still don't understand how PNG is better then PDF, but I accept your assertion anyway.<BR><BR>When will USATF provide a way to simply upload maps - like job sites that upload resumes, or Facebook's photo and video uploads?<BR><BR>BTW, my maps are under "Lyman Jordan"<BR><BR>Have a good day.<BR><BR>Lyman
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984967">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#10 &bull; 1/15/10 @ 3:40 PM</span>
+                      </div>
+                      <div class="post-body">
+                        BTW:  I always send my maps to my regional certifier (John Sissala) in PDF.  He prints each map - which looks perfect - and then sends the hard copy to USATF - which - scans it.  This process seems to be a recipe for a loss of resolution.  A printed copy of my (most of) my maps from USATF looks OK.  But the same map printed from the PDF I send John looks much better.<BR><BR>I can promise that any PDF I would send into USATF via email or upload from USATF.org (if this functionality were offered) would look fine.
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984972">
+                      <div class="post-header">
+                        <span class="post-author">duanerussell</span>
+                        <span class="meta">#11 &bull; 1/15/10 @ 4:40 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Lyman, please email me the pdf files for DC08004JS and DC09002JS.  I would like to compare them with the prints I just did from the png files.<BR><BR>Regarding the garbage png files on USATF: GIGO.  (Garbage In, Garbage Out.)  Some people don't create good images to begin with, or they are scanned on an older scanner.  Also, they may not have their scanner set to 300 dpi.  Many variables.  Don't blame the file format, as much as the original image.<BR><BR>The USATF site will never be a location to upload the initial maps, as they have to be reviewed by the Certifier, then the Regional, before being passed to the Registrar for posting.  I have rejected maps that don't meet the requirements, and allowing direct upload would remove the checking option.  (Yes, we could work with folders, etc., but we need to get a fail-safe process created, which we are working on.  Don't hold your breath, though.)
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984977">
+                      <div class="post-header">
+                        <span class="post-author">genenewman</span>
+                        <span class="meta">#12 &bull; 1/15/10 @ 4:55 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Lyman,<BR><BR>Again, Duane couldn't find you as a measurer and when I did a search I used Lehman(not your name). Using your name,    Please send me the maps you are referring to as I also would like to see what the problem is?<BR>Gene
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984982">
+                      <div class="post-header">
+                        <span class="post-author">pastmember</span>
+                        <span class="meta">#13 &bull; 1/15/10 @ 6:15 PM</span>
+                      </div>
+                      <div class="post-body">
+                        Thanks, Gene,<BR><BR>I do not have a problem with how USATF is posting my maps.  A couple of my maps were done hurriedly and the originals are not good.  The rest are OK.<BR><BR>My issue is with the apparent inefficiency of printing and mailing maps, then USATF scanning them into a graphics format - which I still do not perceive the need for - when simply emailing maps and applications - or better yet, uploading them to USATF seem to be vastly more efficient than the current printing/snail mailing/scanning/ inconvenient format protocol of today.<BR><BR>My 2 cents.<BR><BR>Kind regards,<BR><BR>Lyman Jordan
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984987">
+                      <div class="post-header">
+                        <span class="post-author">genenewman</span>
+                        <span class="meta">#14 &bull; 1/15/10 @ 6:34 PM</span>
+                      </div>
+                      <div class="post-body">
+                        I just sent you an email that should explain why we do the process.  A point of reference, the one map that's a problem was scanned before my time as registrar and before we improved the standards.<BR><BR>It only takes about 15 days to get all online.  It used to take months.  We at RRTC feel the process is working well and yes we will look into ways to improve the process.  Thanks for your responses and hope you continue to measure.        Best Regards,<BR><BR>Gene
+                        
+                      </div>
+                    </article>
+                    
+                    <article class="post-card" id="post-585516546019984992">
+                      <div class="post-header">
+                        <span class="post-author">Admin</span>
+                        <span class="meta">#15 &bull; 1/15/10 @ 8:19 PM</span>
+                      </div>
+                      <div class="post-body">
+                        <BLOCKQUOTE class="ip-ubbcode-quote"><div class="ip-ubbcode-quote-title">quote:</div><div class="ip-ubbcode-quote-content">Regarding the garbage png files on USATF: GIGO. (Garbage In, Garbage Out.) Some people don't create good images to begin with, or they are scanned on an older scanner. Also, they may not have their scanner set to 300 dpi. Many variables. Don't blame the file format, as much as the original image. </div></BLOCKQUOTE><BR><BR>I think the original image was probably fine.  Afterall, it must have been readable when the regional certifier and vice chair approved it.  What probably happened is that the map had feint grey lines and feint parts of handwritten text that scanned in as white rather than black.  There is no such thing as grey in a B&W white scan.  Measurers who have been around a while have figured this out and create maps that are close to true B&W with no light grey.  New measurers think that B&W simply means no color, and only learn that greys don't scan well, by trial and error.  Unfortunately, some of their errors (like mine) are on the website.
                         
                       </div>
                     </article>
